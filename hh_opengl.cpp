@@ -1425,54 +1425,54 @@ typedef void (__stdcall *GLDEBUGPROC)    (GLenum source,GLenum type,GLuint id,GL
 //typedef void (WINAPI *GLDEBUGPROCAMD) (GLuint id,GLenum category,GLenum severity,GLsizei length,const GLchar *message,void *userParam);
 
 // 1.0
-#define glCullFace			SharedGL_glCullFace
-#define glFrontFace			SharedGL_glFrontFace
-#define glHint				SharedGL_glHint
-#define glLineWidth			SharedGL_glLineWidth
-#define glPointSize			SharedGL_glPointSize
-#define glPolygonMode			SharedGL_glPolygonMode
-#define glScissor			SharedGL_glScissor
-#define glTexParameterf			SharedGL_glTexParameterf
-#define glTexParameterfv		SharedGL_glTexParameterfv
-#define glTexParameteri			SharedGL_glTexParameteri
-#define glTexParameteriv		SharedGL_glTexParameteriv
-#define glTexImage1D			SharedGL_glTexImage1D
-#define glTexImage2D			SharedGL_glTexImage2D
-#define glDrawBuffer			SharedGL_glDrawBuffer
-#define glClear				SharedGL_glClear
-#define glClearColor			SharedGL_glClearColor
-#define glClearStencil			SharedGL_glClearStencil
-#define glClearDepth			SharedGL_glClearDepth
-#define glStencilMask			SharedGL_glStencilMask
-#define glColorMask			SharedGL_glColorMask
-#define glDepthMask			SharedGL_glDepthMask
-#define glDisable			SharedGL_glDisable
-#define glEnable			SharedGL_glEnable
-#define glFinish			SharedGL_glFinish
-#define glFlush				SharedGL_glFlush
-#define glBlendFunc			SharedGL_glBlendFunc
-#define glLogicOp			SharedGL_glLogicOp
-#define glStencilFunc			SharedGL_glStencilFunc
-#define glStencilOp			SharedGL_glStencilOp
-#define glDepthFunc			SharedGL_glDepthFunc
-#define glPixelStoref			SharedGL_glPixelStoref
-#define glPixelStorei			SharedGL_glPixelStorei
-#define glReadBuffer			SharedGL_glReadBuffer
-#define glReadPixels			SharedGL_glReadPixels
-#define glGetBooleanv			SharedGL_glGetBooleanv
-#define glGetDoublev			SharedGL_glGetDoublev
-#define glGetError			SharedGL_glGetError
-#define glGetFloatv			SharedGL_glGetFloatv
-#define glGetIntegerv			SharedGL_glGetIntegerv
-#define glGetString			SharedGL_glGetString
-#define glGetTexImage			SharedGL_glGetTexImage
-#define glGetTexParameterfv		SharedGL_glGetTexParameterfv
-#define glGetTexParameteriv		SharedGL_glGetTexParameteriv
-#define glGetTexLevelParameterfv	SharedGL_glGetTexLevelParameterfv
-#define glGetTexLevelParameteriv	SharedGL_glGetTexLevelParameteriv
-#define glIsEnabled			SharedGL_glIsEnabled
-#define glDepthRange			SharedGL_glDepthRange
-#define glViewport			SharedGL_glViewport
+#define glCullFace			HH_GL_glCullFace
+#define glFrontFace			HH_GL_glFrontFace
+#define glHint				HH_GL_glHint
+#define glLineWidth			HH_GL_glLineWidth
+#define glPointSize			HH_GL_glPointSize
+#define glPolygonMode			HH_GL_glPolygonMode
+#define glScissor			HH_GL_glScissor
+#define glTexParameterf			HH_GL_glTexParameterf
+#define glTexParameterfv		HH_GL_glTexParameterfv
+#define glTexParameteri			HH_GL_glTexParameteri
+#define glTexParameteriv		HH_GL_glTexParameteriv
+#define glTexImage1D			HH_GL_glTexImage1D
+#define glTexImage2D			HH_GL_glTexImage2D
+#define glDrawBuffer			HH_GL_glDrawBuffer
+#define glClear				HH_GL_glClear
+#define glClearColor			HH_GL_glClearColor
+#define glClearStencil			HH_GL_glClearStencil
+#define glClearDepth			HH_GL_glClearDepth
+#define glStencilMask			HH_GL_glStencilMask
+#define glColorMask			HH_GL_glColorMask
+#define glDepthMask			HH_GL_glDepthMask
+#define glDisable			HH_GL_glDisable
+#define glEnable			HH_GL_glEnable
+#define glFinish			HH_GL_glFinish
+#define glFlush				HH_GL_glFlush
+#define glBlendFunc			HH_GL_glBlendFunc
+#define glLogicOp			HH_GL_glLogicOp
+#define glStencilFunc			HH_GL_glStencilFunc
+#define glStencilOp			HH_GL_glStencilOp
+#define glDepthFunc			HH_GL_glDepthFunc
+#define glPixelStoref			HH_GL_glPixelStoref
+#define glPixelStorei			HH_GL_glPixelStorei
+#define glReadBuffer			HH_GL_glReadBuffer
+#define glReadPixels			HH_GL_glReadPixels
+#define glGetBooleanv			HH_GL_glGetBooleanv
+#define glGetDoublev			HH_GL_glGetDoublev
+#define glGetError			HH_GL_glGetError
+#define glGetFloatv			HH_GL_glGetFloatv
+#define glGetIntegerv			HH_GL_glGetIntegerv
+#define glGetString			HH_GL_glGetString
+#define glGetTexImage			HH_GL_glGetTexImage
+#define glGetTexParameterfv		HH_GL_glGetTexParameterfv
+#define glGetTexParameteriv		HH_GL_glGetTexParameteriv
+#define glGetTexLevelParameterfv	HH_GL_glGetTexLevelParameterfv
+#define glGetTexLevelParameteriv	HH_GL_glGetTexLevelParameteriv
+#define glIsEnabled			HH_GL_glIsEnabled
+#define glDepthRange			HH_GL_glDepthRange
+#define glViewport			HH_GL_glViewport
 
 typedef void           (__stdcall *PFNGLCULLFACEPROC)               (GLenum mode);
 typedef void           (__stdcall *PFNGLFRONTFACEPROC)              (GLenum mode);
@@ -1523,69 +1523,69 @@ typedef GLboolean      (__stdcall *PFNGLISENABLEDPROC)              (GLenum cap)
 typedef void           (__stdcall *PFNGLDEPTHRANGEPROC)             (GLdouble n, GLdouble f);
 typedef void           (__stdcall *PFNGLVIEWPORTPROC)               (GLint x, GLint y, GLsizei width, GLsizei height);
 
-PFNGLCULLFACEPROC		SharedGL_glCullFace		     = 0;
-PFNGLFRONTFACEPROC		SharedGL_glFrontFace		     = 0;
-PFNGLHINTPROC			SharedGL_glHint		     = 0;
-PFNGLLINEWIDTHPROC		SharedGL_glLineWidth		     = 0;
-PFNGLPOINTSIZEPROC		SharedGL_glPointSize		     = 0;
-PFNGLPOLYGONMODEPROC		SharedGL_glPolygonMode	     = 0;
-PFNGLSCISSORPROC		SharedGL_glScissor		     = 0;
-PFNGLTEXPARAMETERFPROC		SharedGL_glTexParameterf	     = 0;
-PFNGLTEXPARAMETERFVPROC		SharedGL_glTexParameterfv	     = 0;
-PFNGLTEXPARAMETERIPROC		SharedGL_glTexParameteri	     = 0;
-PFNGLTEXPARAMETERIVPROC		SharedGL_glTexParameteriv	     = 0;
-PFNGLTEXIMAGE1DPROC		SharedGL_glTexImage1D	     = 0;
-PFNGLTEXIMAGE2DPROC		SharedGL_glTexImage2D	     = 0;
-PFNGLDRAWBUFFERPROC		SharedGL_glDrawBuffer	     = 0;
-PFNGLCLEARPROC			SharedGL_glClear		     = 0;
-PFNGLCLEARCOLORPROC		SharedGL_glClearColor	     = 0;
-PFNGLCLEARSTENCILPROC		SharedGL_glClearStencil	     = 0;
-PFNGLCLEARDEPTHPROC		SharedGL_glClearDepth	     = 0;
-PFNGLSTENCILMASKPROC		SharedGL_glStencilMask	     = 0;
-PFNGLCOLORMASKPROC		SharedGL_glColorMask		     = 0;
-PFNGLDEPTHMASKPROC		SharedGL_glDepthMask		     = 0;
-PFNGLDISABLEPROC		SharedGL_glDisable		     = 0;
-PFNGLENABLEPROC			SharedGL_glEnable		     = 0;
-PFNGLFINISHPROC			SharedGL_glFinish		     = 0;
-PFNGLFLUSHPROC			SharedGL_glFlush		     = 0;
-PFNGLBLENDFUNCPROC		SharedGL_glBlendFunc		     = 0;
-PFNGLLOGICOPPROC		SharedGL_glLogicOp		     = 0;
-PFNGLSTENCILFUNCPROC		SharedGL_glStencilFunc	     = 0;
-PFNGLSTENCILOPPROC		SharedGL_glStencilOp		     = 0;
-PFNGLDEPTHFUNCPROC		SharedGL_glDepthFunc		     = 0;
-PFNGLPIXELSTOREFPROC		SharedGL_glPixelStoref	     = 0;
-PFNGLPIXELSTOREIPROC		SharedGL_glPixelStorei	     = 0;
-PFNGLREADBUFFERPROC		SharedGL_glReadBuffer	     = 0;
-PFNGLREADPIXELSPROC		SharedGL_glReadPixels	     = 0;
-PFNGLGETBOOLEANVPROC		SharedGL_glGetBooleanv	     = 0;
-PFNGLGETDOUBLEVPROC		SharedGL_glGetDoublev	     = 0;
-PFNGLGETERRORPROC		SharedGL_glGetError		     = 0;
-PFNGLGETFLOATVPROC		SharedGL_glGetFloatv		     = 0;
-PFNGLGETINTEGERVPROC		SharedGL_glGetIntegerv	     = 0;
-PFNGLGETSTRINGPROC		SharedGL_glGetString		     = 0;
-PFNGLGETTEXIMAGEPROC		SharedGL_glGetTexImage	     = 0;
-PFNGLGETTEXPARAMETERFVPROC	SharedGL_glGetTexParameterfv	     = 0;
-PFNGLGETTEXPARAMETERIVPROC	SharedGL_glGetTexParameteriv	     = 0;
-PFNGLGETTEXLEVELPARAMETERFVPROC SharedGL_glGetTexLevelParameterfv = 0;
-PFNGLGETTEXLEVELPARAMETERIVPROC SharedGL_glGetTexLevelParameteriv = 0;
-PFNGLISENABLEDPROC		SharedGL_glIsEnabled		     = 0;
-PFNGLDEPTHRANGEPROC		SharedGL_glDepthRange	     = 0;
-PFNGLVIEWPORTPROC		SharedGL_glViewport		     = 0;
+PFNGLCULLFACEPROC		HH_GL_glCullFace		     = 0;
+PFNGLFRONTFACEPROC		HH_GL_glFrontFace		     = 0;
+PFNGLHINTPROC			HH_GL_glHint		     = 0;
+PFNGLLINEWIDTHPROC		HH_GL_glLineWidth		     = 0;
+PFNGLPOINTSIZEPROC		HH_GL_glPointSize		     = 0;
+PFNGLPOLYGONMODEPROC		HH_GL_glPolygonMode	     = 0;
+PFNGLSCISSORPROC		HH_GL_glScissor		     = 0;
+PFNGLTEXPARAMETERFPROC		HH_GL_glTexParameterf	     = 0;
+PFNGLTEXPARAMETERFVPROC		HH_GL_glTexParameterfv	     = 0;
+PFNGLTEXPARAMETERIPROC		HH_GL_glTexParameteri	     = 0;
+PFNGLTEXPARAMETERIVPROC		HH_GL_glTexParameteriv	     = 0;
+PFNGLTEXIMAGE1DPROC		HH_GL_glTexImage1D	     = 0;
+PFNGLTEXIMAGE2DPROC		HH_GL_glTexImage2D	     = 0;
+PFNGLDRAWBUFFERPROC		HH_GL_glDrawBuffer	     = 0;
+PFNGLCLEARPROC			HH_GL_glClear		     = 0;
+PFNGLCLEARCOLORPROC		HH_GL_glClearColor	     = 0;
+PFNGLCLEARSTENCILPROC		HH_GL_glClearStencil	     = 0;
+PFNGLCLEARDEPTHPROC		HH_GL_glClearDepth	     = 0;
+PFNGLSTENCILMASKPROC		HH_GL_glStencilMask	     = 0;
+PFNGLCOLORMASKPROC		HH_GL_glColorMask		     = 0;
+PFNGLDEPTHMASKPROC		HH_GL_glDepthMask		     = 0;
+PFNGLDISABLEPROC		HH_GL_glDisable		     = 0;
+PFNGLENABLEPROC			HH_GL_glEnable		     = 0;
+PFNGLFINISHPROC			HH_GL_glFinish		     = 0;
+PFNGLFLUSHPROC			HH_GL_glFlush		     = 0;
+PFNGLBLENDFUNCPROC		HH_GL_glBlendFunc		     = 0;
+PFNGLLOGICOPPROC		HH_GL_glLogicOp		     = 0;
+PFNGLSTENCILFUNCPROC		HH_GL_glStencilFunc	     = 0;
+PFNGLSTENCILOPPROC		HH_GL_glStencilOp		     = 0;
+PFNGLDEPTHFUNCPROC		HH_GL_glDepthFunc		     = 0;
+PFNGLPIXELSTOREFPROC		HH_GL_glPixelStoref	     = 0;
+PFNGLPIXELSTOREIPROC		HH_GL_glPixelStorei	     = 0;
+PFNGLREADBUFFERPROC		HH_GL_glReadBuffer	     = 0;
+PFNGLREADPIXELSPROC		HH_GL_glReadPixels	     = 0;
+PFNGLGETBOOLEANVPROC		HH_GL_glGetBooleanv	     = 0;
+PFNGLGETDOUBLEVPROC		HH_GL_glGetDoublev	     = 0;
+PFNGLGETERRORPROC		HH_GL_glGetError		     = 0;
+PFNGLGETFLOATVPROC		HH_GL_glGetFloatv		     = 0;
+PFNGLGETINTEGERVPROC		HH_GL_glGetIntegerv	     = 0;
+PFNGLGETSTRINGPROC		HH_GL_glGetString		     = 0;
+PFNGLGETTEXIMAGEPROC		HH_GL_glGetTexImage	     = 0;
+PFNGLGETTEXPARAMETERFVPROC	HH_GL_glGetTexParameterfv	     = 0;
+PFNGLGETTEXPARAMETERIVPROC	HH_GL_glGetTexParameteriv	     = 0;
+PFNGLGETTEXLEVELPARAMETERFVPROC HH_GL_glGetTexLevelParameterfv = 0;
+PFNGLGETTEXLEVELPARAMETERIVPROC HH_GL_glGetTexLevelParameteriv = 0;
+PFNGLISENABLEDPROC		HH_GL_glIsEnabled		     = 0;
+PFNGLDEPTHRANGEPROC		HH_GL_glDepthRange	     = 0;
+PFNGLVIEWPORTPROC		HH_GL_glViewport		     = 0;
 
 // 1.1
-#define glDrawArrays		SharedGL_glDrawArrays
-#define glDrawElements		SharedGL_glDrawElements
-#define glPolygonOffset		SharedGL_glPolygonOffset
-#define glCopyTexImage1D	SharedGL_glCopyTexImage1D
-#define glCopyTexImage2D	SharedGL_glCopyTexImage2D
-#define glCopyTexSubImage1D	SharedGL_glCopyTexSubImage1D
-#define glCopyTexSubImage2D	SharedGL_glCopyTexSubImage2D
-#define glTexSubImage1D		SharedGL_glTexSubImage1D
-#define glTexSubImage2D		SharedGL_glTexSubImage2D
-#define glBindTexture		SharedGL_glBindTexture
-#define glDeleteTextures	SharedGL_glDeleteTextures
-#define glGenTextures		SharedGL_glGenTextures
-#define glIsTexture		SharedGL_glIsTexture
+#define glDrawArrays		HH_GL_glDrawArrays
+#define glDrawElements		HH_GL_glDrawElements
+#define glPolygonOffset		HH_GL_glPolygonOffset
+#define glCopyTexImage1D	HH_GL_glCopyTexImage1D
+#define glCopyTexImage2D	HH_GL_glCopyTexImage2D
+#define glCopyTexSubImage1D	HH_GL_glCopyTexSubImage1D
+#define glCopyTexSubImage2D	HH_GL_glCopyTexSubImage2D
+#define glTexSubImage1D		HH_GL_glTexSubImage1D
+#define glTexSubImage2D		HH_GL_glTexSubImage2D
+#define glBindTexture		HH_GL_glBindTexture
+#define glDeleteTextures	HH_GL_glDeleteTextures
+#define glGenTextures		HH_GL_glGenTextures
+#define glIsTexture		HH_GL_glIsTexture
 
 typedef void       (__stdcall *PFNGLDRAWARRAYSPROC)        (GLenum mode, GLint first, GLsizei count);
 typedef void       (__stdcall *PFNGLDRAWELEMENTSPROC)      (GLenum mode, GLsizei count, GLenum type, const void *indices);
@@ -1601,77 +1601,77 @@ typedef void       (__stdcall *PFNGLDELETETEXTURESPROC)    (GLsizei n, const GLu
 typedef void       (__stdcall *PFNGLGENTEXTURESPROC)       (GLsizei n, GLuint *textures);
 typedef GLboolean  (__stdcall *PFNGLISTEXTUREPROC)         (GLuint texture);
 
-PFNGLDRAWARRAYSPROC		SharedGL_glDrawArrays	= 0;
-PFNGLDRAWELEMENTSPROC		SharedGL_glDrawElements	= 0;
-PFNGLPOLYGONOFFSETPROC		SharedGL_glPolygonOffset	= 0;
-PFNGLCOPYTEXIMAGE1DPROC		SharedGL_glCopyTexImage1D	= 0;
-PFNGLCOPYTEXIMAGE2DPROC		SharedGL_glCopyTexImage2D	= 0;
-PFNGLCOPYTEXSUBIMAGE1DPROC	SharedGL_glCopyTexSubImage1D = 0;
-PFNGLCOPYTEXSUBIMAGE2DPROC	SharedGL_glCopyTexSubImage2D = 0;
-PFNGLTEXSUBIMAGE1DPROC		SharedGL_glTexSubImage1D	= 0;
-PFNGLTEXSUBIMAGE2DPROC		SharedGL_glTexSubImage2D	= 0;
-PFNGLBINDTEXTUREPROC		SharedGL_glBindTexture	= 0;
-PFNGLDELETETEXTURESPROC		SharedGL_glDeleteTextures	= 0;
-PFNGLGENTEXTURESPROC		SharedGL_glGenTextures	= 0;
-PFNGLISTEXTUREPROC		SharedGL_glIsTexture		= 0;
+PFNGLDRAWARRAYSPROC		HH_GL_glDrawArrays	= 0;
+PFNGLDRAWELEMENTSPROC		HH_GL_glDrawElements	= 0;
+PFNGLPOLYGONOFFSETPROC		HH_GL_glPolygonOffset	= 0;
+PFNGLCOPYTEXIMAGE1DPROC		HH_GL_glCopyTexImage1D	= 0;
+PFNGLCOPYTEXIMAGE2DPROC		HH_GL_glCopyTexImage2D	= 0;
+PFNGLCOPYTEXSUBIMAGE1DPROC	HH_GL_glCopyTexSubImage1D = 0;
+PFNGLCOPYTEXSUBIMAGE2DPROC	HH_GL_glCopyTexSubImage2D = 0;
+PFNGLTEXSUBIMAGE1DPROC		HH_GL_glTexSubImage1D	= 0;
+PFNGLTEXSUBIMAGE2DPROC		HH_GL_glTexSubImage2D	= 0;
+PFNGLBINDTEXTUREPROC		HH_GL_glBindTexture	= 0;
+PFNGLDELETETEXTURESPROC		HH_GL_glDeleteTextures	= 0;
+PFNGLGENTEXTURESPROC		HH_GL_glGenTextures	= 0;
+PFNGLISTEXTUREPROC		HH_GL_glIsTexture		= 0;
 
 // 1.2 
-#define glDrawRangeElements	SharedGL_glDrawRangeElements
-#define glTexImage3D		SharedGL_glTexImage3D
-#define glTexSubImage3D		SharedGL_glTexSubImage3D
-#define glCopyTexSubImage3D	SharedGL_glCopyTexSubImage3D
+#define glDrawRangeElements	HH_GL_glDrawRangeElements
+#define glTexImage3D		HH_GL_glTexImage3D
+#define glTexSubImage3D		HH_GL_glTexSubImage3D
+#define glCopyTexSubImage3D	HH_GL_glCopyTexSubImage3D
 
 typedef void (__stdcall *PFNGLDRAWRANGEELEMENTSPROC) (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void *indices);
 typedef void (__stdcall *PFNGLTEXIMAGE3DPROC)        (GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void *pixels);
 typedef void (__stdcall *PFNGLTEXSUBIMAGE3DPROC)     (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
 typedef void (__stdcall *PFNGLCOPYTEXSUBIMAGE3DPROC) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
 
-PFNGLDRAWRANGEELEMENTSPROC	SharedGL_glDrawRangeElements = 0;
-PFNGLTEXIMAGE3DPROC		SharedGL_glTexImage3D	= 0;
-PFNGLTEXSUBIMAGE3DPROC		SharedGL_glTexSubImage3D	= 0;
-PFNGLCOPYTEXSUBIMAGE3DPROC	SharedGL_glCopyTexSubImage3D = 0;
+PFNGLDRAWRANGEELEMENTSPROC	HH_GL_glDrawRangeElements = 0;
+PFNGLTEXIMAGE3DPROC		HH_GL_glTexImage3D	= 0;
+PFNGLTEXSUBIMAGE3DPROC		HH_GL_glTexSubImage3D	= 0;
+PFNGLCOPYTEXSUBIMAGE3DPROC	HH_GL_glCopyTexSubImage3D = 0;
 
 // 1.3 
-#define glActiveTexture			SharedGL_glActiveTexture
-#define glSampleCoverage		SharedGL_glSampleCoverage
-#define glCompressedTexImage3D		SharedGL_glCompressedTexImage3D
-#define glCompressedTexImage2D		SharedGL_glCompressedTexImage2D
-#define glCompressedTexImage1D		SharedGL_glCompressedTexImage1D
-#define glCompressedTexSubImage3D	SharedGL_glCompressedTexSubImage3D
-#define glCompressedTexSubImage2D	SharedGL_glCompressedTexSubImage2D
-#define glCompressedTexSubImage1D	SharedGL_glCompressedTexSubImage1D
-#define glGetCompressedTexImage		SharedGL_glGetCompressedTexImage
+#define glActiveTexture			HH_GL_glActiveTexture
+#define glSampleCoverage		HH_GL_glSampleCoverage
+#define glCompressedTexImage3D		HH_GL_glCompressedTexImage3D
+#define glCompressedTexImage2D		HH_GL_glCompressedTexImage2D
+#define glCompressedTexImage1D		HH_GL_glCompressedTexImage1D
+#define glCompressedTexSubImage3D	HH_GL_glCompressedTexSubImage3D
+#define glCompressedTexSubImage2D	HH_GL_glCompressedTexSubImage2D
+#define glCompressedTexSubImage1D	HH_GL_glCompressedTexSubImage1D
+#define glGetCompressedTexImage		HH_GL_glGetCompressedTexImage
 
 typedef void (__stdcall *PFNGLACTIVETEXTUREPROC)           (GLenum texture);
-typedef void (__stdcall *PFNGLSASharedGLLECOVERAGEPROC)          (GLfloat value, GLboolean invert);
-typedef void (__stdcall *PFNGLCOSharedGLRESSEDTEXIMAGE3DPROC)    (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void *data);
-typedef void (__stdcall *PFNGLCOSharedGLRESSEDTEXIMAGE2DPROC)    (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void *data);
-typedef void (__stdcall *PFNGLCOSharedGLRESSEDTEXIMAGE1DPROC)    (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void *data);
-typedef void (__stdcall *PFNGLCOSharedGLRESSEDTEXSUBIMAGE3DPROC) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
-typedef void (__stdcall *PFNGLCOSharedGLRESSEDTEXSUBIMAGE2DPROC) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
-typedef void (__stdcall *PFNGLCOSharedGLRESSEDTEXSUBIMAGE1DPROC) (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
-typedef void (__stdcall *PFNGLGETCOSharedGLRESSEDTEXIMAGEPROC)   (GLenum target, GLint level, void *img);
+typedef void (__stdcall *PFNGLSAHH_GLLECOVERAGEPROC)          (GLfloat value, GLboolean invert);
+typedef void (__stdcall *PFNGLCOHH_GLRESSEDTEXIMAGE3DPROC)    (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void *data);
+typedef void (__stdcall *PFNGLCOHH_GLRESSEDTEXIMAGE2DPROC)    (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void *data);
+typedef void (__stdcall *PFNGLCOHH_GLRESSEDTEXIMAGE1DPROC)    (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void *data);
+typedef void (__stdcall *PFNGLCOHH_GLRESSEDTEXSUBIMAGE3DPROC) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
+typedef void (__stdcall *PFNGLCOHH_GLRESSEDTEXSUBIMAGE2DPROC) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+typedef void (__stdcall *PFNGLCOHH_GLRESSEDTEXSUBIMAGE1DPROC) (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
+typedef void (__stdcall *PFNGLGETCOHH_GLRESSEDTEXIMAGEPROC)   (GLenum target, GLint level, void *img);
 
-PFNGLACTIVETEXTUREPROC			SharedGL_glActiveTexture	      = 0;
-PFNGLSASharedGLLECOVERAGEPROC			SharedGL_glSampleCoverage	      = 0;
-PFNGLCOSharedGLRESSEDTEXIMAGE3DPROC		SharedGL_glCompressedTexImage3D    = 0;
-PFNGLCOSharedGLRESSEDTEXIMAGE2DPROC		SharedGL_glCompressedTexImage2D    = 0;
-PFNGLCOSharedGLRESSEDTEXIMAGE1DPROC		SharedGL_glCompressedTexImage1D    = 0;
-PFNGLCOSharedGLRESSEDTEXSUBIMAGE3DPROC	SharedGL_glCompressedTexSubImage3D = 0;
-PFNGLCOSharedGLRESSEDTEXSUBIMAGE2DPROC	SharedGL_glCompressedTexSubImage2D = 0;
-PFNGLCOSharedGLRESSEDTEXSUBIMAGE1DPROC	SharedGL_glCompressedTexSubImage1D = 0;
-PFNGLGETCOSharedGLRESSEDTEXIMAGEPROC		SharedGL_glGetCompressedTexImage   = 0;
+PFNGLACTIVETEXTUREPROC			HH_GL_glActiveTexture	      = 0;
+PFNGLSAHH_GLLECOVERAGEPROC			HH_GL_glSampleCoverage	      = 0;
+PFNGLCOHH_GLRESSEDTEXIMAGE3DPROC		HH_GL_glCompressedTexImage3D    = 0;
+PFNGLCOHH_GLRESSEDTEXIMAGE2DPROC		HH_GL_glCompressedTexImage2D    = 0;
+PFNGLCOHH_GLRESSEDTEXIMAGE1DPROC		HH_GL_glCompressedTexImage1D    = 0;
+PFNGLCOHH_GLRESSEDTEXSUBIMAGE3DPROC	HH_GL_glCompressedTexSubImage3D = 0;
+PFNGLCOHH_GLRESSEDTEXSUBIMAGE2DPROC	HH_GL_glCompressedTexSubImage2D = 0;
+PFNGLCOHH_GLRESSEDTEXSUBIMAGE1DPROC	HH_GL_glCompressedTexSubImage1D = 0;
+PFNGLGETCOHH_GLRESSEDTEXIMAGEPROC		HH_GL_glGetCompressedTexImage   = 0;
 
 // 1.4 
-#define glBlendFuncSeparate	SharedGL_glBlendFuncSeparate
-#define glMultiDrawArrays	SharedGL_glMultiDrawArrays
-#define glMultiDrawElements	SharedGL_glMultiDrawElements
-#define glPointParameterf	SharedGL_glPointParameterf
-#define glPointParameterfv	SharedGL_glPointParameterfv
-#define glPointParameteri	SharedGL_glPointParameteri
-#define glPointParameteriv	SharedGL_glPointParameteriv
-#define glBlendColor		SharedGL_glBlendColor
-#define glBlendEquation		SharedGL_glBlendEquation
+#define glBlendFuncSeparate	HH_GL_glBlendFuncSeparate
+#define glMultiDrawArrays	HH_GL_glMultiDrawArrays
+#define glMultiDrawElements	HH_GL_glMultiDrawElements
+#define glPointParameterf	HH_GL_glPointParameterf
+#define glPointParameterfv	HH_GL_glPointParameterfv
+#define glPointParameteri	HH_GL_glPointParameteri
+#define glPointParameteriv	HH_GL_glPointParameteriv
+#define glBlendColor		HH_GL_glBlendColor
+#define glBlendEquation		HH_GL_glBlendEquation
 
 typedef void (__stdcall *PFNGLBLENDFUNCSEPARATEPROC) (GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
 typedef void (__stdcall *PFNGLMULTIDRAWARRAYSPROC)   (GLenum mode, const GLint *first, const GLsizei *count, GLsizei drawcount);
@@ -1683,36 +1683,36 @@ typedef void (__stdcall *PFNGLPOINTPARAMETERIVPROC)  (GLenum pname, const GLint 
 typedef void (__stdcall *PFNGLBLENDCOLORPROC)        (GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
 typedef void (__stdcall *PFNGLBLENDEQUATIONPROC)     (GLenum mode);
 
-PFNGLBLENDFUNCSEPARATEPROC	SharedGL_glBlendFuncSeparate = 0;
-PFNGLMULTIDRAWARRAYSPROC	SharedGL_glMultiDrawArrays	= 0;
-PFNGLMULTIDRAWELEMENTSPROC	SharedGL_glMultiDrawElements = 0;
-PFNGLPOINTPARAMETERFPROC	SharedGL_glPointParameterf	= 0;
-PFNGLPOINTPARAMETERFVPROC	SharedGL_glPointParameterfv	= 0;
-PFNGLPOINTPARAMETERIPROC	SharedGL_glPointParameteri	= 0;
-PFNGLPOINTPARAMETERIVPROC	SharedGL_glPointParameteriv	= 0;
-PFNGLBLENDCOLORPROC		SharedGL_glBlendColor	= 0;
-PFNGLBLENDEQUATIONPROC		SharedGL_glBlendEquation	= 0;
+PFNGLBLENDFUNCSEPARATEPROC	HH_GL_glBlendFuncSeparate = 0;
+PFNGLMULTIDRAWARRAYSPROC	HH_GL_glMultiDrawArrays	= 0;
+PFNGLMULTIDRAWELEMENTSPROC	HH_GL_glMultiDrawElements = 0;
+PFNGLPOINTPARAMETERFPROC	HH_GL_glPointParameterf	= 0;
+PFNGLPOINTPARAMETERFVPROC	HH_GL_glPointParameterfv	= 0;
+PFNGLPOINTPARAMETERIPROC	HH_GL_glPointParameteri	= 0;
+PFNGLPOINTPARAMETERIVPROC	HH_GL_glPointParameteriv	= 0;
+PFNGLBLENDCOLORPROC		HH_GL_glBlendColor	= 0;
+PFNGLBLENDEQUATIONPROC		HH_GL_glBlendEquation	= 0;
 
 // 1.5 
-#define glGenQueries		SharedGL_glGenQueries
-#define glDeleteQueries		SharedGL_glDeleteQueries
-#define glIsQuery		SharedGL_glIsQuery
-#define glBeginQuery		SharedGL_glBeginQuery
-#define glEndQuery		SharedGL_glEndQuery
-#define glGetQueryiv		SharedGL_glGetQueryiv
-#define glGetQueryObjectiv	SharedGL_glGetQueryObjectiv
-#define glGetQueryObjectuiv	SharedGL_glGetQueryObjectuiv
-#define glBindBuffer		SharedGL_glBindBuffer
-#define glDeleteBuffers		SharedGL_glDeleteBuffers
-#define glGenBuffers		SharedGL_glGenBuffers
-#define glIsBuffer		SharedGL_glIsBuffer
-#define glBufferData		SharedGL_glBufferData
-#define glBufferSubData		SharedGL_glBufferSubData
-#define glGetBufferSubData	SharedGL_glGetBufferSubData
-#define glMapBuffer		SharedGL_glMapBuffer
-#define glUnmapBuffer		SharedGL_glUnmapBuffer
-#define glGetBufferParameteriv	SharedGL_glGetBufferParameteriv
-#define glGetBufferPointerv	SharedGL_glGetBufferPointerv
+#define glGenQueries		HH_GL_glGenQueries
+#define glDeleteQueries		HH_GL_glDeleteQueries
+#define glIsQuery		HH_GL_glIsQuery
+#define glBeginQuery		HH_GL_glBeginQuery
+#define glEndQuery		HH_GL_glEndQuery
+#define glGetQueryiv		HH_GL_glGetQueryiv
+#define glGetQueryObjectiv	HH_GL_glGetQueryObjectiv
+#define glGetQueryObjectuiv	HH_GL_glGetQueryObjectuiv
+#define glBindBuffer		HH_GL_glBindBuffer
+#define glDeleteBuffers		HH_GL_glDeleteBuffers
+#define glGenBuffers		HH_GL_glGenBuffers
+#define glIsBuffer		HH_GL_glIsBuffer
+#define glBufferData		HH_GL_glBufferData
+#define glBufferSubData		HH_GL_glBufferSubData
+#define glGetBufferSubData	HH_GL_glGetBufferSubData
+#define glMapBuffer		HH_GL_glMapBuffer
+#define glUnmapBuffer		HH_GL_glUnmapBuffer
+#define glGetBufferParameteriv	HH_GL_glGetBufferParameteriv
+#define glGetBufferPointerv	HH_GL_glGetBufferPointerv
 
 typedef void      (__stdcall *PFNGLGENQUERIESPROC)           (GLsizei n, GLuint *ids);
 typedef void      (__stdcall *PFNGLDELETEQUERIESPROC)        (GLsizei n, const GLuint *ids);
@@ -1734,119 +1734,119 @@ typedef GLboolean (__stdcall *PFNGLUNMAPBUFFERPROC)          (GLenum target);
 typedef void      (__stdcall *PFNGLGETBUFFERPARAMETERIVPROC) (GLenum target, GLenum pname, GLint *params);
 typedef void      (__stdcall *PFNGLGETBUFFERPOINTERVPROC)    (GLenum target, GLenum pname, void **params);
 
-PFNGLGENQUERIESPROC		SharedGL_glGenQueries	   = 0;
-PFNGLDELETEQUERIESPROC		SharedGL_glDeleteQueries	   = 0;
-PFNGLISQUERYPROC		SharedGL_glIsQuery		   = 0;
-PFNGLBEGINQUERYPROC		SharedGL_glBeginQuery	   = 0;
-PFNGLENDQUERYPROC		SharedGL_glEndQuery		   = 0;
-PFNGLGETQUERYIVPROC		SharedGL_glGetQueryiv	   = 0;
-PFNGLGETQUERYOBJECTIVPROC	SharedGL_glGetQueryObjectiv	   = 0;
-PFNGLGETQUERYOBJECTUIVPROC	SharedGL_glGetQueryObjectuiv	   = 0;
-PFNGLBINDBUFFERPROC		SharedGL_glBindBuffer	   = 0;
-PFNGLDELETEBUFFERSPROC		SharedGL_glDeleteBuffers	   = 0;
-PFNGLGENBUFFERSPROC		SharedGL_glGenBuffers	   = 0;
-PFNGLISBUFFERPROC		SharedGL_glIsBuffer		   = 0;
-PFNGLBUFFERDATAPROC		SharedGL_glBufferData	   = 0;
-PFNGLBUFFERSUBDATAPROC		SharedGL_glBufferSubData	   = 0;
-PFNGLGETBUFFERSUBDATAPROC	SharedGL_glGetBufferSubData	   = 0;
-PFNGLMAPBUFFERPROC		SharedGL_glMapBuffer		   = 0;
-PFNGLUNMAPBUFFERPROC		SharedGL_glUnmapBuffer	   = 0;
-PFNGLGETBUFFERPARAMETERIVPROC	SharedGL_glGetBufferParameteriv = 0;
-PFNGLGETBUFFERPOINTERVPROC	SharedGL_glGetBufferPointerv	   = 0;
+PFNGLGENQUERIESPROC		HH_GL_glGenQueries	   = 0;
+PFNGLDELETEQUERIESPROC		HH_GL_glDeleteQueries	   = 0;
+PFNGLISQUERYPROC		HH_GL_glIsQuery		   = 0;
+PFNGLBEGINQUERYPROC		HH_GL_glBeginQuery	   = 0;
+PFNGLENDQUERYPROC		HH_GL_glEndQuery		   = 0;
+PFNGLGETQUERYIVPROC		HH_GL_glGetQueryiv	   = 0;
+PFNGLGETQUERYOBJECTIVPROC	HH_GL_glGetQueryObjectiv	   = 0;
+PFNGLGETQUERYOBJECTUIVPROC	HH_GL_glGetQueryObjectuiv	   = 0;
+PFNGLBINDBUFFERPROC		HH_GL_glBindBuffer	   = 0;
+PFNGLDELETEBUFFERSPROC		HH_GL_glDeleteBuffers	   = 0;
+PFNGLGENBUFFERSPROC		HH_GL_glGenBuffers	   = 0;
+PFNGLISBUFFERPROC		HH_GL_glIsBuffer		   = 0;
+PFNGLBUFFERDATAPROC		HH_GL_glBufferData	   = 0;
+PFNGLBUFFERSUBDATAPROC		HH_GL_glBufferSubData	   = 0;
+PFNGLGETBUFFERSUBDATAPROC	HH_GL_glGetBufferSubData	   = 0;
+PFNGLMAPBUFFERPROC		HH_GL_glMapBuffer		   = 0;
+PFNGLUNMAPBUFFERPROC		HH_GL_glUnmapBuffer	   = 0;
+PFNGLGETBUFFERPARAMETERIVPROC	HH_GL_glGetBufferParameteriv = 0;
+PFNGLGETBUFFERPOINTERVPROC	HH_GL_glGetBufferPointerv	   = 0;
 
 // 2.0
-#define glBlendEquationSeparate		SharedGL_glBlendEquationSeparate
-#define glDrawBuffers			SharedGL_glDrawBuffers
-#define glStencilOpSeparate		SharedGL_glStencilOpSeparate
-#define glStencilFuncSeparate		SharedGL_glStencilFuncSeparate
-#define glStencilMaskSeparate		SharedGL_glStencilMaskSeparate
-#define glAttachShader			SharedGL_glAttachShader
-#define glBindAttribLocation		SharedGL_glBindAttribLocation
-#define glCompileShader			SharedGL_glCompileShader
-#define glCreateProgram			SharedGL_glCreateProgram
-#define glCreateShader			SharedGL_glCreateShader
-#define glDeleteProgram			SharedGL_glDeleteProgram
-#define glDeleteShader			SharedGL_glDeleteShader
-#define glDetachShader			SharedGL_glDetachShader
-#define glDisableVertexAttribArray	SharedGL_glDisableVertexAttribArray
-#define glEnableVertexAttribArray	SharedGL_glEnableVertexAttribArray
-#define glGetActiveAttrib		SharedGL_glGetActiveAttrib
-#define glGetActiveUniform		SharedGL_glGetActiveUniform
-#define glGetAttachedShaders		SharedGL_glGetAttachedShaders
-#define glGetAttribLocation		SharedGL_glGetAttribLocation
-#define glGetProgramiv			SharedGL_glGetProgramiv
-#define glGetProgramInfoLog		SharedGL_glGetProgramInfoLog
-#define glGetShaderiv			SharedGL_glGetShaderiv
-#define glGetShaderInfoLog		SharedGL_glGetShaderInfoLog
-#define glGetShaderSource		SharedGL_glGetShaderSource
-#define glGetUniformLocation		SharedGL_glGetUniformLocation
-#define glGetUniformfv			SharedGL_glGetUniformfv
-#define glGetUniformiv			SharedGL_glGetUniformiv
-#define glGetVertexAttribdv		SharedGL_glGetVertexAttribdv
-#define glGetVertexAttribfv		SharedGL_glGetVertexAttribfv
-#define glGetVertexAttribiv		SharedGL_glGetVertexAttribiv
-#define glGetVertexAttribPointerv	SharedGL_glGetVertexAttribPointerv
-#define glIsProgram			SharedGL_glIsProgram
-#define glIsShader			SharedGL_glIsShader
-#define glLinkProgram			SharedGL_glLinkProgram
-#define glShaderSource			SharedGL_glShaderSource
-#define glUseProgram			SharedGL_glUseProgram
-#define glUniform1f			SharedGL_glUniform1f
-#define glUniform2f			SharedGL_glUniform2f
-#define glUniform3f			SharedGL_glUniform3f
-#define glUniform4f			SharedGL_glUniform4f
-#define glUniform1i			SharedGL_glUniform1i
-#define glUniform2i			SharedGL_glUniform2i
-#define glUniform3i			SharedGL_glUniform3i
-#define glUniform4i			SharedGL_glUniform4i
-#define glUniform1fv			SharedGL_glUniform1fv
-#define glUniform2fv			SharedGL_glUniform2fv
-#define glUniform3fv			SharedGL_glUniform3fv
-#define glUniform4fv			SharedGL_glUniform4fv
-#define glUniform1iv			SharedGL_glUniform1iv
-#define glUniform2iv			SharedGL_glUniform2iv
-#define glUniform3iv			SharedGL_glUniform3iv
-#define glUniform4iv			SharedGL_glUniform4iv
-#define glUniformMatrix3fv		SharedGL_glUniformMatrix3fv
-#define glUniformMatrix4fv		SharedGL_glUniformMatrix4fv
-#define glValidateProgram		SharedGL_glValidateProgram
-#define glVertexAttrib1d		SharedGL_glVertexAttrib1d
-#define glVertexAttrib1dv		SharedGL_glVertexAttrib1dv
-#define glVertexAttrib1f		SharedGL_glVertexAttrib1f
-#define glVertexAttrib1fv		SharedGL_glVertexAttrib1fv
-#define glVertexAttrib1s		SharedGL_glVertexAttrib1s
-#define glVertexAttrib1sv		SharedGL_glVertexAttrib1sv
-#define glVertexAttrib2d		SharedGL_glVertexAttrib2d
-#define glVertexAttrib2dv		SharedGL_glVertexAttrib2dv
-#define glVertexAttrib2f		SharedGL_glVertexAttrib2f
-#define glVertexAttrib2fv		SharedGL_glVertexAttrib2fv
-#define glVertexAttrib2s		SharedGL_glVertexAttrib2s
-#define glVertexAttrib2sv		SharedGL_glVertexAttrib2sv
-#define glVertexAttrib3d		SharedGL_glVertexAttrib3d
-#define glVertexAttrib3dv		SharedGL_glVertexAttrib3dv
-#define glVertexAttrib3f		SharedGL_glVertexAttrib3f
-#define glVertexAttrib3fv		SharedGL_glVertexAttrib3fv
-#define glVertexAttrib3s		SharedGL_glVertexAttrib3s
-#define glVertexAttrib3sv		SharedGL_glVertexAttrib3sv
-#define glVertexAttrib4Nbv		SharedGL_glVertexAttrib4Nbv
-#define glVertexAttrib4Niv		SharedGL_glVertexAttrib4Niv
-#define glVertexAttrib4Nsv		SharedGL_glVertexAttrib4Nsv
-#define glVertexAttrib4Nub		SharedGL_glVertexAttrib4Nub
-#define glVertexAttrib4Nubv		SharedGL_glVertexAttrib4Nubv
-#define glVertexAttrib4Nuiv		SharedGL_glVertexAttrib4Nuiv
-#define glVertexAttrib4Nusv		SharedGL_glVertexAttrib4Nusv
-#define glVertexAttrib4bv		SharedGL_glVertexAttrib4bv
-#define glVertexAttrib4d		SharedGL_glVertexAttrib4d
-#define glVertexAttrib4dv		SharedGL_glVertexAttrib4dv
-#define glVertexAttrib4f		SharedGL_glVertexAttrib4f
-#define glVertexAttrib4fv		SharedGL_glVertexAttrib4fv
-#define glVertexAttrib4iv		SharedGL_glVertexAttrib4iv
-#define glVertexAttrib4s		SharedGL_glVertexAttrib4s
-#define glVertexAttrib4sv		SharedGL_glVertexAttrib4sv
-#define glVertexAttrib4ubv		SharedGL_glVertexAttrib4ubv
-#define glVertexAttrib4uiv		SharedGL_glVertexAttrib4uiv
-#define glVertexAttrib4usv		SharedGL_glVertexAttrib4usv
-#define glVertexAttribPointer		SharedGL_glVertexAttribPointer
+#define glBlendEquationSeparate		HH_GL_glBlendEquationSeparate
+#define glDrawBuffers			HH_GL_glDrawBuffers
+#define glStencilOpSeparate		HH_GL_glStencilOpSeparate
+#define glStencilFuncSeparate		HH_GL_glStencilFuncSeparate
+#define glStencilMaskSeparate		HH_GL_glStencilMaskSeparate
+#define glAttachShader			HH_GL_glAttachShader
+#define glBindAttribLocation		HH_GL_glBindAttribLocation
+#define glCompileShader			HH_GL_glCompileShader
+#define glCreateProgram			HH_GL_glCreateProgram
+#define glCreateShader			HH_GL_glCreateShader
+#define glDeleteProgram			HH_GL_glDeleteProgram
+#define glDeleteShader			HH_GL_glDeleteShader
+#define glDetachShader			HH_GL_glDetachShader
+#define glDisableVertexAttribArray	HH_GL_glDisableVertexAttribArray
+#define glEnableVertexAttribArray	HH_GL_glEnableVertexAttribArray
+#define glGetActiveAttrib		HH_GL_glGetActiveAttrib
+#define glGetActiveUniform		HH_GL_glGetActiveUniform
+#define glGetAttachedShaders		HH_GL_glGetAttachedShaders
+#define glGetAttribLocation		HH_GL_glGetAttribLocation
+#define glGetProgramiv			HH_GL_glGetProgramiv
+#define glGetProgramInfoLog		HH_GL_glGetProgramInfoLog
+#define glGetShaderiv			HH_GL_glGetShaderiv
+#define glGetShaderInfoLog		HH_GL_glGetShaderInfoLog
+#define glGetShaderSource		HH_GL_glGetShaderSource
+#define glGetUniformLocation		HH_GL_glGetUniformLocation
+#define glGetUniformfv			HH_GL_glGetUniformfv
+#define glGetUniformiv			HH_GL_glGetUniformiv
+#define glGetVertexAttribdv		HH_GL_glGetVertexAttribdv
+#define glGetVertexAttribfv		HH_GL_glGetVertexAttribfv
+#define glGetVertexAttribiv		HH_GL_glGetVertexAttribiv
+#define glGetVertexAttribPointerv	HH_GL_glGetVertexAttribPointerv
+#define glIsProgram			HH_GL_glIsProgram
+#define glIsShader			HH_GL_glIsShader
+#define glLinkProgram			HH_GL_glLinkProgram
+#define glShaderSource			HH_GL_glShaderSource
+#define glUseProgram			HH_GL_glUseProgram
+#define glUniform1f			HH_GL_glUniform1f
+#define glUniform2f			HH_GL_glUniform2f
+#define glUniform3f			HH_GL_glUniform3f
+#define glUniform4f			HH_GL_glUniform4f
+#define glUniform1i			HH_GL_glUniform1i
+#define glUniform2i			HH_GL_glUniform2i
+#define glUniform3i			HH_GL_glUniform3i
+#define glUniform4i			HH_GL_glUniform4i
+#define glUniform1fv			HH_GL_glUniform1fv
+#define glUniform2fv			HH_GL_glUniform2fv
+#define glUniform3fv			HH_GL_glUniform3fv
+#define glUniform4fv			HH_GL_glUniform4fv
+#define glUniform1iv			HH_GL_glUniform1iv
+#define glUniform2iv			HH_GL_glUniform2iv
+#define glUniform3iv			HH_GL_glUniform3iv
+#define glUniform4iv			HH_GL_glUniform4iv
+#define glUniformMatrix3fv		HH_GL_glUniformMatrix3fv
+#define glUniformMatrix4fv		HH_GL_glUniformMatrix4fv
+#define glValidateProgram		HH_GL_glValidateProgram
+#define glVertexAttrib1d		HH_GL_glVertexAttrib1d
+#define glVertexAttrib1dv		HH_GL_glVertexAttrib1dv
+#define glVertexAttrib1f		HH_GL_glVertexAttrib1f
+#define glVertexAttrib1fv		HH_GL_glVertexAttrib1fv
+#define glVertexAttrib1s		HH_GL_glVertexAttrib1s
+#define glVertexAttrib1sv		HH_GL_glVertexAttrib1sv
+#define glVertexAttrib2d		HH_GL_glVertexAttrib2d
+#define glVertexAttrib2dv		HH_GL_glVertexAttrib2dv
+#define glVertexAttrib2f		HH_GL_glVertexAttrib2f
+#define glVertexAttrib2fv		HH_GL_glVertexAttrib2fv
+#define glVertexAttrib2s		HH_GL_glVertexAttrib2s
+#define glVertexAttrib2sv		HH_GL_glVertexAttrib2sv
+#define glVertexAttrib3d		HH_GL_glVertexAttrib3d
+#define glVertexAttrib3dv		HH_GL_glVertexAttrib3dv
+#define glVertexAttrib3f		HH_GL_glVertexAttrib3f
+#define glVertexAttrib3fv		HH_GL_glVertexAttrib3fv
+#define glVertexAttrib3s		HH_GL_glVertexAttrib3s
+#define glVertexAttrib3sv		HH_GL_glVertexAttrib3sv
+#define glVertexAttrib4Nbv		HH_GL_glVertexAttrib4Nbv
+#define glVertexAttrib4Niv		HH_GL_glVertexAttrib4Niv
+#define glVertexAttrib4Nsv		HH_GL_glVertexAttrib4Nsv
+#define glVertexAttrib4Nub		HH_GL_glVertexAttrib4Nub
+#define glVertexAttrib4Nubv		HH_GL_glVertexAttrib4Nubv
+#define glVertexAttrib4Nuiv		HH_GL_glVertexAttrib4Nuiv
+#define glVertexAttrib4Nusv		HH_GL_glVertexAttrib4Nusv
+#define glVertexAttrib4bv		HH_GL_glVertexAttrib4bv
+#define glVertexAttrib4d		HH_GL_glVertexAttrib4d
+#define glVertexAttrib4dv		HH_GL_glVertexAttrib4dv
+#define glVertexAttrib4f		HH_GL_glVertexAttrib4f
+#define glVertexAttrib4fv		HH_GL_glVertexAttrib4fv
+#define glVertexAttrib4iv		HH_GL_glVertexAttrib4iv
+#define glVertexAttrib4s		HH_GL_glVertexAttrib4s
+#define glVertexAttrib4sv		HH_GL_glVertexAttrib4sv
+#define glVertexAttrib4ubv		HH_GL_glVertexAttrib4ubv
+#define glVertexAttrib4uiv		HH_GL_glVertexAttrib4uiv
+#define glVertexAttrib4usv		HH_GL_glVertexAttrib4usv
+#define glVertexAttribPointer		HH_GL_glVertexAttribPointer
 
 typedef void      (__stdcall *PFNGLBLENDEQUATIONSEPARATEPROC)    (GLenum modeRGB, GLenum modeAlpha);
 typedef void      (__stdcall *PFNGLDRAWBUFFERSPROC)              (GLsizei n, const GLenum *bufs);
@@ -1855,16 +1855,16 @@ typedef void      (__stdcall *PFNGLSTENCILFUNCSEPARATEPROC)      (GLenum face, G
 typedef void      (__stdcall *PFNGLSTENCILMASKSEPARATEPROC)      (GLenum face, GLuint mask);
 typedef void      (__stdcall *PFNGLATTACHSHADERPROC)             (GLuint program, GLuint shader);
 typedef void      (__stdcall *PFNGLBINDATTRIBLOCATIONPROC)       (GLuint program, GLuint index, const GLchar *name);
-typedef void      (__stdcall *PFNGLCOSharedGLILESHADERPROC)            (GLuint shader);
-typedef GLuint    (__stdcall *PFNGLCREATEPROGRASharedGLROC)            (void);
+typedef void      (__stdcall *PFNGLCOHH_GLILESHADERPROC)            (GLuint shader);
+typedef GLuint    (__stdcall *PFNGLCREATEPROGRAHH_GLROC)            (void);
 typedef GLuint    (__stdcall *PFNGLCREATESHADERPROC)             (GLenum type);
-typedef void      (__stdcall *PFNGLDELETEPROGRASharedGLROC)            (GLuint program);
+typedef void      (__stdcall *PFNGLDELETEPROGRAHH_GLROC)            (GLuint program);
 typedef void      (__stdcall *PFNGLDELETESHADERPROC)             (GLuint shader);
 typedef void      (__stdcall *PFNGLDETACHSHADERPROC)             (GLuint program, GLuint shader);
 typedef void      (__stdcall *PFNGLDISABLEVERTEXATTRIBARRAYPROC) (GLuint index);
 typedef void      (__stdcall *PFNGLENABLEVERTEXATTRIBARRAYPROC)  (GLuint index);
 typedef void      (__stdcall *PFNGLGETACTIVEATTRIBPROC)          (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name);
-typedef void      (__stdcall *PFNGLGETACTIVEUNIFORSharedGLROC)         (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name);
+typedef void      (__stdcall *PFNGLGETACTIVEUNIFORHH_GLROC)         (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name);
 typedef void      (__stdcall *PFNGLGETATTACHEDSHADERSPROC)       (GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders);
 typedef GLint     (__stdcall *PFNGLGETATTRIBLOCATIONPROC)        (GLuint program, const GLchar *name);
 typedef void      (__stdcall *PFNGLGETPROGRAMIVPROC)             (GLuint program, GLenum pname, GLint *params);
@@ -1879,11 +1879,11 @@ typedef void      (__stdcall *PFNGLGETVERTEXATTRIBDVPROC)        (GLuint index, 
 typedef void      (__stdcall *PFNGLGETVERTEXATTRIBFVPROC)        (GLuint index, GLenum pname, GLfloat *params);
 typedef void      (__stdcall *PFNGLGETVERTEXATTRIBIVPROC)        (GLuint index, GLenum pname, GLint *params);
 typedef void      (__stdcall *PFNGLGETVERTEXATTRIBPOINTERVPROC)  (GLuint index, GLenum pname, void **pointer);
-typedef GLboolean (__stdcall *PFNGLISPROGRASharedGLROC)                (GLuint program);
+typedef GLboolean (__stdcall *PFNGLISPROGRAHH_GLROC)                (GLuint program);
 typedef GLboolean (__stdcall *PFNGLISSHADERPROC)                 (GLuint shader);
-typedef void      (__stdcall *PFNGLLINKPROGRASharedGLROC)              (GLuint program);
+typedef void      (__stdcall *PFNGLLINKPROGRAHH_GLROC)              (GLuint program);
 typedef void      (__stdcall *PFNGLSHADERSOURCEPROC)             (GLuint shader, GLsizei count, const GLchar *const*string, const GLint *length);
-typedef void      (__stdcall *PFNGLUSEPROGRASharedGLROC)               (GLuint program);
+typedef void      (__stdcall *PFNGLUSEPROGRAHH_GLROC)               (GLuint program);
 typedef void      (__stdcall *PFNGLUNIFORM1FPROC)                (GLint location, GLfloat v0);
 typedef void      (__stdcall *PFNGLUNIFORM2FPROC)                (GLint location, GLfloat v0, GLfloat v1);
 typedef void      (__stdcall *PFNGLUNIFORM3FPROC)                (GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
@@ -1903,7 +1903,7 @@ typedef void      (__stdcall *PFNGLUNIFORM4IVPROC)               (GLint location
 typedef void      (__stdcall *PFNGLUNIFORMMATRIX2FVPROC)         (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 typedef void      (__stdcall *PFNGLUNIFORMMATRIX3FVPROC)         (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 typedef void      (__stdcall *PFNGLUNIFORMMATRIX4FVPROC)         (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-typedef void      (__stdcall *PFNGLVALIDATEPROGRASharedGLROC)          (GLuint program);
+typedef void      (__stdcall *PFNGLVALIDATEPROGRAHH_GLROC)          (GLuint program);
 typedef void      (__stdcall *PFNGLVERTEXATTRIB1DPROC)           (GLuint index, GLdouble x);
 typedef void      (__stdcall *PFNGLVERTEXATTRIB1DVPROC)          (GLuint index, const GLdouble *v);
 typedef void      (__stdcall *PFNGLVERTEXATTRIB1FPROC)           (GLuint index, GLfloat x);
@@ -1942,107 +1942,107 @@ typedef void      (__stdcall *PFNGLVERTEXATTRIB4UIVPROC)         (GLuint index, 
 typedef void      (__stdcall *PFNGLVERTEXATTRIB4USVPROC)         (GLuint index, const GLushort *v);
 typedef void      (__stdcall *PFNGLVERTEXATTRIBPOINTERPROC)      (GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void *pointer);
 
-PFNGLBLENDEQUATIONSEPARATEPROC		SharedGL_glBlendEquationSeparate    = 0;
-PFNGLDRAWBUFFERSPROC			SharedGL_glDrawBuffers	       = 0;
-PFNGLSTENCILOPSEPARATEPROC		SharedGL_glStencilOpSeparate	       = 0;
-PFNGLSTENCILFUNCSEPARATEPROC		SharedGL_glStencilFuncSeparate      = 0;
-PFNGLSTENCILMASKSEPARATEPROC		SharedGL_glStencilMaskSeparate      = 0;
-PFNGLATTACHSHADERPROC			SharedGL_glAttachShader	       = 0;
-PFNGLBINDATTRIBLOCATIONPROC		SharedGL_glBindAttribLocation       = 0;
-PFNGLCOSharedGLILESHADERPROC			SharedGL_glCompileShader	       = 0;
-PFNGLCREATEPROGRASharedGLROC			SharedGL_glCreateProgram	       = 0;
-PFNGLCREATESHADERPROC			SharedGL_glCreateShader	       = 0;
-PFNGLDELETEPROGRASharedGLROC			SharedGL_glDeleteProgram	       = 0;
-PFNGLDELETESHADERPROC			SharedGL_glDeleteShader	       = 0;
-PFNGLDETACHSHADERPROC			SharedGL_glDetachShader	       = 0;
-PFNGLDISABLEVERTEXATTRIBARRAYPROC	SharedGL_glDisableVertexAttribArray = 0;
-PFNGLENABLEVERTEXATTRIBARRAYPROC	SharedGL_glEnableVertexAttribArray  = 0;
-PFNGLGETACTIVEATTRIBPROC		SharedGL_glGetActiveAttrib	       = 0;
-PFNGLGETACTIVEUNIFORSharedGLROC		SharedGL_glGetActiveUniform	       = 0;
-PFNGLGETATTACHEDSHADERSPROC		SharedGL_glGetAttachedShaders       = 0;
-PFNGLGETATTRIBLOCATIONPROC		SharedGL_glGetAttribLocation	       = 0;
-PFNGLGETPROGRAMIVPROC			SharedGL_glGetProgramiv	       = 0;
-PFNGLGETPROGRAMINFOLOGPROC		SharedGL_glGetProgramInfoLog	       = 0;
-PFNGLGETSHADERIVPROC			SharedGL_glGetShaderiv	       = 0;
-PFNGLGETSHADERINFOLOGPROC		SharedGL_glGetShaderInfoLog	       = 0;
-PFNGLGETSHADERSOURCEPROC		SharedGL_glGetShaderSource	       = 0;
-PFNGLGETUNIFORMLOCATIONPROC		SharedGL_glGetUniformLocation       = 0;
-PFNGLGETUNIFORMFVPROC			SharedGL_glGetUniformfv	       = 0;
-PFNGLGETUNIFORMIVPROC			SharedGL_glGetUniformiv	       = 0;
-PFNGLGETVERTEXATTRIBDVPROC		SharedGL_glGetVertexAttribdv	       = 0;
-PFNGLGETVERTEXATTRIBFVPROC		SharedGL_glGetVertexAttribfv	       = 0;
-PFNGLGETVERTEXATTRIBIVPROC		SharedGL_glGetVertexAttribiv	       = 0;
-PFNGLGETVERTEXATTRIBPOINTERVPROC	SharedGL_glGetVertexAttribPointerv  = 0;
-PFNGLISPROGRASharedGLROC			SharedGL_glIsProgram		       = 0;
-PFNGLISSHADERPROC			SharedGL_glIsShader		       = 0;
-PFNGLLINKPROGRASharedGLROC			SharedGL_glLinkProgram	       = 0;
-PFNGLSHADERSOURCEPROC			SharedGL_glShaderSource	       = 0;
-PFNGLUSEPROGRASharedGLROC			SharedGL_glUseProgram	       = 0;
-PFNGLUNIFORM1FPROC			SharedGL_glUniform1f		       = 0;
-PFNGLUNIFORM2FPROC			SharedGL_glUniform2f		       = 0;
-PFNGLUNIFORM3FPROC			SharedGL_glUniform3f		       = 0;
-PFNGLUNIFORM4FPROC			SharedGL_glUniform4f		       = 0;
-PFNGLUNIFORM1IPROC			SharedGL_glUniform1i		       = 0;
-PFNGLUNIFORM2IPROC			SharedGL_glUniform2i		       = 0;
-PFNGLUNIFORM3IPROC			SharedGL_glUniform3i		       = 0;
-PFNGLUNIFORM4IPROC			SharedGL_glUniform4i		       = 0;
-PFNGLUNIFORM1FVPROC			SharedGL_glUniform1fv	       = 0;
-PFNGLUNIFORM2FVPROC			SharedGL_glUniform2fv	       = 0;
-PFNGLUNIFORM3FVPROC			SharedGL_glUniform3fv	       = 0;
-PFNGLUNIFORM4FVPROC			SharedGL_glUniform4fv	       = 0;
-PFNGLUNIFORM1IVPROC			SharedGL_glUniform1iv	       = 0;
-PFNGLUNIFORM2IVPROC			SharedGL_glUniform2iv	       = 0;
-PFNGLUNIFORM3IVPROC			SharedGL_glUniform3iv	       = 0;
-PFNGLUNIFORM4IVPROC			SharedGL_glUniform4iv	       = 0;
-PFNGLUNIFORMMATRIX2FVPROC		SharedGL_glUniformMatrix2fv	       = 0;
-PFNGLUNIFORMMATRIX3FVPROC		SharedGL_glUniformMatrix3fv	       = 0;
-PFNGLUNIFORMMATRIX4FVPROC		SharedGL_glUniformMatrix4fv	       = 0;
-PFNGLVALIDATEPROGRASharedGLROC		SharedGL_glValidateProgram	       = 0;
-PFNGLVERTEXATTRIB1DPROC			SharedGL_glVertexAttrib1d	       = 0;
-PFNGLVERTEXATTRIB1DVPROC		SharedGL_glVertexAttrib1dv	       = 0;
-PFNGLVERTEXATTRIB1FPROC			SharedGL_glVertexAttrib1f	       = 0;
-PFNGLVERTEXATTRIB1FVPROC		SharedGL_glVertexAttrib1fv	       = 0;
-PFNGLVERTEXATTRIB1SPROC			SharedGL_glVertexAttrib1s	       = 0;
-PFNGLVERTEXATTRIB1SVPROC		SharedGL_glVertexAttrib1sv	       = 0;
-PFNGLVERTEXATTRIB2DPROC			SharedGL_glVertexAttrib2d	       = 0;
-PFNGLVERTEXATTRIB2DVPROC		SharedGL_glVertexAttrib2dv	       = 0;
-PFNGLVERTEXATTRIB2FPROC			SharedGL_glVertexAttrib2f	       = 0;
-PFNGLVERTEXATTRIB2FVPROC		SharedGL_glVertexAttrib2fv	       = 0;
-PFNGLVERTEXATTRIB2SPROC			SharedGL_glVertexAttrib2s	       = 0;
-PFNGLVERTEXATTRIB2SVPROC		SharedGL_glVertexAttrib2sv	       = 0;
-PFNGLVERTEXATTRIB3DPROC			SharedGL_glVertexAttrib3d	       = 0;
-PFNGLVERTEXATTRIB3DVPROC		SharedGL_glVertexAttrib3dv	       = 0;
-PFNGLVERTEXATTRIB3FPROC			SharedGL_glVertexAttrib3f	       = 0;
-PFNGLVERTEXATTRIB3FVPROC		SharedGL_glVertexAttrib3fv	       = 0;
-PFNGLVERTEXATTRIB3SPROC			SharedGL_glVertexAttrib3s	       = 0;
-PFNGLVERTEXATTRIB3SVPROC		SharedGL_glVertexAttrib3sv	       = 0;
-PFNGLVERTEXATTRIB4NBVPROC		SharedGL_glVertexAttrib4Nbv	       = 0;
-PFNGLVERTEXATTRIB4NIVPROC		SharedGL_glVertexAttrib4Niv	       = 0;
-PFNGLVERTEXATTRIB4NSVPROC		SharedGL_glVertexAttrib4Nsv	       = 0;
-PFNGLVERTEXATTRIB4NUBPROC		SharedGL_glVertexAttrib4Nub	       = 0;
-PFNGLVERTEXATTRIB4NUBVPROC		SharedGL_glVertexAttrib4Nubv	       = 0;
-PFNGLVERTEXATTRIB4NUIVPROC		SharedGL_glVertexAttrib4Nuiv	       = 0;
-PFNGLVERTEXATTRIB4NUSVPROC		SharedGL_glVertexAttrib4Nusv	       = 0;
-PFNGLVERTEXATTRIB4BVPROC		SharedGL_glVertexAttrib4bv	       = 0;
-PFNGLVERTEXATTRIB4DPROC			SharedGL_glVertexAttrib4d	       = 0;
-PFNGLVERTEXATTRIB4DVPROC		SharedGL_glVertexAttrib4dv	       = 0;
-PFNGLVERTEXATTRIB4FPROC			SharedGL_glVertexAttrib4f	       = 0;
-PFNGLVERTEXATTRIB4FVPROC		SharedGL_glVertexAttrib4fv	       = 0;
-PFNGLVERTEXATTRIB4IVPROC		SharedGL_glVertexAttrib4iv	       = 0;
-PFNGLVERTEXATTRIB4SPROC			SharedGL_glVertexAttrib4s	       = 0;
-PFNGLVERTEXATTRIB4SVPROC		SharedGL_glVertexAttrib4sv	       = 0;
-PFNGLVERTEXATTRIB4UBVPROC		SharedGL_glVertexAttrib4ubv	       = 0;
-PFNGLVERTEXATTRIB4UIVPROC		SharedGL_glVertexAttrib4uiv	       = 0;
-PFNGLVERTEXATTRIB4USVPROC		SharedGL_glVertexAttrib4usv	       = 0;
-PFNGLVERTEXATTRIBPOINTERPROC		SharedGL_glVertexAttribPointer      = 0;
+PFNGLBLENDEQUATIONSEPARATEPROC		HH_GL_glBlendEquationSeparate    = 0;
+PFNGLDRAWBUFFERSPROC			HH_GL_glDrawBuffers	       = 0;
+PFNGLSTENCILOPSEPARATEPROC		HH_GL_glStencilOpSeparate	       = 0;
+PFNGLSTENCILFUNCSEPARATEPROC		HH_GL_glStencilFuncSeparate      = 0;
+PFNGLSTENCILMASKSEPARATEPROC		HH_GL_glStencilMaskSeparate      = 0;
+PFNGLATTACHSHADERPROC			HH_GL_glAttachShader	       = 0;
+PFNGLBINDATTRIBLOCATIONPROC		HH_GL_glBindAttribLocation       = 0;
+PFNGLCOHH_GLILESHADERPROC			HH_GL_glCompileShader	       = 0;
+PFNGLCREATEPROGRAHH_GLROC			HH_GL_glCreateProgram	       = 0;
+PFNGLCREATESHADERPROC			HH_GL_glCreateShader	       = 0;
+PFNGLDELETEPROGRAHH_GLROC			HH_GL_glDeleteProgram	       = 0;
+PFNGLDELETESHADERPROC			HH_GL_glDeleteShader	       = 0;
+PFNGLDETACHSHADERPROC			HH_GL_glDetachShader	       = 0;
+PFNGLDISABLEVERTEXATTRIBARRAYPROC	HH_GL_glDisableVertexAttribArray = 0;
+PFNGLENABLEVERTEXATTRIBARRAYPROC	HH_GL_glEnableVertexAttribArray  = 0;
+PFNGLGETACTIVEATTRIBPROC		HH_GL_glGetActiveAttrib	       = 0;
+PFNGLGETACTIVEUNIFORHH_GLROC		HH_GL_glGetActiveUniform	       = 0;
+PFNGLGETATTACHEDSHADERSPROC		HH_GL_glGetAttachedShaders       = 0;
+PFNGLGETATTRIBLOCATIONPROC		HH_GL_glGetAttribLocation	       = 0;
+PFNGLGETPROGRAMIVPROC			HH_GL_glGetProgramiv	       = 0;
+PFNGLGETPROGRAMINFOLOGPROC		HH_GL_glGetProgramInfoLog	       = 0;
+PFNGLGETSHADERIVPROC			HH_GL_glGetShaderiv	       = 0;
+PFNGLGETSHADERINFOLOGPROC		HH_GL_glGetShaderInfoLog	       = 0;
+PFNGLGETSHADERSOURCEPROC		HH_GL_glGetShaderSource	       = 0;
+PFNGLGETUNIFORMLOCATIONPROC		HH_GL_glGetUniformLocation       = 0;
+PFNGLGETUNIFORMFVPROC			HH_GL_glGetUniformfv	       = 0;
+PFNGLGETUNIFORMIVPROC			HH_GL_glGetUniformiv	       = 0;
+PFNGLGETVERTEXATTRIBDVPROC		HH_GL_glGetVertexAttribdv	       = 0;
+PFNGLGETVERTEXATTRIBFVPROC		HH_GL_glGetVertexAttribfv	       = 0;
+PFNGLGETVERTEXATTRIBIVPROC		HH_GL_glGetVertexAttribiv	       = 0;
+PFNGLGETVERTEXATTRIBPOINTERVPROC	HH_GL_glGetVertexAttribPointerv  = 0;
+PFNGLISPROGRAHH_GLROC			HH_GL_glIsProgram		       = 0;
+PFNGLISSHADERPROC			HH_GL_glIsShader		       = 0;
+PFNGLLINKPROGRAHH_GLROC			HH_GL_glLinkProgram	       = 0;
+PFNGLSHADERSOURCEPROC			HH_GL_glShaderSource	       = 0;
+PFNGLUSEPROGRAHH_GLROC			HH_GL_glUseProgram	       = 0;
+PFNGLUNIFORM1FPROC			HH_GL_glUniform1f		       = 0;
+PFNGLUNIFORM2FPROC			HH_GL_glUniform2f		       = 0;
+PFNGLUNIFORM3FPROC			HH_GL_glUniform3f		       = 0;
+PFNGLUNIFORM4FPROC			HH_GL_glUniform4f		       = 0;
+PFNGLUNIFORM1IPROC			HH_GL_glUniform1i		       = 0;
+PFNGLUNIFORM2IPROC			HH_GL_glUniform2i		       = 0;
+PFNGLUNIFORM3IPROC			HH_GL_glUniform3i		       = 0;
+PFNGLUNIFORM4IPROC			HH_GL_glUniform4i		       = 0;
+PFNGLUNIFORM1FVPROC			HH_GL_glUniform1fv	       = 0;
+PFNGLUNIFORM2FVPROC			HH_GL_glUniform2fv	       = 0;
+PFNGLUNIFORM3FVPROC			HH_GL_glUniform3fv	       = 0;
+PFNGLUNIFORM4FVPROC			HH_GL_glUniform4fv	       = 0;
+PFNGLUNIFORM1IVPROC			HH_GL_glUniform1iv	       = 0;
+PFNGLUNIFORM2IVPROC			HH_GL_glUniform2iv	       = 0;
+PFNGLUNIFORM3IVPROC			HH_GL_glUniform3iv	       = 0;
+PFNGLUNIFORM4IVPROC			HH_GL_glUniform4iv	       = 0;
+PFNGLUNIFORMMATRIX2FVPROC		HH_GL_glUniformMatrix2fv	       = 0;
+PFNGLUNIFORMMATRIX3FVPROC		HH_GL_glUniformMatrix3fv	       = 0;
+PFNGLUNIFORMMATRIX4FVPROC		HH_GL_glUniformMatrix4fv	       = 0;
+PFNGLVALIDATEPROGRAHH_GLROC		HH_GL_glValidateProgram	       = 0;
+PFNGLVERTEXATTRIB1DPROC			HH_GL_glVertexAttrib1d	       = 0;
+PFNGLVERTEXATTRIB1DVPROC		HH_GL_glVertexAttrib1dv	       = 0;
+PFNGLVERTEXATTRIB1FPROC			HH_GL_glVertexAttrib1f	       = 0;
+PFNGLVERTEXATTRIB1FVPROC		HH_GL_glVertexAttrib1fv	       = 0;
+PFNGLVERTEXATTRIB1SPROC			HH_GL_glVertexAttrib1s	       = 0;
+PFNGLVERTEXATTRIB1SVPROC		HH_GL_glVertexAttrib1sv	       = 0;
+PFNGLVERTEXATTRIB2DPROC			HH_GL_glVertexAttrib2d	       = 0;
+PFNGLVERTEXATTRIB2DVPROC		HH_GL_glVertexAttrib2dv	       = 0;
+PFNGLVERTEXATTRIB2FPROC			HH_GL_glVertexAttrib2f	       = 0;
+PFNGLVERTEXATTRIB2FVPROC		HH_GL_glVertexAttrib2fv	       = 0;
+PFNGLVERTEXATTRIB2SPROC			HH_GL_glVertexAttrib2s	       = 0;
+PFNGLVERTEXATTRIB2SVPROC		HH_GL_glVertexAttrib2sv	       = 0;
+PFNGLVERTEXATTRIB3DPROC			HH_GL_glVertexAttrib3d	       = 0;
+PFNGLVERTEXATTRIB3DVPROC		HH_GL_glVertexAttrib3dv	       = 0;
+PFNGLVERTEXATTRIB3FPROC			HH_GL_glVertexAttrib3f	       = 0;
+PFNGLVERTEXATTRIB3FVPROC		HH_GL_glVertexAttrib3fv	       = 0;
+PFNGLVERTEXATTRIB3SPROC			HH_GL_glVertexAttrib3s	       = 0;
+PFNGLVERTEXATTRIB3SVPROC		HH_GL_glVertexAttrib3sv	       = 0;
+PFNGLVERTEXATTRIB4NBVPROC		HH_GL_glVertexAttrib4Nbv	       = 0;
+PFNGLVERTEXATTRIB4NIVPROC		HH_GL_glVertexAttrib4Niv	       = 0;
+PFNGLVERTEXATTRIB4NSVPROC		HH_GL_glVertexAttrib4Nsv	       = 0;
+PFNGLVERTEXATTRIB4NUBPROC		HH_GL_glVertexAttrib4Nub	       = 0;
+PFNGLVERTEXATTRIB4NUBVPROC		HH_GL_glVertexAttrib4Nubv	       = 0;
+PFNGLVERTEXATTRIB4NUIVPROC		HH_GL_glVertexAttrib4Nuiv	       = 0;
+PFNGLVERTEXATTRIB4NUSVPROC		HH_GL_glVertexAttrib4Nusv	       = 0;
+PFNGLVERTEXATTRIB4BVPROC		HH_GL_glVertexAttrib4bv	       = 0;
+PFNGLVERTEXATTRIB4DPROC			HH_GL_glVertexAttrib4d	       = 0;
+PFNGLVERTEXATTRIB4DVPROC		HH_GL_glVertexAttrib4dv	       = 0;
+PFNGLVERTEXATTRIB4FPROC			HH_GL_glVertexAttrib4f	       = 0;
+PFNGLVERTEXATTRIB4FVPROC		HH_GL_glVertexAttrib4fv	       = 0;
+PFNGLVERTEXATTRIB4IVPROC		HH_GL_glVertexAttrib4iv	       = 0;
+PFNGLVERTEXATTRIB4SPROC			HH_GL_glVertexAttrib4s	       = 0;
+PFNGLVERTEXATTRIB4SVPROC		HH_GL_glVertexAttrib4sv	       = 0;
+PFNGLVERTEXATTRIB4UBVPROC		HH_GL_glVertexAttrib4ubv	       = 0;
+PFNGLVERTEXATTRIB4UIVPROC		HH_GL_glVertexAttrib4uiv	       = 0;
+PFNGLVERTEXATTRIB4USVPROC		HH_GL_glVertexAttrib4usv	       = 0;
+PFNGLVERTEXATTRIBPOINTERPROC		HH_GL_glVertexAttribPointer      = 0;
 
 // 2.1
-#define glUniformMatrix2x3fv SharedGL_glUniformMatrix2x3fv
-#define glUniformMatrix3x2fv SharedGL_glUniformMatrix3x2fv
-#define glUniformMatrix2x4fv SharedGL_glUniformMatrix2x4fv
-#define glUniformMatrix4x2fv SharedGL_glUniformMatrix4x2fv
-#define glUniformMatrix3x4fv SharedGL_glUniformMatrix3x4fv
-#define glUniformMatrix4x3fv SharedGL_glUniformMatrix4x3fv
+#define glUniformMatrix2x3fv HH_GL_glUniformMatrix2x3fv
+#define glUniformMatrix3x2fv HH_GL_glUniformMatrix3x2fv
+#define glUniformMatrix2x4fv HH_GL_glUniformMatrix2x4fv
+#define glUniformMatrix4x2fv HH_GL_glUniformMatrix4x2fv
+#define glUniformMatrix3x4fv HH_GL_glUniformMatrix3x4fv
+#define glUniformMatrix4x3fv HH_GL_glUniformMatrix4x3fv
 
 typedef void (__stdcall *PFNGLUNIFORMMATRIX2X3FVPROC) (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 typedef void (__stdcall *PFNGLUNIFORMMATRIX3X2FVPROC) (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
@@ -2051,97 +2051,97 @@ typedef void (__stdcall *PFNGLUNIFORMMATRIX4X2FVPROC) (GLint location, GLsizei c
 typedef void (__stdcall *PFNGLUNIFORMMATRIX3X4FVPROC) (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 typedef void (__stdcall *PFNGLUNIFORMMATRIX4X3FVPROC) (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 
-PFNGLUNIFORMMATRIX2X3FVPROC SharedGL_glUniformMatrix2x3fv = 0;
-PFNGLUNIFORMMATRIX3X2FVPROC SharedGL_glUniformMatrix3x2fv = 0;
-PFNGLUNIFORMMATRIX2X4FVPROC SharedGL_glUniformMatrix2x4fv = 0;
-PFNGLUNIFORMMATRIX4X2FVPROC SharedGL_glUniformMatrix4x2fv = 0;
-PFNGLUNIFORMMATRIX3X4FVPROC SharedGL_glUniformMatrix3x4fv = 0;
-PFNGLUNIFORMMATRIX4X3FVPROC SharedGL_glUniformMatrix4x3fv = 0;
+PFNGLUNIFORMMATRIX2X3FVPROC HH_GL_glUniformMatrix2x3fv = 0;
+PFNGLUNIFORMMATRIX3X2FVPROC HH_GL_glUniformMatrix3x2fv = 0;
+PFNGLUNIFORMMATRIX2X4FVPROC HH_GL_glUniformMatrix2x4fv = 0;
+PFNGLUNIFORMMATRIX4X2FVPROC HH_GL_glUniformMatrix4x2fv = 0;
+PFNGLUNIFORMMATRIX3X4FVPROC HH_GL_glUniformMatrix3x4fv = 0;
+PFNGLUNIFORMMATRIX4X3FVPROC HH_GL_glUniformMatrix4x3fv = 0;
 
 // 3.0 
-#define glColorMaski				SharedGL_glColorMaski
-#define glGetBooleani_v				SharedGL_glGetBooleani_v
-#define glGetIntegeri_v				SharedGL_glGetIntegeri_v
-#define glEnablei				SharedGL_glEnablei
-#define glDisablei				SharedGL_glDisablei
-#define glIsEnabledi				SharedGL_glIsEnabledi
-#define glEndTransformFeedback			SharedGL_glEndTransformFeedback
-#define glBindBufferRange			SharedGL_glBindBufferRange
-#define glBindBufferBase			SharedGL_glBindBufferBase
-#define glTransformFeedbackVaryings		SharedGL_glTransformFeedbackVaryings
-#define glGetTransformFeedbackVarying		SharedGL_glGetTransformFeedbackVarying
-#define glClampColor				SharedGL_glClampColor
-#define glBeginConditionalRender		SharedGL_glBeginConditionalRender
-#define glEndConditionalRender			SharedGL_glEndConditionalRender
-#define glVertexAttribIPointer			SharedGL_glVertexAttribIPointer
-#define glGetVertexAttribIiv			SharedGL_glGetVertexAttribIiv
-#define glGetVertexAttribIuiv			SharedGL_glGetVertexAttribIuiv
-#define glVertexAttribI1i			SharedGL_glVertexAttribI1i
-#define glVertexAttribI2i			SharedGL_glVertexAttribI2i
-#define glVertexAttribI3i			SharedGL_glVertexAttribI3i
-#define glVertexAttribI4i			SharedGL_glVertexAttribI4i
-#define glVertexAttribI1ui			SharedGL_glVertexAttribI1ui
-#define glVertexAttribI2ui			SharedGL_glVertexAttribI2ui
-#define glVertexAttribI3ui			SharedGL_glVertexAttribI3ui
-#define glVertexAttribI4ui			SharedGL_glVertexAttribI4ui
-#define glVertexAttribI1iv			SharedGL_glVertexAttribI1iv
-#define glVertexAttribI2iv			SharedGL_glVertexAttribI2iv
-#define glVertexAttribI3iv			SharedGL_glVertexAttribI3iv
-#define glVertexAttribI4iv			SharedGL_glVertexAttribI4iv
-#define glVertexAttribI1uiv			SharedGL_glVertexAttribI1uiv
-#define glVertexAttribI2uiv			SharedGL_glVertexAttribI2uiv
-#define glVertexAttribI3uiv			SharedGL_glVertexAttribI3uiv
-#define glVertexAttribI4uiv			SharedGL_glVertexAttribI4uiv
-#define glVertexAttribI4bv			SharedGL_glVertexAttribI4bv
-#define glVertexAttribI4sv			SharedGL_glVertexAttribI4sv
-#define glVertexAttribI4ubv			SharedGL_glVertexAttribI4ubv
-#define glVertexAttribI4usv			SharedGL_glVertexAttribI4usv
-#define glGetUniformuiv				SharedGL_glGetUniformuiv
-#define glBindFragDataLocation			SharedGL_glBindFragDataLocation
-#define glGetFragDataLocation			SharedGL_glGetFragDataLocation
-#define glUniform1ui				SharedGL_glUniform1ui
-#define glUniform2ui				SharedGL_glUniform2ui
-#define glUniform3ui				SharedGL_glUniform3ui
-#define glUniform4ui				SharedGL_glUniform4ui
-#define glUniform1uiv				SharedGL_glUniform1uiv
-#define glUniform2uiv				SharedGL_glUniform2uiv
-#define glUniform3uiv				SharedGL_glUniform3uiv
-#define glUniform4uiv				SharedGL_glUniform4uiv
-#define glTexParameterIiv			SharedGL_glTexParameterIiv
-#define glTexParameterIuiv			SharedGL_glTexParameterIuiv
-#define glGetTexParameterIiv			SharedGL_glGetTexParameterIiv
-#define glGetTexParameterIuiv			SharedGL_glGetTexParameterIuiv
-#define glClearBufferiv				SharedGL_glClearBufferiv
-#define glClearBufferuiv			SharedGL_glClearBufferuiv
-#define glClearBufferfv				SharedGL_glClearBufferfv
-#define glClearBufferfi				SharedGL_glClearBufferfi
-#define glGetStringi				SharedGL_glGetStringi
-#define glIsRenderbuffer			SharedGL_glIsRenderbuffer
-#define glBindRenderbuffer			SharedGL_glBindRenderbuffer
-#define glDeleteRenderbuffers			SharedGL_glDeleteRenderbuffers
-#define glGenRenderbuffers			SharedGL_glGenRenderbuffers
-#define glRenderbufferStorage			SharedGL_glRenderbufferStorage
-#define glGetRenderbufferParameteriv		SharedGL_glGetRenderbufferParameteriv
-#define glIsFramebuffer				SharedGL_glIsFramebuffer
-#define glBindFramebuffer			SharedGL_glBindFramebuffer
-#define glDeleteFramebuffers			SharedGL_glDeleteFramebuffers
-#define glGenFramebuffers			SharedGL_glGenFramebuffers
-#define glCheckFramebufferStatus		SharedGL_glCheckFramebufferStatus
-#define glFramebufferTexture1D			SharedGL_glFramebufferTexture1D
-#define glFramebufferTexture2D			SharedGL_glFramebufferTexture2D
-#define glFramebufferTexture3D			SharedGL_glFramebufferTexture3D
-#define glFramebufferRenderbuffer		SharedGL_glFramebufferRenderbuffer
-#define glGetFramebufferAttachmentParameteriv	SharedGL_glGetFramebufferAttachmentParameteriv
-#define glGenerateMipmap			SharedGL_glGenerateMipmap
-#define glBlitFramebuffer			SharedGL_glBlitFramebuffer
-#define glRenderbufferStorageMultisample	SharedGL_glRenderbufferStorageMultisample
-#define glFramebufferTextureLayer		SharedGL_glFramebufferTextureLayer
-#define glMapBufferRange			SharedGL_glMapBufferRange
-#define glFlushMappedBufferRange		SharedGL_glFlushMappedBufferRange
-#define glBindVertexArray			SharedGL_glBindVertexArray
-#define glDeleteVertexArrays			SharedGL_glDeleteVertexArrays
-#define glGenVertexArrays			SharedGL_glGenVertexArrays
-#define glIsVertexArray				SharedGL_glIsVertexArray
+#define glColorMaski				HH_GL_glColorMaski
+#define glGetBooleani_v				HH_GL_glGetBooleani_v
+#define glGetIntegeri_v				HH_GL_glGetIntegeri_v
+#define glEnablei				HH_GL_glEnablei
+#define glDisablei				HH_GL_glDisablei
+#define glIsEnabledi				HH_GL_glIsEnabledi
+#define glEndTransformFeedback			HH_GL_glEndTransformFeedback
+#define glBindBufferRange			HH_GL_glBindBufferRange
+#define glBindBufferBase			HH_GL_glBindBufferBase
+#define glTransformFeedbackVaryings		HH_GL_glTransformFeedbackVaryings
+#define glGetTransformFeedbackVarying		HH_GL_glGetTransformFeedbackVarying
+#define glClampColor				HH_GL_glClampColor
+#define glBeginConditionalRender		HH_GL_glBeginConditionalRender
+#define glEndConditionalRender			HH_GL_glEndConditionalRender
+#define glVertexAttribIPointer			HH_GL_glVertexAttribIPointer
+#define glGetVertexAttribIiv			HH_GL_glGetVertexAttribIiv
+#define glGetVertexAttribIuiv			HH_GL_glGetVertexAttribIuiv
+#define glVertexAttribI1i			HH_GL_glVertexAttribI1i
+#define glVertexAttribI2i			HH_GL_glVertexAttribI2i
+#define glVertexAttribI3i			HH_GL_glVertexAttribI3i
+#define glVertexAttribI4i			HH_GL_glVertexAttribI4i
+#define glVertexAttribI1ui			HH_GL_glVertexAttribI1ui
+#define glVertexAttribI2ui			HH_GL_glVertexAttribI2ui
+#define glVertexAttribI3ui			HH_GL_glVertexAttribI3ui
+#define glVertexAttribI4ui			HH_GL_glVertexAttribI4ui
+#define glVertexAttribI1iv			HH_GL_glVertexAttribI1iv
+#define glVertexAttribI2iv			HH_GL_glVertexAttribI2iv
+#define glVertexAttribI3iv			HH_GL_glVertexAttribI3iv
+#define glVertexAttribI4iv			HH_GL_glVertexAttribI4iv
+#define glVertexAttribI1uiv			HH_GL_glVertexAttribI1uiv
+#define glVertexAttribI2uiv			HH_GL_glVertexAttribI2uiv
+#define glVertexAttribI3uiv			HH_GL_glVertexAttribI3uiv
+#define glVertexAttribI4uiv			HH_GL_glVertexAttribI4uiv
+#define glVertexAttribI4bv			HH_GL_glVertexAttribI4bv
+#define glVertexAttribI4sv			HH_GL_glVertexAttribI4sv
+#define glVertexAttribI4ubv			HH_GL_glVertexAttribI4ubv
+#define glVertexAttribI4usv			HH_GL_glVertexAttribI4usv
+#define glGetUniformuiv				HH_GL_glGetUniformuiv
+#define glBindFragDataLocation			HH_GL_glBindFragDataLocation
+#define glGetFragDataLocation			HH_GL_glGetFragDataLocation
+#define glUniform1ui				HH_GL_glUniform1ui
+#define glUniform2ui				HH_GL_glUniform2ui
+#define glUniform3ui				HH_GL_glUniform3ui
+#define glUniform4ui				HH_GL_glUniform4ui
+#define glUniform1uiv				HH_GL_glUniform1uiv
+#define glUniform2uiv				HH_GL_glUniform2uiv
+#define glUniform3uiv				HH_GL_glUniform3uiv
+#define glUniform4uiv				HH_GL_glUniform4uiv
+#define glTexParameterIiv			HH_GL_glTexParameterIiv
+#define glTexParameterIuiv			HH_GL_glTexParameterIuiv
+#define glGetTexParameterIiv			HH_GL_glGetTexParameterIiv
+#define glGetTexParameterIuiv			HH_GL_glGetTexParameterIuiv
+#define glClearBufferiv				HH_GL_glClearBufferiv
+#define glClearBufferuiv			HH_GL_glClearBufferuiv
+#define glClearBufferfv				HH_GL_glClearBufferfv
+#define glClearBufferfi				HH_GL_glClearBufferfi
+#define glGetStringi				HH_GL_glGetStringi
+#define glIsRenderbuffer			HH_GL_glIsRenderbuffer
+#define glBindRenderbuffer			HH_GL_glBindRenderbuffer
+#define glDeleteRenderbuffers			HH_GL_glDeleteRenderbuffers
+#define glGenRenderbuffers			HH_GL_glGenRenderbuffers
+#define glRenderbufferStorage			HH_GL_glRenderbufferStorage
+#define glGetRenderbufferParameteriv		HH_GL_glGetRenderbufferParameteriv
+#define glIsFramebuffer				HH_GL_glIsFramebuffer
+#define glBindFramebuffer			HH_GL_glBindFramebuffer
+#define glDeleteFramebuffers			HH_GL_glDeleteFramebuffers
+#define glGenFramebuffers			HH_GL_glGenFramebuffers
+#define glCheckFramebufferStatus		HH_GL_glCheckFramebufferStatus
+#define glFramebufferTexture1D			HH_GL_glFramebufferTexture1D
+#define glFramebufferTexture2D			HH_GL_glFramebufferTexture2D
+#define glFramebufferTexture3D			HH_GL_glFramebufferTexture3D
+#define glFramebufferRenderbuffer		HH_GL_glFramebufferRenderbuffer
+#define glGetFramebufferAttachmentParameteriv	HH_GL_glGetFramebufferAttachmentParameteriv
+#define glGenerateMipmap			HH_GL_glGenerateMipmap
+#define glBlitFramebuffer			HH_GL_glBlitFramebuffer
+#define glRenderbufferStorageMultisample	HH_GL_glRenderbufferStorageMultisample
+#define glFramebufferTextureLayer		HH_GL_glFramebufferTextureLayer
+#define glMapBufferRange			HH_GL_glMapBufferRange
+#define glFlushMappedBufferRange		HH_GL_glFlushMappedBufferRange
+#define glBindVertexArray			HH_GL_glBindVertexArray
+#define glDeleteVertexArrays			HH_GL_glDeleteVertexArrays
+#define glGenVertexArrays			HH_GL_glGenVertexArrays
+#define glIsVertexArray				HH_GL_glIsVertexArray
 
 typedef void            (__stdcall *PFNGLCOLORMASKIPROC)			   (GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a);
 typedef void            (__stdcall *PFNGLGETBOOLEANI_VPROC)			   (GLenum target, GLuint index, GLboolean *data);
@@ -2155,7 +2155,7 @@ typedef void            (__stdcall *PFNGLBINDBUFFERRANGEPROC)			   (GLenum targe
 typedef void            (__stdcall *PFNGLBINDBUFFERBASEPROC)			   (GLenum target, GLuint index, GLuint buffer);
 typedef void            (__stdcall *PFNGLTRANSFORMFEEDBACKVARYINGSPROC)	           (GLuint program, GLsizei count, const GLchar *const*varyings, GLenum bufferMode);
 typedef void            (__stdcall *PFNGLGETTRANSFORMFEEDBACKVARYINGPROC)	   (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
-typedef void            (__stdcall *PFNGLCLASharedGLCOLORPROC)			   (GLenum target, GLenum clamp);
+typedef void            (__stdcall *PFNGLCLAHH_GLCOLORPROC)			   (GLenum target, GLenum clamp);
 typedef void            (__stdcall *PFNGLBEGINCONDITIONALRENDERPROC)		   (GLuint id, GLenum mode);
 typedef void            (__stdcall *PFNGLENDCONDITIONALRENDERPROC)		   (void);
 typedef void            (__stdcall *PFNGLVERTEXATTRIBIPOINTERPROC)		   (GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
@@ -2219,7 +2219,7 @@ typedef void            (__stdcall *PFNGLFRAMEBUFFERRENDERBUFFERPROC)		   (GLenu
 typedef void            (__stdcall *PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC)  (GLenum target, GLenum attachment, GLenum pname, GLint *params);
 typedef void            (__stdcall *PFNGLGENERATEMIPMAPPROC)			   (GLenum target);
 typedef void            (__stdcall *PFNGLBLITFRAMEBUFFERPROC)			   (GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
-typedef void            (__stdcall *PFNGLRENDERBUFFERSTORAGEMULTISASharedGLLEPROC)	   (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
+typedef void            (__stdcall *PFNGLRENDERBUFFERSTORAGEMULTISAHH_GLLEPROC)	   (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
 typedef void            (__stdcall *PFNGLFRAMEBUFFERTEXTURELAYERPROC)              (GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
 typedef void*           (__stdcall *PFNGLMAPBUFFERRANGEPROC)			   (GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access);
 typedef void            (__stdcall *PFNGLFLUSHMAPPEDBUFFERRANGEPROC)		   (GLenum target, GLintptr offset, GLsizeiptr length);
@@ -2228,104 +2228,104 @@ typedef void            (__stdcall *PFNGLDELETEVERTEXARRAYSPROC)                
 typedef void            (__stdcall *PFNGLGENVERTEXARRAYSPROC)                      (GLsizei n, GLuint *arrays);
 typedef GLboolean       (__stdcall *PFNGLISVERTEXARRAYPROC)                        (GLuint array);
 
-PFNGLCOLORMASKIPROC				SharedGL_glColorMaski			  = 0;
-PFNGLGETBOOLEANI_VPROC				SharedGL_glGetBooleani_v			  = 0;
-PFNGLGETINTEGERI_VPROC				SharedGL_glGetIntegeri_v			  = 0;
-PFNGLENABLEIPROC				SharedGL_glEnablei				  = 0;
-PFNGLDISABLEIPROC				SharedGL_glDisablei				  = 0;
-PFNGLISENABLEDIPROC				SharedGL_glIsEnabledi			  = 0;
-PFNGLBEGINTRANSFORMFEEDBACKPROC			SharedGL_glBeginTransformFeedback		  = 0;
-PFNGLENDTRANSFORMFEEDBACKPROC			SharedGL_glEndTransformFeedback		  = 0;
-PFNGLBINDBUFFERRANGEPROC			SharedGL_glBindBufferRange			  = 0;
-PFNGLBINDBUFFERBASEPROC				SharedGL_glBindBufferBase			  = 0;
-PFNGLTRANSFORMFEEDBACKVARYINGSPROC		SharedGL_glTransformFeedbackVaryings		  = 0;
-PFNGLGETTRANSFORMFEEDBACKVARYINGPROC		SharedGL_glGetTransformFeedbackVarying	  = 0;
-PFNGLCLASharedGLCOLORPROC				SharedGL_glClampColor			  = 0;
-PFNGLBEGINCONDITIONALRENDERPROC			SharedGL_glBeginConditionalRender		  = 0;
-PFNGLENDCONDITIONALRENDERPROC			SharedGL_glEndConditionalRender		  = 0;
-PFNGLVERTEXATTRIBIPOINTERPROC			SharedGL_glVertexAttribIPointer		  = 0;
-PFNGLGETVERTEXATTRIBIIVPROC			SharedGL_glGetVertexAttribIiv		  = 0;
-PFNGLGETVERTEXATTRIBIUIVPROC			SharedGL_glGetVertexAttribIuiv		  = 0;
-PFNGLVERTEXATTRIBI1IPROC			SharedGL_glVertexAttribI1i			  = 0;
-PFNGLVERTEXATTRIBI2IPROC			SharedGL_glVertexAttribI2i			  = 0;
-PFNGLVERTEXATTRIBI3IPROC			SharedGL_glVertexAttribI3i			  = 0;
-PFNGLVERTEXATTRIBI4IPROC			SharedGL_glVertexAttribI4i			  = 0;
-PFNGLVERTEXATTRIBI1UIPROC			SharedGL_glVertexAttribI1ui			  = 0;
-PFNGLVERTEXATTRIBI2UIPROC			SharedGL_glVertexAttribI2ui			  = 0;
-PFNGLVERTEXATTRIBI3UIPROC			SharedGL_glVertexAttribI3ui			  = 0;
-PFNGLVERTEXATTRIBI4UIPROC			SharedGL_glVertexAttribI4ui			  = 0;
-PFNGLVERTEXATTRIBI1IVPROC			SharedGL_glVertexAttribI1iv			  = 0;
-PFNGLVERTEXATTRIBI2IVPROC			SharedGL_glVertexAttribI2iv			  = 0;
-PFNGLVERTEXATTRIBI3IVPROC			SharedGL_glVertexAttribI3iv			  = 0;
-PFNGLVERTEXATTRIBI4IVPROC			SharedGL_glVertexAttribI4iv			  = 0;
-PFNGLVERTEXATTRIBI1UIVPROC			SharedGL_glVertexAttribI1uiv			  = 0;
-PFNGLVERTEXATTRIBI2UIVPROC			SharedGL_glVertexAttribI2uiv			  = 0;
-PFNGLVERTEXATTRIBI3UIVPROC			SharedGL_glVertexAttribI3uiv			  = 0;
-PFNGLVERTEXATTRIBI4UIVPROC			SharedGL_glVertexAttribI4uiv			  = 0;
-PFNGLVERTEXATTRIBI4BVPROC			SharedGL_glVertexAttribI4bv			  = 0;
-PFNGLVERTEXATTRIBI4SVPROC			SharedGL_glVertexAttribI4sv			  = 0;
-PFNGLVERTEXATTRIBI4UBVPROC			SharedGL_glVertexAttribI4ubv			  = 0;
-PFNGLVERTEXATTRIBI4USVPROC			SharedGL_glVertexAttribI4usv			  = 0;
-PFNGLGETUNIFORMUIVPROC				SharedGL_glGetUniformuiv			  = 0;
-PFNGLBINDFRAGDATALOCATIONPROC			SharedGL_glBindFragDataLocation		  = 0;
-PFNGLGETFRAGDATALOCATIONPROC			SharedGL_glGetFragDataLocation		  = 0;
-PFNGLUNIFORM1UIPROC				SharedGL_glUniform1ui			  = 0;
-PFNGLUNIFORM2UIPROC				SharedGL_glUniform2ui			  = 0;
-PFNGLUNIFORM3UIPROC				SharedGL_glUniform3ui			  = 0;
-PFNGLUNIFORM4UIPROC				SharedGL_glUniform4ui			  = 0;
-PFNGLUNIFORM1UIVPROC				SharedGL_glUniform1uiv			  = 0;
-PFNGLUNIFORM2UIVPROC				SharedGL_glUniform2uiv			  = 0;
-PFNGLUNIFORM3UIVPROC				SharedGL_glUniform3uiv			  = 0;
-PFNGLUNIFORM4UIVPROC				SharedGL_glUniform4uiv			  = 0;
-PFNGLTEXPARAMETERIIVPROC			SharedGL_glTexParameterIiv			  = 0;
-PFNGLTEXPARAMETERIUIVPROC			SharedGL_glTexParameterIuiv			  = 0;
-PFNGLGETTEXPARAMETERIIVPROC			SharedGL_glGetTexParameterIiv		  = 0;
-PFNGLGETTEXPARAMETERIUIVPROC			SharedGL_glGetTexParameterIuiv		  = 0;
-PFNGLCLEARBUFFERIVPROC				SharedGL_glClearBufferiv			  = 0;
-PFNGLCLEARBUFFERUIVPROC				SharedGL_glClearBufferuiv			  = 0;
-PFNGLCLEARBUFFERFVPROC				SharedGL_glClearBufferfv			  = 0;
-PFNGLCLEARBUFFERFIPROC				SharedGL_glClearBufferfi			  = 0;
-PFNGLGETSTRINGIPROC				SharedGL_glGetStringi			  = 0;
-PFNGLISRENDERBUFFERPROC				SharedGL_glIsRenderbuffer			  = 0;
-PFNGLBINDRENDERBUFFERPROC			SharedGL_glBindRenderbuffer			  = 0;
-PFNGLDELETERENDERBUFFERSPROC			SharedGL_glDeleteRenderbuffers		  = 0;
-PFNGLGENRENDERBUFFERSPROC			SharedGL_glGenRenderbuffers			  = 0;
-PFNGLRENDERBUFFERSTORAGEPROC			SharedGL_glRenderbufferStorage		  = 0;
-PFNGLGETRENDERBUFFERPARAMETERIVPROC		SharedGL_glGetRenderbufferParameteriv	  = 0;
-PFNGLISFRAMEBUFFERPROC				SharedGL_glIsFramebuffer			  = 0;
-PFNGLBINDFRAMEBUFFERPROC			SharedGL_glBindFramebuffer			  = 0;
-PFNGLDELETEFRAMEBUFFERSPROC			SharedGL_glDeleteFramebuffers		  = 0;
-PFNGLGENFRAMEBUFFERSPROC			SharedGL_glGenFramebuffers			  = 0;
-PFNGLCHECKFRAMEBUFFERSTATUSPROC			SharedGL_glCheckFramebufferStatus		  = 0;
-PFNGLFRAMEBUFFERTEXTURE1DPROC			SharedGL_glFramebufferTexture1D		  = 0;
-PFNGLFRAMEBUFFERTEXTURE2DPROC			SharedGL_glFramebufferTexture2D		  = 0;
-PFNGLFRAMEBUFFERTEXTURE3DPROC			SharedGL_glFramebufferTexture3D		  = 0;
-PFNGLFRAMEBUFFERRENDERBUFFERPROC		SharedGL_glFramebufferRenderbuffer		  = 0;
-PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC	SharedGL_glGetFramebufferAttachmentParameteriv = 0;
-PFNGLGENERATEMIPMAPPROC				SharedGL_glGenerateMipmap			  = 0;
-PFNGLBLITFRAMEBUFFERPROC			SharedGL_glBlitFramebuffer			  = 0;
-PFNGLRENDERBUFFERSTORAGEMULTISASharedGLLEPROC		SharedGL_glRenderbufferStorageMultisample	  = 0;
-PFNGLFRAMEBUFFERTEXTURELAYERPROC		SharedGL_glFramebufferTextureLayer		  = 0;
-PFNGLMAPBUFFERRANGEPROC				SharedGL_glMapBufferRange			  = 0;
-PFNGLFLUSHMAPPEDBUFFERRANGEPROC			SharedGL_glFlushMappedBufferRange		  = 0;
-PFNGLBINDVERTEXARRAYPROC			SharedGL_glBindVertexArray			  = 0;
-PFNGLDELETEVERTEXARRAYSPROC			SharedGL_glDeleteVertexArrays		  = 0;
-PFNGLGENVERTEXARRAYSPROC			SharedGL_glGenVertexArrays			  = 0;
-PFNGLISVERTEXARRAYPROC				SharedGL_glIsVertexArray			  = 0;
+PFNGLCOLORMASKIPROC				HH_GL_glColorMaski			  = 0;
+PFNGLGETBOOLEANI_VPROC				HH_GL_glGetBooleani_v			  = 0;
+PFNGLGETINTEGERI_VPROC				HH_GL_glGetIntegeri_v			  = 0;
+PFNGLENABLEIPROC				HH_GL_glEnablei				  = 0;
+PFNGLDISABLEIPROC				HH_GL_glDisablei				  = 0;
+PFNGLISENABLEDIPROC				HH_GL_glIsEnabledi			  = 0;
+PFNGLBEGINTRANSFORMFEEDBACKPROC			HH_GL_glBeginTransformFeedback		  = 0;
+PFNGLENDTRANSFORMFEEDBACKPROC			HH_GL_glEndTransformFeedback		  = 0;
+PFNGLBINDBUFFERRANGEPROC			HH_GL_glBindBufferRange			  = 0;
+PFNGLBINDBUFFERBASEPROC				HH_GL_glBindBufferBase			  = 0;
+PFNGLTRANSFORMFEEDBACKVARYINGSPROC		HH_GL_glTransformFeedbackVaryings		  = 0;
+PFNGLGETTRANSFORMFEEDBACKVARYINGPROC		HH_GL_glGetTransformFeedbackVarying	  = 0;
+PFNGLCLAHH_GLCOLORPROC				HH_GL_glClampColor			  = 0;
+PFNGLBEGINCONDITIONALRENDERPROC			HH_GL_glBeginConditionalRender		  = 0;
+PFNGLENDCONDITIONALRENDERPROC			HH_GL_glEndConditionalRender		  = 0;
+PFNGLVERTEXATTRIBIPOINTERPROC			HH_GL_glVertexAttribIPointer		  = 0;
+PFNGLGETVERTEXATTRIBIIVPROC			HH_GL_glGetVertexAttribIiv		  = 0;
+PFNGLGETVERTEXATTRIBIUIVPROC			HH_GL_glGetVertexAttribIuiv		  = 0;
+PFNGLVERTEXATTRIBI1IPROC			HH_GL_glVertexAttribI1i			  = 0;
+PFNGLVERTEXATTRIBI2IPROC			HH_GL_glVertexAttribI2i			  = 0;
+PFNGLVERTEXATTRIBI3IPROC			HH_GL_glVertexAttribI3i			  = 0;
+PFNGLVERTEXATTRIBI4IPROC			HH_GL_glVertexAttribI4i			  = 0;
+PFNGLVERTEXATTRIBI1UIPROC			HH_GL_glVertexAttribI1ui			  = 0;
+PFNGLVERTEXATTRIBI2UIPROC			HH_GL_glVertexAttribI2ui			  = 0;
+PFNGLVERTEXATTRIBI3UIPROC			HH_GL_glVertexAttribI3ui			  = 0;
+PFNGLVERTEXATTRIBI4UIPROC			HH_GL_glVertexAttribI4ui			  = 0;
+PFNGLVERTEXATTRIBI1IVPROC			HH_GL_glVertexAttribI1iv			  = 0;
+PFNGLVERTEXATTRIBI2IVPROC			HH_GL_glVertexAttribI2iv			  = 0;
+PFNGLVERTEXATTRIBI3IVPROC			HH_GL_glVertexAttribI3iv			  = 0;
+PFNGLVERTEXATTRIBI4IVPROC			HH_GL_glVertexAttribI4iv			  = 0;
+PFNGLVERTEXATTRIBI1UIVPROC			HH_GL_glVertexAttribI1uiv			  = 0;
+PFNGLVERTEXATTRIBI2UIVPROC			HH_GL_glVertexAttribI2uiv			  = 0;
+PFNGLVERTEXATTRIBI3UIVPROC			HH_GL_glVertexAttribI3uiv			  = 0;
+PFNGLVERTEXATTRIBI4UIVPROC			HH_GL_glVertexAttribI4uiv			  = 0;
+PFNGLVERTEXATTRIBI4BVPROC			HH_GL_glVertexAttribI4bv			  = 0;
+PFNGLVERTEXATTRIBI4SVPROC			HH_GL_glVertexAttribI4sv			  = 0;
+PFNGLVERTEXATTRIBI4UBVPROC			HH_GL_glVertexAttribI4ubv			  = 0;
+PFNGLVERTEXATTRIBI4USVPROC			HH_GL_glVertexAttribI4usv			  = 0;
+PFNGLGETUNIFORMUIVPROC				HH_GL_glGetUniformuiv			  = 0;
+PFNGLBINDFRAGDATALOCATIONPROC			HH_GL_glBindFragDataLocation		  = 0;
+PFNGLGETFRAGDATALOCATIONPROC			HH_GL_glGetFragDataLocation		  = 0;
+PFNGLUNIFORM1UIPROC				HH_GL_glUniform1ui			  = 0;
+PFNGLUNIFORM2UIPROC				HH_GL_glUniform2ui			  = 0;
+PFNGLUNIFORM3UIPROC				HH_GL_glUniform3ui			  = 0;
+PFNGLUNIFORM4UIPROC				HH_GL_glUniform4ui			  = 0;
+PFNGLUNIFORM1UIVPROC				HH_GL_glUniform1uiv			  = 0;
+PFNGLUNIFORM2UIVPROC				HH_GL_glUniform2uiv			  = 0;
+PFNGLUNIFORM3UIVPROC				HH_GL_glUniform3uiv			  = 0;
+PFNGLUNIFORM4UIVPROC				HH_GL_glUniform4uiv			  = 0;
+PFNGLTEXPARAMETERIIVPROC			HH_GL_glTexParameterIiv			  = 0;
+PFNGLTEXPARAMETERIUIVPROC			HH_GL_glTexParameterIuiv			  = 0;
+PFNGLGETTEXPARAMETERIIVPROC			HH_GL_glGetTexParameterIiv		  = 0;
+PFNGLGETTEXPARAMETERIUIVPROC			HH_GL_glGetTexParameterIuiv		  = 0;
+PFNGLCLEARBUFFERIVPROC				HH_GL_glClearBufferiv			  = 0;
+PFNGLCLEARBUFFERUIVPROC				HH_GL_glClearBufferuiv			  = 0;
+PFNGLCLEARBUFFERFVPROC				HH_GL_glClearBufferfv			  = 0;
+PFNGLCLEARBUFFERFIPROC				HH_GL_glClearBufferfi			  = 0;
+PFNGLGETSTRINGIPROC				HH_GL_glGetStringi			  = 0;
+PFNGLISRENDERBUFFERPROC				HH_GL_glIsRenderbuffer			  = 0;
+PFNGLBINDRENDERBUFFERPROC			HH_GL_glBindRenderbuffer			  = 0;
+PFNGLDELETERENDERBUFFERSPROC			HH_GL_glDeleteRenderbuffers		  = 0;
+PFNGLGENRENDERBUFFERSPROC			HH_GL_glGenRenderbuffers			  = 0;
+PFNGLRENDERBUFFERSTORAGEPROC			HH_GL_glRenderbufferStorage		  = 0;
+PFNGLGETRENDERBUFFERPARAMETERIVPROC		HH_GL_glGetRenderbufferParameteriv	  = 0;
+PFNGLISFRAMEBUFFERPROC				HH_GL_glIsFramebuffer			  = 0;
+PFNGLBINDFRAMEBUFFERPROC			HH_GL_glBindFramebuffer			  = 0;
+PFNGLDELETEFRAMEBUFFERSPROC			HH_GL_glDeleteFramebuffers		  = 0;
+PFNGLGENFRAMEBUFFERSPROC			HH_GL_glGenFramebuffers			  = 0;
+PFNGLCHECKFRAMEBUFFERSTATUSPROC			HH_GL_glCheckFramebufferStatus		  = 0;
+PFNGLFRAMEBUFFERTEXTURE1DPROC			HH_GL_glFramebufferTexture1D		  = 0;
+PFNGLFRAMEBUFFERTEXTURE2DPROC			HH_GL_glFramebufferTexture2D		  = 0;
+PFNGLFRAMEBUFFERTEXTURE3DPROC			HH_GL_glFramebufferTexture3D		  = 0;
+PFNGLFRAMEBUFFERRENDERBUFFERPROC		HH_GL_glFramebufferRenderbuffer		  = 0;
+PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC	HH_GL_glGetFramebufferAttachmentParameteriv = 0;
+PFNGLGENERATEMIPMAPPROC				HH_GL_glGenerateMipmap			  = 0;
+PFNGLBLITFRAMEBUFFERPROC			HH_GL_glBlitFramebuffer			  = 0;
+PFNGLRENDERBUFFERSTORAGEMULTISAHH_GLLEPROC		HH_GL_glRenderbufferStorageMultisample	  = 0;
+PFNGLFRAMEBUFFERTEXTURELAYERPROC		HH_GL_glFramebufferTextureLayer		  = 0;
+PFNGLMAPBUFFERRANGEPROC				HH_GL_glMapBufferRange			  = 0;
+PFNGLFLUSHMAPPEDBUFFERRANGEPROC			HH_GL_glFlushMappedBufferRange		  = 0;
+PFNGLBINDVERTEXARRAYPROC			HH_GL_glBindVertexArray			  = 0;
+PFNGLDELETEVERTEXARRAYSPROC			HH_GL_glDeleteVertexArrays		  = 0;
+PFNGLGENVERTEXARRAYSPROC			HH_GL_glGenVertexArrays			  = 0;
+PFNGLISVERTEXARRAYPROC				HH_GL_glIsVertexArray			  = 0;
 
 // 3.1
-#define glDrawArraysInstanced		SharedGL_glDrawArraysInstanced
-#define glDrawElementsInstanced		SharedGL_glDrawElementsInstanced
-#define glTexBuffer			SharedGL_glTexBuffer
-#define glPrimitiveRestartIndex		SharedGL_glPrimitiveRestartIndex
-#define glCopyBufferSubData		SharedGL_glCopyBufferSubData
-#define glGetUniformIndices		SharedGL_glGetUniformIndices
-#define glGetActiveUniformsiv		SharedGL_glGetActiveUniformsiv
-#define glGetActiveUniformName		SharedGL_glGetActiveUniformName
-#define glGetUniformBlockIndex		SharedGL_glGetUniformBlockIndex
-#define glGetActiveUniformBlockiv	SharedGL_glGetActiveUniformBlockiv
-#define glGetActiveUniformBlockName	SharedGL_glGetActiveUniformBlockName
-#define glUniformBlockBinding		SharedGL_glUniformBlockBinding
+#define glDrawArraysInstanced		HH_GL_glDrawArraysInstanced
+#define glDrawElementsInstanced		HH_GL_glDrawElementsInstanced
+#define glTexBuffer			HH_GL_glTexBuffer
+#define glPrimitiveRestartIndex		HH_GL_glPrimitiveRestartIndex
+#define glCopyBufferSubData		HH_GL_glCopyBufferSubData
+#define glGetUniformIndices		HH_GL_glGetUniformIndices
+#define glGetActiveUniformsiv		HH_GL_glGetActiveUniformsiv
+#define glGetActiveUniformName		HH_GL_glGetActiveUniformName
+#define glGetUniformBlockIndex		HH_GL_glGetUniformBlockIndex
+#define glGetActiveUniformBlockiv	HH_GL_glGetActiveUniformBlockiv
+#define glGetActiveUniformBlockName	HH_GL_glGetActiveUniformBlockName
+#define glUniformBlockBinding		HH_GL_glUniformBlockBinding
 
 typedef void   (__stdcall *PFNGLDRAWARRAYSINSTANCEDPROC)    	(GLenum mode, GLint first, GLsizei count, GLsizei instancecount);
 typedef void   (__stdcall *PFNGLDRAWELEMENTSINSTANCEDPROC)  	(GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount);
@@ -2340,39 +2340,39 @@ typedef void   (__stdcall *PFNGLGETACTIVEUNIFORMBLOCKIVPROC)	(GLuint program, GL
 typedef void   (__stdcall *PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC)	(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformBlockName);
 typedef void   (__stdcall *PFNGLUNIFORMBLOCKBINDINGPROC)	(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding);
 
-PFNGLDRAWARRAYSINSTANCEDPROC		SharedGL_glDrawArraysInstanced	= 0;
-PFNGLDRAWELEMENTSINSTANCEDPROC		SharedGL_glDrawElementsInstanced	= 0;
-PFNGLTEXBUFFERPROC			SharedGL_glTexBuffer			= 0;
-PFNGLPRIMITIVERESTARTINDEXPROC		SharedGL_glPrimitiveRestartIndex	= 0;
-PFNGLCOPYBUFFERSUBDATAPROC		SharedGL_glCopyBufferSubData		= 0;
-PFNGLGETUNIFORMINDICESPROC		SharedGL_glGetUniformIndices		= 0;
-PFNGLGETACTIVEUNIFORMSIVPROC		SharedGL_glGetActiveUniformsiv	= 0;
-PFNGLGETACTIVEUNIFORMNAMEPROC		SharedGL_glGetActiveUniformName	= 0;
-PFNGLGETUNIFORMBLOCKINDEXPROC		SharedGL_glGetUniformBlockIndex	= 0;
-PFNGLGETACTIVEUNIFORMBLOCKIVPROC	SharedGL_glGetActiveUniformBlockiv	= 0;
-PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC	SharedGL_glGetActiveUniformBlockName = 0;
-PFNGLUNIFORMBLOCKBINDINGPROC		SharedGL_glUniformBlockBinding	= 0;
+PFNGLDRAWARRAYSINSTANCEDPROC		HH_GL_glDrawArraysInstanced	= 0;
+PFNGLDRAWELEMENTSINSTANCEDPROC		HH_GL_glDrawElementsInstanced	= 0;
+PFNGLTEXBUFFERPROC			HH_GL_glTexBuffer			= 0;
+PFNGLPRIMITIVERESTARTINDEXPROC		HH_GL_glPrimitiveRestartIndex	= 0;
+PFNGLCOPYBUFFERSUBDATAPROC		HH_GL_glCopyBufferSubData		= 0;
+PFNGLGETUNIFORMINDICESPROC		HH_GL_glGetUniformIndices		= 0;
+PFNGLGETACTIVEUNIFORMSIVPROC		HH_GL_glGetActiveUniformsiv	= 0;
+PFNGLGETACTIVEUNIFORMNAMEPROC		HH_GL_glGetActiveUniformName	= 0;
+PFNGLGETUNIFORMBLOCKINDEXPROC		HH_GL_glGetUniformBlockIndex	= 0;
+PFNGLGETACTIVEUNIFORMBLOCKIVPROC	HH_GL_glGetActiveUniformBlockiv	= 0;
+PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC	HH_GL_glGetActiveUniformBlockName = 0;
+PFNGLUNIFORMBLOCKBINDINGPROC		HH_GL_glUniformBlockBinding	= 0;
 
 // 3.2
-#define glDrawElementsBaseVertex		SharedGL_glDrawElementsBaseVertex
-#define glDrawRangeElementsBaseVertex		SharedGL_glDrawRangeElementsBaseVertex
-#define glDrawElementsInstancedBaseVertex	SharedGL_glDrawElementsInstancedBaseVertex
-#define glMultiDrawElementsBaseVertex		SharedGL_glMultiDrawElementsBaseVertex
-#define glProvokingVertex			SharedGL_glProvokingVertex
-#define glFenceSync				SharedGL_glFenceSync
-#define glIsSync				SharedGL_glIsSync
-#define glDeleteSync				SharedGL_glDeleteSync
-#define glClientWaitSync			SharedGL_glClientWaitSync
-#define glWaitSync				SharedGL_glWaitSync
-#define glGetInteger64v				SharedGL_glGetInteger64v
-#define glGetSynciv				SharedGL_glGetSynciv
-#define glGetInteger64i_v			SharedGL_glGetInteger64i_v
-#define glGetBufferParameteri64v		SharedGL_glGetBufferParameteri64v
-#define glFramebufferTexture			SharedGL_glFramebufferTexture
-#define glTexImage2DMultisample			SharedGL_glTexImage2DMultisample
-#define glTexImage3DMultisample			SharedGL_glTexImage3DMultisample
-#define glGetMultisamplefv			SharedGL_glGetMultisamplefv
-#define glSampleMaski				SharedGL_glSampleMaski
+#define glDrawElementsBaseVertex		HH_GL_glDrawElementsBaseVertex
+#define glDrawRangeElementsBaseVertex		HH_GL_glDrawRangeElementsBaseVertex
+#define glDrawElementsInstancedBaseVertex	HH_GL_glDrawElementsInstancedBaseVertex
+#define glMultiDrawElementsBaseVertex		HH_GL_glMultiDrawElementsBaseVertex
+#define glProvokingVertex			HH_GL_glProvokingVertex
+#define glFenceSync				HH_GL_glFenceSync
+#define glIsSync				HH_GL_glIsSync
+#define glDeleteSync				HH_GL_glDeleteSync
+#define glClientWaitSync			HH_GL_glClientWaitSync
+#define glWaitSync				HH_GL_glWaitSync
+#define glGetInteger64v				HH_GL_glGetInteger64v
+#define glGetSynciv				HH_GL_glGetSynciv
+#define glGetInteger64i_v			HH_GL_glGetInteger64i_v
+#define glGetBufferParameteri64v		HH_GL_glGetBufferParameteri64v
+#define glFramebufferTexture			HH_GL_glFramebufferTexture
+#define glTexImage2DMultisample			HH_GL_glTexImage2DMultisample
+#define glTexImage3DMultisample			HH_GL_glTexImage3DMultisample
+#define glGetMultisamplefv			HH_GL_glGetMultisamplefv
+#define glSampleMaski				HH_GL_glSampleMaski
 
 typedef void      (__stdcall*PFNGLDRAWELEMENTSBASEVERTEXPROC)		(GLenum mode, GLsizei count, GLenum type, const void *indices, GLint basevertex);
 typedef void      (__stdcall*PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC)	(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void *indices, GLint basevertex);
@@ -2389,107 +2389,107 @@ typedef void      (__stdcall*PFNGLGETSYNCIVPROC)			(GLsync sync, GLenum pname, G
 typedef void      (__stdcall*PFNGLGETINTEGER64I_VPROC)			(GLenum target, GLuint index, GLint64 *data);
 typedef void      (__stdcall*PFNGLGETBUFFERPARAMETERI64VPROC)		(GLenum target, GLenum pname, GLint64 *params);
 typedef void      (__stdcall*PFNGLFRAMEBUFFERTEXTUREPROC)		(GLenum target, GLenum attachment, GLuint texture, GLint level);
-typedef void      (__stdcall*PFNGLTEXIMAGE2DMULTISASharedGLLEPROC)		(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-typedef void      (__stdcall*PFNGLTEXIMAGE3DMULTISASharedGLLEPROC)		(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
-typedef void      (__stdcall*PFNGLGETMULTISASharedGLLEFVPROC)		(GLenum pname, GLuint index, GLfloat *val);
-typedef void      (__stdcall*PFNGLSASharedGLLEMASKIPROC)			(GLuint maskNumber, GLbitfield mask);
+typedef void      (__stdcall*PFNGLTEXIMAGE2DMULTISAHH_GLLEPROC)		(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
+typedef void      (__stdcall*PFNGLTEXIMAGE3DMULTISAHH_GLLEPROC)		(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+typedef void      (__stdcall*PFNGLGETMULTISAHH_GLLEFVPROC)		(GLenum pname, GLuint index, GLfloat *val);
+typedef void      (__stdcall*PFNGLSAHH_GLLEMASKIPROC)			(GLuint maskNumber, GLbitfield mask);
 
-PFNGLDRAWELEMENTSBASEVERTEXPROC			SharedGL_glDrawElementsBaseVertex	      = 0;
-PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC		SharedGL_glDrawRangeElementsBaseVertex     = 0;
-PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC	SharedGL_glDrawElementsInstancedBaseVertex = 0;
-PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC		SharedGL_glMultiDrawElementsBaseVertex     = 0;
-PFNGLPROVOKINGVERTEXPROC			SharedGL_glProvokingVertex		      = 0;
-PFNGLFENCESYNCPROC				SharedGL_glFenceSync			      = 0;
-PFNGLISSYNCPROC					SharedGL_glIsSync			      = 0;
-PFNGLDELETESYNCPROC				SharedGL_glDeleteSync		      = 0;
-PFNGLCLIENTWAITSYNCPROC				SharedGL_glClientWaitSync		      = 0;
-PFNGLWAITSYNCPROC				SharedGL_glWaitSync			      = 0;
-PFNGLGETINTEGER64VPROC				SharedGL_glGetInteger64v		      = 0;
-PFNGLGETSYNCIVPROC				SharedGL_glGetSynciv			      = 0;
-PFNGLGETINTEGER64I_VPROC			SharedGL_glGetInteger64i_v		      = 0;
-PFNGLGETBUFFERPARAMETERI64VPROC			SharedGL_glGetBufferParameteri64v	      = 0;
-PFNGLFRAMEBUFFERTEXTUREPROC			SharedGL_glFramebufferTexture	      = 0;
-PFNGLTEXIMAGE2DMULTISASharedGLLEPROC			SharedGL_glTexImage2DMultisample	      = 0;
-PFNGLTEXIMAGE3DMULTISASharedGLLEPROC			SharedGL_glTexImage3DMultisample	      = 0;
-PFNGLGETMULTISASharedGLLEFVPROC			SharedGL_glGetMultisamplefv		      = 0;
-PFNGLSASharedGLLEMASKIPROC				SharedGL_glSampleMaski		      = 0;
+PFNGLDRAWELEMENTSBASEVERTEXPROC			HH_GL_glDrawElementsBaseVertex	      = 0;
+PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC		HH_GL_glDrawRangeElementsBaseVertex     = 0;
+PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC	HH_GL_glDrawElementsInstancedBaseVertex = 0;
+PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC		HH_GL_glMultiDrawElementsBaseVertex     = 0;
+PFNGLPROVOKINGVERTEXPROC			HH_GL_glProvokingVertex		      = 0;
+PFNGLFENCESYNCPROC				HH_GL_glFenceSync			      = 0;
+PFNGLISSYNCPROC					HH_GL_glIsSync			      = 0;
+PFNGLDELETESYNCPROC				HH_GL_glDeleteSync		      = 0;
+PFNGLCLIENTWAITSYNCPROC				HH_GL_glClientWaitSync		      = 0;
+PFNGLWAITSYNCPROC				HH_GL_glWaitSync			      = 0;
+PFNGLGETINTEGER64VPROC				HH_GL_glGetInteger64v		      = 0;
+PFNGLGETSYNCIVPROC				HH_GL_glGetSynciv			      = 0;
+PFNGLGETINTEGER64I_VPROC			HH_GL_glGetInteger64i_v		      = 0;
+PFNGLGETBUFFERPARAMETERI64VPROC			HH_GL_glGetBufferParameteri64v	      = 0;
+PFNGLFRAMEBUFFERTEXTUREPROC			HH_GL_glFramebufferTexture	      = 0;
+PFNGLTEXIMAGE2DMULTISAHH_GLLEPROC			HH_GL_glTexImage2DMultisample	      = 0;
+PFNGLTEXIMAGE3DMULTISAHH_GLLEPROC			HH_GL_glTexImage3DMultisample	      = 0;
+PFNGLGETMULTISAHH_GLLEFVPROC			HH_GL_glGetMultisamplefv		      = 0;
+PFNGLSAHH_GLLEMASKIPROC				HH_GL_glSampleMaski		      = 0;
 
 // 3.3
-#define glBindFragDataLocationIndexed	SharedGL_glBindFragDataLocationIndexed
-#define glGetFragDataIndex		SharedGL_glGetFragDataIndex
-#define glGenSamplers			SharedGL_glGenSamplers
-#define glDeleteSamplers		SharedGL_glDeleteSamplers
-#define glIsSampler			SharedGL_glIsSampler
-#define glBindSampler			SharedGL_glBindSampler
-#define glSamplerParameteri		SharedGL_glSamplerParameteri
-#define glSamplerParameteriv		SharedGL_glSamplerParameteriv
-#define glSamplerParameterf		SharedGL_glSamplerParameterf
-#define glSamplerParameterfv		SharedGL_glSamplerParameterfv
-#define glSamplerParameterIiv		SharedGL_glSamplerParameterIiv
-#define glSamplerParameterIuiv		SharedGL_glSamplerParameterIuiv
-#define glGetSamplerParameteriv		SharedGL_glGetSamplerParameteriv
-#define glGetSamplerParameterIiv	SharedGL_glGetSamplerParameterIiv
-#define glGetSamplerParameterfv		SharedGL_glGetSamplerParameterfv
-#define glGetSamplerParameterIuiv	SharedGL_glGetSamplerParameterIuiv
-#define glQueryCounter			SharedGL_glQueryCounter
-#define glGetQueryObjecti64v		SharedGL_glGetQueryObjecti64v
-#define glGetQueryObjectui64v		SharedGL_glGetQueryObjectui64v
-#define glVertexAttribDivisor		SharedGL_glVertexAttribDivisor
-#define glVertexAttribP1ui		SharedGL_glVertexAttribP1ui
-#define glVertexAttribP1uiv		SharedGL_glVertexAttribP1uiv
-#define glVertexAttribP2ui		SharedGL_glVertexAttribP2ui
-#define glVertexAttribP2uiv		SharedGL_glVertexAttribP2uiv
-#define glVertexAttribP3ui		SharedGL_glVertexAttribP3ui
-#define glVertexAttribP3uiv		SharedGL_glVertexAttribP3uiv
-#define glVertexAttribP4ui		SharedGL_glVertexAttribP4ui
-#define glVertexAttribP4uiv		SharedGL_glVertexAttribP4uiv
-#define glVertexP2ui			SharedGL_glVertexP2ui
-#define glVertexP2uiv			SharedGL_glVertexP2uiv
-#define glVertexP3ui			SharedGL_glVertexP3ui
-#define glVertexP3uiv			SharedGL_glVertexP3uiv
-#define glVertexP4ui			SharedGL_glVertexP4ui
-#define glVertexP4uiv			SharedGL_glVertexP4uiv
-#define glTexCoordP1ui			SharedGL_glTexCoordP1ui
-#define glTexCoordP1uiv			SharedGL_glTexCoordP1uiv
-#define glTexCoordP2ui			SharedGL_glTexCoordP2ui
-#define glTexCoordP2uiv			SharedGL_glTexCoordP2uiv
-#define glTexCoordP3ui			SharedGL_glTexCoordP3ui
-#define glTexCoordP3uiv			SharedGL_glTexCoordP3uiv
-#define glTexCoordP4ui			SharedGL_glTexCoordP4ui
-#define glTexCoordP4uiv			SharedGL_glTexCoordP4uiv
-#define glMultiTexCoordP1ui		SharedGL_glMultiTexCoordP1ui
-#define glMultiTexCoordP1uiv		SharedGL_glMultiTexCoordP1uiv
-#define glMultiTexCoordP2ui		SharedGL_glMultiTexCoordP2ui
-#define glMultiTexCoordP2uiv		SharedGL_glMultiTexCoordP2uiv
-#define glMultiTexCoordP3ui		SharedGL_glMultiTexCoordP3ui
-#define glMultiTexCoordP3uiv		SharedGL_glMultiTexCoordP3uiv
-#define glMultiTexCoordP4ui		SharedGL_glMultiTexCoordP4ui
-#define glMultiTexCoordP4uiv		SharedGL_glMultiTexCoordP4uiv
-#define glNormalP3ui			SharedGL_glNormalP3ui
-#define glNormalP3uiv			SharedGL_glNormalP3uiv
-#define glColorP3ui			SharedGL_glColorP3ui
-#define glColorP3uiv			SharedGL_glColorP3uiv
-#define glColorP4ui			SharedGL_glColorP4ui
-#define glColorP4uiv			SharedGL_glColorP4uiv
-#define glSecondaryColorP3ui		SharedGL_glSecondaryColorP3ui
-#define glSecondaryColorP3uiv		SharedGL_glSecondaryColorP3uiv
+#define glBindFragDataLocationIndexed	HH_GL_glBindFragDataLocationIndexed
+#define glGetFragDataIndex		HH_GL_glGetFragDataIndex
+#define glGenSamplers			HH_GL_glGenSamplers
+#define glDeleteSamplers		HH_GL_glDeleteSamplers
+#define glIsSampler			HH_GL_glIsSampler
+#define glBindSampler			HH_GL_glBindSampler
+#define glSamplerParameteri		HH_GL_glSamplerParameteri
+#define glSamplerParameteriv		HH_GL_glSamplerParameteriv
+#define glSamplerParameterf		HH_GL_glSamplerParameterf
+#define glSamplerParameterfv		HH_GL_glSamplerParameterfv
+#define glSamplerParameterIiv		HH_GL_glSamplerParameterIiv
+#define glSamplerParameterIuiv		HH_GL_glSamplerParameterIuiv
+#define glGetSamplerParameteriv		HH_GL_glGetSamplerParameteriv
+#define glGetSamplerParameterIiv	HH_GL_glGetSamplerParameterIiv
+#define glGetSamplerParameterfv		HH_GL_glGetSamplerParameterfv
+#define glGetSamplerParameterIuiv	HH_GL_glGetSamplerParameterIuiv
+#define glQueryCounter			HH_GL_glQueryCounter
+#define glGetQueryObjecti64v		HH_GL_glGetQueryObjecti64v
+#define glGetQueryObjectui64v		HH_GL_glGetQueryObjectui64v
+#define glVertexAttribDivisor		HH_GL_glVertexAttribDivisor
+#define glVertexAttribP1ui		HH_GL_glVertexAttribP1ui
+#define glVertexAttribP1uiv		HH_GL_glVertexAttribP1uiv
+#define glVertexAttribP2ui		HH_GL_glVertexAttribP2ui
+#define glVertexAttribP2uiv		HH_GL_glVertexAttribP2uiv
+#define glVertexAttribP3ui		HH_GL_glVertexAttribP3ui
+#define glVertexAttribP3uiv		HH_GL_glVertexAttribP3uiv
+#define glVertexAttribP4ui		HH_GL_glVertexAttribP4ui
+#define glVertexAttribP4uiv		HH_GL_glVertexAttribP4uiv
+#define glVertexP2ui			HH_GL_glVertexP2ui
+#define glVertexP2uiv			HH_GL_glVertexP2uiv
+#define glVertexP3ui			HH_GL_glVertexP3ui
+#define glVertexP3uiv			HH_GL_glVertexP3uiv
+#define glVertexP4ui			HH_GL_glVertexP4ui
+#define glVertexP4uiv			HH_GL_glVertexP4uiv
+#define glTexCoordP1ui			HH_GL_glTexCoordP1ui
+#define glTexCoordP1uiv			HH_GL_glTexCoordP1uiv
+#define glTexCoordP2ui			HH_GL_glTexCoordP2ui
+#define glTexCoordP2uiv			HH_GL_glTexCoordP2uiv
+#define glTexCoordP3ui			HH_GL_glTexCoordP3ui
+#define glTexCoordP3uiv			HH_GL_glTexCoordP3uiv
+#define glTexCoordP4ui			HH_GL_glTexCoordP4ui
+#define glTexCoordP4uiv			HH_GL_glTexCoordP4uiv
+#define glMultiTexCoordP1ui		HH_GL_glMultiTexCoordP1ui
+#define glMultiTexCoordP1uiv		HH_GL_glMultiTexCoordP1uiv
+#define glMultiTexCoordP2ui		HH_GL_glMultiTexCoordP2ui
+#define glMultiTexCoordP2uiv		HH_GL_glMultiTexCoordP2uiv
+#define glMultiTexCoordP3ui		HH_GL_glMultiTexCoordP3ui
+#define glMultiTexCoordP3uiv		HH_GL_glMultiTexCoordP3uiv
+#define glMultiTexCoordP4ui		HH_GL_glMultiTexCoordP4ui
+#define glMultiTexCoordP4uiv		HH_GL_glMultiTexCoordP4uiv
+#define glNormalP3ui			HH_GL_glNormalP3ui
+#define glNormalP3uiv			HH_GL_glNormalP3uiv
+#define glColorP3ui			HH_GL_glColorP3ui
+#define glColorP3uiv			HH_GL_glColorP3uiv
+#define glColorP4ui			HH_GL_glColorP4ui
+#define glColorP4uiv			HH_GL_glColorP4uiv
+#define glSecondaryColorP3ui		HH_GL_glSecondaryColorP3ui
+#define glSecondaryColorP3uiv		HH_GL_glSecondaryColorP3uiv
 
 typedef void      (__stdcall *PFNGLBINDFRAGDATALOCATIONINDEXEDPROC)	(GLuint program, GLuint colorNumber, GLuint index, const GLchar *name);
 typedef GLint     (__stdcall *PFNGLGETFRAGDATAINDEXPROC)		(GLuint program, const GLchar *name);
-typedef void      (__stdcall *PFNGLGENSASharedGLLERSPROC)			(GLsizei count, GLuint *samplers);
-typedef void      (__stdcall *PFNGLDELETESASharedGLLERSPROC)			(GLsizei count, const GLuint *samplers);
-typedef GLboolean (__stdcall *PFNGLISSASharedGLLERPROC)			(GLuint sampler);
-typedef void      (__stdcall *PFNGLBINDSASharedGLLERPROC)			(GLuint unit, GLuint sampler);
-typedef void      (__stdcall *PFNGLSASharedGLLERPARAMETERIPROC)		(GLuint sampler, GLenum pname, GLint param);
-typedef void      (__stdcall *PFNGLSASharedGLLERPARAMETERIVPROC)		(GLuint sampler, GLenum pname, const GLint *param);
-typedef void      (__stdcall *PFNGLSASharedGLLERPARAMETERFPROC)		(GLuint sampler, GLenum pname, GLfloat param);
-typedef void      (__stdcall *PFNGLSASharedGLLERPARAMETERFVPROC)		(GLuint sampler, GLenum pname, const GLfloat *param);
-typedef void      (__stdcall *PFNGLSASharedGLLERPARAMETERIIVPROC)		(GLuint sampler, GLenum pname, const GLint *param);
-typedef void      (__stdcall *PFNGLSASharedGLLERPARAMETERIUIVPROC)		(GLuint sampler, GLenum pname, const GLuint *param);
-typedef void      (__stdcall *PFNGLGETSASharedGLLERPARAMETERIVPROC)		(GLuint sampler, GLenum pname, GLint *params);
-typedef void      (__stdcall *PFNGLGETSASharedGLLERPARAMETERIIVPROC)		(GLuint sampler, GLenum pname, GLint *params);
-typedef void      (__stdcall *PFNGLGETSASharedGLLERPARAMETERFVPROC)		(GLuint sampler, GLenum pname, GLfloat *params);
-typedef void      (__stdcall *PFNGLGETSASharedGLLERPARAMETERIUIVPROC)		(GLuint sampler, GLenum pname, GLuint *params);
+typedef void      (__stdcall *PFNGLGENSAHH_GLLERSPROC)			(GLsizei count, GLuint *samplers);
+typedef void      (__stdcall *PFNGLDELETESAHH_GLLERSPROC)			(GLsizei count, const GLuint *samplers);
+typedef GLboolean (__stdcall *PFNGLISSAHH_GLLERPROC)			(GLuint sampler);
+typedef void      (__stdcall *PFNGLBINDSAHH_GLLERPROC)			(GLuint unit, GLuint sampler);
+typedef void      (__stdcall *PFNGLSAHH_GLLERPARAMETERIPROC)		(GLuint sampler, GLenum pname, GLint param);
+typedef void      (__stdcall *PFNGLSAHH_GLLERPARAMETERIVPROC)		(GLuint sampler, GLenum pname, const GLint *param);
+typedef void      (__stdcall *PFNGLSAHH_GLLERPARAMETERFPROC)		(GLuint sampler, GLenum pname, GLfloat param);
+typedef void      (__stdcall *PFNGLSAHH_GLLERPARAMETERFVPROC)		(GLuint sampler, GLenum pname, const GLfloat *param);
+typedef void      (__stdcall *PFNGLSAHH_GLLERPARAMETERIIVPROC)		(GLuint sampler, GLenum pname, const GLint *param);
+typedef void      (__stdcall *PFNGLSAHH_GLLERPARAMETERIUIVPROC)		(GLuint sampler, GLenum pname, const GLuint *param);
+typedef void      (__stdcall *PFNGLGETSAHH_GLLERPARAMETERIVPROC)		(GLuint sampler, GLenum pname, GLint *params);
+typedef void      (__stdcall *PFNGLGETSAHH_GLLERPARAMETERIIVPROC)		(GLuint sampler, GLenum pname, GLint *params);
+typedef void      (__stdcall *PFNGLGETSAHH_GLLERPARAMETERFVPROC)		(GLuint sampler, GLenum pname, GLfloat *params);
+typedef void      (__stdcall *PFNGLGETSAHH_GLLERPARAMETERIUIVPROC)		(GLuint sampler, GLenum pname, GLuint *params);
 typedef void      (__stdcall *PFNGLQUERYCOUNTERPROC)			(GLuint id, GLenum target);
 typedef void      (__stdcall *PFNGLGETQUERYOBJECTI64VPROC)		(GLuint id, GLenum pname, GLint64 *params);
 typedef void      (__stdcall *PFNGLGETQUERYOBJECTUI64VPROC)		(GLuint id, GLenum pname, GLuint64 *params);
@@ -2533,114 +2533,114 @@ typedef void      (__stdcall *PFNGLCOLORP4UIVPROC)			(GLenum type, const GLuint 
 typedef void      (__stdcall *PFNGLSECONDARYCOLORP3UIPROC)		(GLenum type, GLuint color);
 typedef void      (__stdcall *PFNGLSECONDARYCOLORP3UIVPROC)		(GLenum type, const GLuint *color);
 
-PFNGLBINDFRAGDATALOCATIONINDEXEDPROC	SharedGL_glBindFragDataLocationIndexed = 0;
-PFNGLGETFRAGDATAINDEXPROC		SharedGL_glGetFragDataIndex		  = 0;
-PFNGLGENSASharedGLLERSPROC			SharedGL_glGenSamplers		  = 0;
-PFNGLDELETESASharedGLLERSPROC			SharedGL_glDeleteSamplers		  = 0;
-PFNGLISSASharedGLLERPROC			SharedGL_glIsSampler			  = 0;
-PFNGLBINDSASharedGLLERPROC			SharedGL_glBindSampler		  = 0;
-PFNGLSASharedGLLERPARAMETERIPROC		SharedGL_glSamplerParameteri		  = 0;
-PFNGLSASharedGLLERPARAMETERIVPROC		SharedGL_glSamplerParameteriv	  = 0;
-PFNGLSASharedGLLERPARAMETERFPROC		SharedGL_glSamplerParameterf		  = 0;
-PFNGLSASharedGLLERPARAMETERFVPROC		SharedGL_glSamplerParameterfv	  = 0;
-PFNGLSASharedGLLERPARAMETERIIVPROC		SharedGL_glSamplerParameterIiv	  = 0;
-PFNGLSASharedGLLERPARAMETERIUIVPROC		SharedGL_glSamplerParameterIuiv	  = 0;
-PFNGLGETSASharedGLLERPARAMETERIVPROC		SharedGL_glGetSamplerParameteriv	  = 0;
-PFNGLGETSASharedGLLERPARAMETERIIVPROC		SharedGL_glGetSamplerParameterIiv	  = 0;
-PFNGLGETSASharedGLLERPARAMETERFVPROC		SharedGL_glGetSamplerParameterfv	  = 0;
-PFNGLGETSASharedGLLERPARAMETERIUIVPROC	SharedGL_glGetSamplerParameterIuiv	  = 0;
-PFNGLQUERYCOUNTERPROC			SharedGL_glQueryCounter		  = 0;
-PFNGLGETQUERYOBJECTI64VPROC		SharedGL_glGetQueryObjecti64v	  = 0;
-PFNGLGETQUERYOBJECTUI64VPROC		SharedGL_glGetQueryObjectui64v	  = 0;
-PFNGLVERTEXATTRIBDIVISORPROC		SharedGL_glVertexAttribDivisor	  = 0;
-PFNGLVERTEXATTRIBP1UIPROC		SharedGL_glVertexAttribP1ui		  = 0;
-PFNGLVERTEXATTRIBP1UIVPROC		SharedGL_glVertexAttribP1uiv		  = 0;
-PFNGLVERTEXATTRIBP2UIPROC		SharedGL_glVertexAttribP2ui		  = 0;
-PFNGLVERTEXATTRIBP2UIVPROC		SharedGL_glVertexAttribP2uiv		  = 0;
-PFNGLVERTEXATTRIBP3UIPROC		SharedGL_glVertexAttribP3ui		  = 0;
-PFNGLVERTEXATTRIBP3UIVPROC		SharedGL_glVertexAttribP3uiv		  = 0;
-PFNGLVERTEXATTRIBP4UIPROC		SharedGL_glVertexAttribP4ui		  = 0;
-PFNGLVERTEXATTRIBP4UIVPROC		SharedGL_glVertexAttribP4uiv		  = 0;
-PFNGLVERTEXP2UIPROC			SharedGL_glVertexP2ui		  = 0;
-PFNGLVERTEXP2UIVPROC			SharedGL_glVertexP2uiv		  = 0;
-PFNGLVERTEXP3UIPROC			SharedGL_glVertexP3ui		  = 0;
-PFNGLVERTEXP3UIVPROC			SharedGL_glVertexP3uiv		  = 0;
-PFNGLVERTEXP4UIPROC			SharedGL_glVertexP4ui		  = 0;
-PFNGLVERTEXP4UIVPROC			SharedGL_glVertexP4uiv		  = 0;
-PFNGLTEXCOORDP1UIPROC			SharedGL_glTexCoordP1ui		  = 0;
-PFNGLTEXCOORDP1UIVPROC			SharedGL_glTexCoordP1uiv		  = 0;
-PFNGLTEXCOORDP2UIPROC			SharedGL_glTexCoordP2ui		  = 0;
-PFNGLTEXCOORDP2UIVPROC			SharedGL_glTexCoordP2uiv		  = 0;
-PFNGLTEXCOORDP3UIPROC			SharedGL_glTexCoordP3ui		  = 0;
-PFNGLTEXCOORDP3UIVPROC			SharedGL_glTexCoordP3uiv		  = 0;
-PFNGLTEXCOORDP4UIPROC			SharedGL_glTexCoordP4ui		  = 0;
-PFNGLTEXCOORDP4UIVPROC			SharedGL_glTexCoordP4uiv		  = 0;
-PFNGLMULTITEXCOORDP1UIPROC		SharedGL_glMultiTexCoordP1ui		  = 0;
-PFNGLMULTITEXCOORDP1UIVPROC		SharedGL_glMultiTexCoordP1uiv	  = 0;
-PFNGLMULTITEXCOORDP2UIPROC		SharedGL_glMultiTexCoordP2ui		  = 0;
-PFNGLMULTITEXCOORDP2UIVPROC		SharedGL_glMultiTexCoordP2uiv	  = 0;
-PFNGLMULTITEXCOORDP3UIPROC		SharedGL_glMultiTexCoordP3ui		  = 0;
-PFNGLMULTITEXCOORDP3UIVPROC		SharedGL_glMultiTexCoordP3uiv	  = 0;
-PFNGLMULTITEXCOORDP4UIPROC		SharedGL_glMultiTexCoordP4ui		  = 0;
-PFNGLMULTITEXCOORDP4UIVPROC		SharedGL_glMultiTexCoordP4uiv	  = 0;
-PFNGLNORMALP3UIPROC			SharedGL_glNormalP3ui		  = 0;
-PFNGLNORMALP3UIVPROC			SharedGL_glNormalP3uiv		  = 0;
-PFNGLCOLORP3UIPROC			SharedGL_glColorP3ui			  = 0;
-PFNGLCOLORP3UIVPROC			SharedGL_glColorP3uiv		  = 0;
-PFNGLCOLORP4UIPROC			SharedGL_glColorP4ui			  = 0;
-PFNGLCOLORP4UIVPROC			SharedGL_glColorP4uiv		  = 0;
-PFNGLSECONDARYCOLORP3UIPROC		SharedGL_glSecondaryColorP3ui	  = 0;
-PFNGLSECONDARYCOLORP3UIVPROC		SharedGL_glSecondaryColorP3uiv	  = 0;
+PFNGLBINDFRAGDATALOCATIONINDEXEDPROC	HH_GL_glBindFragDataLocationIndexed = 0;
+PFNGLGETFRAGDATAINDEXPROC		HH_GL_glGetFragDataIndex		  = 0;
+PFNGLGENSAHH_GLLERSPROC			HH_GL_glGenSamplers		  = 0;
+PFNGLDELETESAHH_GLLERSPROC			HH_GL_glDeleteSamplers		  = 0;
+PFNGLISSAHH_GLLERPROC			HH_GL_glIsSampler			  = 0;
+PFNGLBINDSAHH_GLLERPROC			HH_GL_glBindSampler		  = 0;
+PFNGLSAHH_GLLERPARAMETERIPROC		HH_GL_glSamplerParameteri		  = 0;
+PFNGLSAHH_GLLERPARAMETERIVPROC		HH_GL_glSamplerParameteriv	  = 0;
+PFNGLSAHH_GLLERPARAMETERFPROC		HH_GL_glSamplerParameterf		  = 0;
+PFNGLSAHH_GLLERPARAMETERFVPROC		HH_GL_glSamplerParameterfv	  = 0;
+PFNGLSAHH_GLLERPARAMETERIIVPROC		HH_GL_glSamplerParameterIiv	  = 0;
+PFNGLSAHH_GLLERPARAMETERIUIVPROC		HH_GL_glSamplerParameterIuiv	  = 0;
+PFNGLGETSAHH_GLLERPARAMETERIVPROC		HH_GL_glGetSamplerParameteriv	  = 0;
+PFNGLGETSAHH_GLLERPARAMETERIIVPROC		HH_GL_glGetSamplerParameterIiv	  = 0;
+PFNGLGETSAHH_GLLERPARAMETERFVPROC		HH_GL_glGetSamplerParameterfv	  = 0;
+PFNGLGETSAHH_GLLERPARAMETERIUIVPROC	HH_GL_glGetSamplerParameterIuiv	  = 0;
+PFNGLQUERYCOUNTERPROC			HH_GL_glQueryCounter		  = 0;
+PFNGLGETQUERYOBJECTI64VPROC		HH_GL_glGetQueryObjecti64v	  = 0;
+PFNGLGETQUERYOBJECTUI64VPROC		HH_GL_glGetQueryObjectui64v	  = 0;
+PFNGLVERTEXATTRIBDIVISORPROC		HH_GL_glVertexAttribDivisor	  = 0;
+PFNGLVERTEXATTRIBP1UIPROC		HH_GL_glVertexAttribP1ui		  = 0;
+PFNGLVERTEXATTRIBP1UIVPROC		HH_GL_glVertexAttribP1uiv		  = 0;
+PFNGLVERTEXATTRIBP2UIPROC		HH_GL_glVertexAttribP2ui		  = 0;
+PFNGLVERTEXATTRIBP2UIVPROC		HH_GL_glVertexAttribP2uiv		  = 0;
+PFNGLVERTEXATTRIBP3UIPROC		HH_GL_glVertexAttribP3ui		  = 0;
+PFNGLVERTEXATTRIBP3UIVPROC		HH_GL_glVertexAttribP3uiv		  = 0;
+PFNGLVERTEXATTRIBP4UIPROC		HH_GL_glVertexAttribP4ui		  = 0;
+PFNGLVERTEXATTRIBP4UIVPROC		HH_GL_glVertexAttribP4uiv		  = 0;
+PFNGLVERTEXP2UIPROC			HH_GL_glVertexP2ui		  = 0;
+PFNGLVERTEXP2UIVPROC			HH_GL_glVertexP2uiv		  = 0;
+PFNGLVERTEXP3UIPROC			HH_GL_glVertexP3ui		  = 0;
+PFNGLVERTEXP3UIVPROC			HH_GL_glVertexP3uiv		  = 0;
+PFNGLVERTEXP4UIPROC			HH_GL_glVertexP4ui		  = 0;
+PFNGLVERTEXP4UIVPROC			HH_GL_glVertexP4uiv		  = 0;
+PFNGLTEXCOORDP1UIPROC			HH_GL_glTexCoordP1ui		  = 0;
+PFNGLTEXCOORDP1UIVPROC			HH_GL_glTexCoordP1uiv		  = 0;
+PFNGLTEXCOORDP2UIPROC			HH_GL_glTexCoordP2ui		  = 0;
+PFNGLTEXCOORDP2UIVPROC			HH_GL_glTexCoordP2uiv		  = 0;
+PFNGLTEXCOORDP3UIPROC			HH_GL_glTexCoordP3ui		  = 0;
+PFNGLTEXCOORDP3UIVPROC			HH_GL_glTexCoordP3uiv		  = 0;
+PFNGLTEXCOORDP4UIPROC			HH_GL_glTexCoordP4ui		  = 0;
+PFNGLTEXCOORDP4UIVPROC			HH_GL_glTexCoordP4uiv		  = 0;
+PFNGLMULTITEXCOORDP1UIPROC		HH_GL_glMultiTexCoordP1ui		  = 0;
+PFNGLMULTITEXCOORDP1UIVPROC		HH_GL_glMultiTexCoordP1uiv	  = 0;
+PFNGLMULTITEXCOORDP2UIPROC		HH_GL_glMultiTexCoordP2ui		  = 0;
+PFNGLMULTITEXCOORDP2UIVPROC		HH_GL_glMultiTexCoordP2uiv	  = 0;
+PFNGLMULTITEXCOORDP3UIPROC		HH_GL_glMultiTexCoordP3ui		  = 0;
+PFNGLMULTITEXCOORDP3UIVPROC		HH_GL_glMultiTexCoordP3uiv	  = 0;
+PFNGLMULTITEXCOORDP4UIPROC		HH_GL_glMultiTexCoordP4ui		  = 0;
+PFNGLMULTITEXCOORDP4UIVPROC		HH_GL_glMultiTexCoordP4uiv	  = 0;
+PFNGLNORMALP3UIPROC			HH_GL_glNormalP3ui		  = 0;
+PFNGLNORMALP3UIVPROC			HH_GL_glNormalP3uiv		  = 0;
+PFNGLCOLORP3UIPROC			HH_GL_glColorP3ui			  = 0;
+PFNGLCOLORP3UIVPROC			HH_GL_glColorP3uiv		  = 0;
+PFNGLCOLORP4UIPROC			HH_GL_glColorP4ui			  = 0;
+PFNGLCOLORP4UIVPROC			HH_GL_glColorP4uiv		  = 0;
+PFNGLSECONDARYCOLORP3UIPROC		HH_GL_glSecondaryColorP3ui	  = 0;
+PFNGLSECONDARYCOLORP3UIVPROC		HH_GL_glSecondaryColorP3uiv	  = 0;
 
 // 4.0
-#define glMinSampleShading			SharedGL_glMinSampleShading
-#define glBlendEquationi			SharedGL_glBlendEquationi
-#define glBlendEquationSeparatei		SharedGL_glBlendEquationSeparatei
-#define glBlendFunci				SharedGL_glBlendFunci
-#define glBlendFuncSeparatei			SharedGL_glBlendFuncSeparatei
-#define glDrawArraysIndirect			SharedGL_glDrawArraysIndirect
-#define glDrawElementsIndirect			SharedGL_glDrawElementsIndirect
-#define glUniform1d				SharedGL_glUniform1d
-#define glUniform2d				SharedGL_glUniform2d
-#define glUniform3d				SharedGL_glUniform3d
-#define glUniform4d				SharedGL_glUniform4d
-#define glUniform1dv				SharedGL_glUniform1dv
-#define glUniform2dv				SharedGL_glUniform2dv
-#define glUniform3dv				SharedGL_glUniform3dv
-#define glUniform4dv				SharedGL_glUniform4dv
-#define glUniformMatrix2dv			SharedGL_glUniformMatrix2dv
-#define glUniformMatrix3dv			SharedGL_glUniformMatrix3dv
-#define glUniformMatrix4dv			SharedGL_glUniformMatrix4dv
-#define glUniformMatrix2x3dv			SharedGL_glUniformMatrix2x3dv
-#define glUniformMatrix2x4dv			SharedGL_glUniformMatrix2x4dv
-#define glUniformMatrix3x2dv			SharedGL_glUniformMatrix3x2dv
-#define glUniformMatrix3x4dv			SharedGL_glUniformMatrix3x4dv
-#define glUniformMatrix4x2dv			SharedGL_glUniformMatrix4x2dv
-#define glUniformMatrix4x3dv			SharedGL_glUniformMatrix4x3dv
-#define glGetUniformdv				SharedGL_glGetUniformdv
-#define glGetSubroutineUniformLocation		SharedGL_glGetSubroutineUniformLocation
-#define glGetSubroutineIndex			SharedGL_glGetSubroutineIndex
-#define glGetActiveSubroutineUniformiv		SharedGL_glGetActiveSubroutineUniformiv
-#define glGetActiveSubroutineUniformName	SharedGL_glGetActiveSubroutineUniformName
-#define glGetActiveSubroutineName		SharedGL_glGetActiveSubroutineName
-#define glUniformSubroutinesuiv			SharedGL_glUniformSubroutinesuiv
-#define glGetUniformSubroutineuiv		SharedGL_glGetUniformSubroutineuiv
-#define glGetProgramStageiv			SharedGL_glGetProgramStageiv
-#define glPatchParameteri			SharedGL_glPatchParameteri
-#define glPatchParameterfv			SharedGL_glPatchParameterfv
-#define glBindTransformFeedback			SharedGL_glBindTransformFeedback
-#define glDeleteTransformFeedbacks		SharedGL_glDeleteTransformFeedbacks
-#define glGenTransformFeedbacks			SharedGL_glGenTransformFeedbacks
-#define glIsTransformFeedback			SharedGL_glIsTransformFeedback
-#define glPauseTransformFeedback		SharedGL_glPauseTransformFeedback
-#define glResumeTransformFeedback		SharedGL_glResumeTransformFeedback
-#define glDrawTransformFeedback			SharedGL_glDrawTransformFeedback
-#define glDrawTransformFeedbackStream		SharedGL_glDrawTransformFeedbackStream
-#define glBeginQueryIndexed			SharedGL_glBeginQueryIndexed
-#define glEndQueryIndexed			SharedGL_glEndQueryIndexed
-#define glGetQueryIndexediv			SharedGL_glGetQueryIndexediv
+#define glMinSampleShading			HH_GL_glMinSampleShading
+#define glBlendEquationi			HH_GL_glBlendEquationi
+#define glBlendEquationSeparatei		HH_GL_glBlendEquationSeparatei
+#define glBlendFunci				HH_GL_glBlendFunci
+#define glBlendFuncSeparatei			HH_GL_glBlendFuncSeparatei
+#define glDrawArraysIndirect			HH_GL_glDrawArraysIndirect
+#define glDrawElementsIndirect			HH_GL_glDrawElementsIndirect
+#define glUniform1d				HH_GL_glUniform1d
+#define glUniform2d				HH_GL_glUniform2d
+#define glUniform3d				HH_GL_glUniform3d
+#define glUniform4d				HH_GL_glUniform4d
+#define glUniform1dv				HH_GL_glUniform1dv
+#define glUniform2dv				HH_GL_glUniform2dv
+#define glUniform3dv				HH_GL_glUniform3dv
+#define glUniform4dv				HH_GL_glUniform4dv
+#define glUniformMatrix2dv			HH_GL_glUniformMatrix2dv
+#define glUniformMatrix3dv			HH_GL_glUniformMatrix3dv
+#define glUniformMatrix4dv			HH_GL_glUniformMatrix4dv
+#define glUniformMatrix2x3dv			HH_GL_glUniformMatrix2x3dv
+#define glUniformMatrix2x4dv			HH_GL_glUniformMatrix2x4dv
+#define glUniformMatrix3x2dv			HH_GL_glUniformMatrix3x2dv
+#define glUniformMatrix3x4dv			HH_GL_glUniformMatrix3x4dv
+#define glUniformMatrix4x2dv			HH_GL_glUniformMatrix4x2dv
+#define glUniformMatrix4x3dv			HH_GL_glUniformMatrix4x3dv
+#define glGetUniformdv				HH_GL_glGetUniformdv
+#define glGetSubroutineUniformLocation		HH_GL_glGetSubroutineUniformLocation
+#define glGetSubroutineIndex			HH_GL_glGetSubroutineIndex
+#define glGetActiveSubroutineUniformiv		HH_GL_glGetActiveSubroutineUniformiv
+#define glGetActiveSubroutineUniformName	HH_GL_glGetActiveSubroutineUniformName
+#define glGetActiveSubroutineName		HH_GL_glGetActiveSubroutineName
+#define glUniformSubroutinesuiv			HH_GL_glUniformSubroutinesuiv
+#define glGetUniformSubroutineuiv		HH_GL_glGetUniformSubroutineuiv
+#define glGetProgramStageiv			HH_GL_glGetProgramStageiv
+#define glPatchParameteri			HH_GL_glPatchParameteri
+#define glPatchParameterfv			HH_GL_glPatchParameterfv
+#define glBindTransformFeedback			HH_GL_glBindTransformFeedback
+#define glDeleteTransformFeedbacks		HH_GL_glDeleteTransformFeedbacks
+#define glGenTransformFeedbacks			HH_GL_glGenTransformFeedbacks
+#define glIsTransformFeedback			HH_GL_glIsTransformFeedback
+#define glPauseTransformFeedback		HH_GL_glPauseTransformFeedback
+#define glResumeTransformFeedback		HH_GL_glResumeTransformFeedback
+#define glDrawTransformFeedback			HH_GL_glDrawTransformFeedback
+#define glDrawTransformFeedbackStream		HH_GL_glDrawTransformFeedbackStream
+#define glBeginQueryIndexed			HH_GL_glBeginQueryIndexed
+#define glEndQueryIndexed			HH_GL_glEndQueryIndexed
+#define glGetQueryIndexediv			HH_GL_glGetQueryIndexediv
 
-typedef void      (__stdcall *PFNGLMINSASharedGLLESHADINGPROC)	        (GLfloat value);
+typedef void      (__stdcall *PFNGLMINSAHH_GLLESHADINGPROC)	        (GLfloat value);
 typedef void      (__stdcall *PFNGLBLENDEQUATIONIPROC)		        (GLuint buf, GLenum mode);
 typedef void      (__stdcall *PFNGLBLENDEQUATIONSEPARATEIPROC)	        (GLuint buf, GLenum modeRGB, GLenum modeAlpha);
 typedef void      (__stdcall *PFNGLBLENDFUNCIPROC)		        (GLuint buf, GLenum src, GLenum dst);
@@ -2682,165 +2682,165 @@ typedef GLboolean (__stdcall *PFNGLISTRANSFORMFEEDBACKPROC)		(GLuint id);
 typedef void      (__stdcall *PFNGLPAUSETRANSFORMFEEDBACKPROC)		(void);
 typedef void      (__stdcall *PFNGLRESUMETRANSFORMFEEDBACKPROC)		(void);
 typedef void      (__stdcall *PFNGLDRAWTRANSFORMFEEDBACKPROC)		(GLenum mode, GLuint id);
-typedef void      (__stdcall *PFNGLDRAWTRANSFORMFEEDBACKSTREASharedGLROC)	(GLenum mode, GLuint id, GLuint stream);
+typedef void      (__stdcall *PFNGLDRAWTRANSFORMFEEDBACKSTREAHH_GLROC)	(GLenum mode, GLuint id, GLuint stream);
 typedef void      (__stdcall *PFNGLBEGINQUERYINDEXEDPROC)		(GLenum target, GLuint index, GLuint id);
 typedef void      (__stdcall *PFNGLENDQUERYINDEXEDPROC)			(GLenum target, GLuint index);
 typedef void      (__stdcall *PFNGLGETQUERYINDEXEDIVPROC)		(GLenum target, GLuint index, GLenum pname, GLint *params);
 
-PFNGLMINSASharedGLLESHADINGPROC		SharedGL_glMinSampleShading		     = 0;
-PFNGLBLENDEQUATIONIPROC			SharedGL_glBlendEquationi		     = 0;
-PFNGLBLENDEQUATIONSEPARATEIPROC		SharedGL_glBlendEquationSeparatei	     = 0;
-PFNGLBLENDFUNCIPROC			SharedGL_glBlendFunci		     = 0;
-PFNGLBLENDFUNCSEPARATEIPROC		SharedGL_glBlendFuncSeparatei	     = 0;
-PFNGLDRAWARRAYSINDIRECTPROC		SharedGL_glDrawArraysIndirect	     = 0;
-PFNGLDRAWELEMENTSINDIRECTPROC		SharedGL_glDrawElementsIndirect	     = 0;
-PFNGLUNIFORM1DPROC			SharedGL_glUniform1d			     = 0;
-PFNGLUNIFORM2DPROC			SharedGL_glUniform2d			     = 0;
-PFNGLUNIFORM3DPROC			SharedGL_glUniform3d			     = 0;
-PFNGLUNIFORM4DPROC			SharedGL_glUniform4d			     = 0;
-PFNGLUNIFORM1DVPROC			SharedGL_glUniform1dv		     = 0;
-PFNGLUNIFORM2DVPROC			SharedGL_glUniform2dv		     = 0;
-PFNGLUNIFORM3DVPROC			SharedGL_glUniform3dv		     = 0;
-PFNGLUNIFORM4DVPROC			SharedGL_glUniform4dv		     = 0;
-PFNGLUNIFORMMATRIX2DVPROC		SharedGL_glUniformMatrix2dv		     = 0;
-PFNGLUNIFORMMATRIX3DVPROC		SharedGL_glUniformMatrix3dv		     = 0;
-PFNGLUNIFORMMATRIX4DVPROC		SharedGL_glUniformMatrix4dv		     = 0;
-PFNGLUNIFORMMATRIX2X3DVPROC		SharedGL_glUniformMatrix2x3dv	     = 0;
-PFNGLUNIFORMMATRIX2X4DVPROC		SharedGL_glUniformMatrix2x4dv	     = 0;
-PFNGLUNIFORMMATRIX3X2DVPROC		SharedGL_glUniformMatrix3x2dv	     = 0;
-PFNGLUNIFORMMATRIX3X4DVPROC		SharedGL_glUniformMatrix3x4dv	     = 0;
-PFNGLUNIFORMMATRIX4X2DVPROC		SharedGL_glUniformMatrix4x2dv	     = 0;
-PFNGLUNIFORMMATRIX4X3DVPROC		SharedGL_glUniformMatrix4x3dv	     = 0;
-PFNGLGETUNIFORMDVPROC			SharedGL_glGetUniformdv		     = 0;
-PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC	SharedGL_glGetSubroutineUniformLocation   = 0;
-PFNGLGETSUBROUTINEINDEXPROC		SharedGL_glGetSubroutineIndex	     = 0;
-PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC	SharedGL_glGetActiveSubroutineUniformiv   = 0;
-PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC	SharedGL_glGetActiveSubroutineUniformName = 0;
-PFNGLGETACTIVESUBROUTINENAMEPROC	SharedGL_glGetActiveSubroutineName	     = 0;
-PFNGLUNIFORMSUBROUTINESUIVPROC		SharedGL_glUniformSubroutinesuiv	     = 0;
-PFNGLGETUNIFORMSUBROUTINEUIVPROC	SharedGL_glGetUniformSubroutineuiv	     = 0;
-PFNGLGETPROGRAMSTAGEIVPROC		SharedGL_glGetProgramStageiv		     = 0;
-PFNGLPATCHPARAMETERIPROC		SharedGL_glPatchParameteri		     = 0;
-PFNGLPATCHPARAMETERFVPROC		SharedGL_glPatchParameterfv		     = 0;
-PFNGLBINDTRANSFORMFEEDBACKPROC		SharedGL_glBindTransformFeedback	     = 0;
-PFNGLDELETETRANSFORMFEEDBACKSPROC	SharedGL_glDeleteTransformFeedbacks	     = 0;
-PFNGLGENTRANSFORMFEEDBACKSPROC		SharedGL_glGenTransformFeedbacks	     = 0;
-PFNGLISTRANSFORMFEEDBACKPROC		SharedGL_glIsTransformFeedback	     = 0;
-PFNGLPAUSETRANSFORMFEEDBACKPROC		SharedGL_glPauseTransformFeedback	     = 0;
-PFNGLRESUMETRANSFORMFEEDBACKPROC	SharedGL_glResumeTransformFeedback	     = 0;
-PFNGLDRAWTRANSFORMFEEDBACKPROC		SharedGL_glDrawTransformFeedback	     = 0;
-PFNGLDRAWTRANSFORMFEEDBACKSTREASharedGLROC	SharedGL_glDrawTransformFeedbackStream    = 0;
-PFNGLBEGINQUERYINDEXEDPROC		SharedGL_glBeginQueryIndexed		     = 0;
-PFNGLENDQUERYINDEXEDPROC		SharedGL_glEndQueryIndexed		     = 0;
-PFNGLGETQUERYINDEXEDIVPROC		SharedGL_glGetQueryIndexediv		     = 0;
+PFNGLMINSAHH_GLLESHADINGPROC		HH_GL_glMinSampleShading		     = 0;
+PFNGLBLENDEQUATIONIPROC			HH_GL_glBlendEquationi		     = 0;
+PFNGLBLENDEQUATIONSEPARATEIPROC		HH_GL_glBlendEquationSeparatei	     = 0;
+PFNGLBLENDFUNCIPROC			HH_GL_glBlendFunci		     = 0;
+PFNGLBLENDFUNCSEPARATEIPROC		HH_GL_glBlendFuncSeparatei	     = 0;
+PFNGLDRAWARRAYSINDIRECTPROC		HH_GL_glDrawArraysIndirect	     = 0;
+PFNGLDRAWELEMENTSINDIRECTPROC		HH_GL_glDrawElementsIndirect	     = 0;
+PFNGLUNIFORM1DPROC			HH_GL_glUniform1d			     = 0;
+PFNGLUNIFORM2DPROC			HH_GL_glUniform2d			     = 0;
+PFNGLUNIFORM3DPROC			HH_GL_glUniform3d			     = 0;
+PFNGLUNIFORM4DPROC			HH_GL_glUniform4d			     = 0;
+PFNGLUNIFORM1DVPROC			HH_GL_glUniform1dv		     = 0;
+PFNGLUNIFORM2DVPROC			HH_GL_glUniform2dv		     = 0;
+PFNGLUNIFORM3DVPROC			HH_GL_glUniform3dv		     = 0;
+PFNGLUNIFORM4DVPROC			HH_GL_glUniform4dv		     = 0;
+PFNGLUNIFORMMATRIX2DVPROC		HH_GL_glUniformMatrix2dv		     = 0;
+PFNGLUNIFORMMATRIX3DVPROC		HH_GL_glUniformMatrix3dv		     = 0;
+PFNGLUNIFORMMATRIX4DVPROC		HH_GL_glUniformMatrix4dv		     = 0;
+PFNGLUNIFORMMATRIX2X3DVPROC		HH_GL_glUniformMatrix2x3dv	     = 0;
+PFNGLUNIFORMMATRIX2X4DVPROC		HH_GL_glUniformMatrix2x4dv	     = 0;
+PFNGLUNIFORMMATRIX3X2DVPROC		HH_GL_glUniformMatrix3x2dv	     = 0;
+PFNGLUNIFORMMATRIX3X4DVPROC		HH_GL_glUniformMatrix3x4dv	     = 0;
+PFNGLUNIFORMMATRIX4X2DVPROC		HH_GL_glUniformMatrix4x2dv	     = 0;
+PFNGLUNIFORMMATRIX4X3DVPROC		HH_GL_glUniformMatrix4x3dv	     = 0;
+PFNGLGETUNIFORMDVPROC			HH_GL_glGetUniformdv		     = 0;
+PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC	HH_GL_glGetSubroutineUniformLocation   = 0;
+PFNGLGETSUBROUTINEINDEXPROC		HH_GL_glGetSubroutineIndex	     = 0;
+PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC	HH_GL_glGetActiveSubroutineUniformiv   = 0;
+PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC	HH_GL_glGetActiveSubroutineUniformName = 0;
+PFNGLGETACTIVESUBROUTINENAMEPROC	HH_GL_glGetActiveSubroutineName	     = 0;
+PFNGLUNIFORMSUBROUTINESUIVPROC		HH_GL_glUniformSubroutinesuiv	     = 0;
+PFNGLGETUNIFORMSUBROUTINEUIVPROC	HH_GL_glGetUniformSubroutineuiv	     = 0;
+PFNGLGETPROGRAMSTAGEIVPROC		HH_GL_glGetProgramStageiv		     = 0;
+PFNGLPATCHPARAMETERIPROC		HH_GL_glPatchParameteri		     = 0;
+PFNGLPATCHPARAMETERFVPROC		HH_GL_glPatchParameterfv		     = 0;
+PFNGLBINDTRANSFORMFEEDBACKPROC		HH_GL_glBindTransformFeedback	     = 0;
+PFNGLDELETETRANSFORMFEEDBACKSPROC	HH_GL_glDeleteTransformFeedbacks	     = 0;
+PFNGLGENTRANSFORMFEEDBACKSPROC		HH_GL_glGenTransformFeedbacks	     = 0;
+PFNGLISTRANSFORMFEEDBACKPROC		HH_GL_glIsTransformFeedback	     = 0;
+PFNGLPAUSETRANSFORMFEEDBACKPROC		HH_GL_glPauseTransformFeedback	     = 0;
+PFNGLRESUMETRANSFORMFEEDBACKPROC	HH_GL_glResumeTransformFeedback	     = 0;
+PFNGLDRAWTRANSFORMFEEDBACKPROC		HH_GL_glDrawTransformFeedback	     = 0;
+PFNGLDRAWTRANSFORMFEEDBACKSTREAHH_GLROC	HH_GL_glDrawTransformFeedbackStream    = 0;
+PFNGLBEGINQUERYINDEXEDPROC		HH_GL_glBeginQueryIndexed		     = 0;
+PFNGLENDQUERYINDEXEDPROC		HH_GL_glEndQueryIndexed		     = 0;
+PFNGLGETQUERYINDEXEDIVPROC		HH_GL_glGetQueryIndexediv		     = 0;
 
 // 4.1
-#define glReleaseShaderCompiler		SharedGL_glReleaseShaderCompiler
-#define glShaderBinary			SharedGL_glShaderBinary
-#define glGetShaderPrecisionFormat	SharedGL_glGetShaderPrecisionFormat
-#define glDepthRangef			SharedGL_glDepthRangef
-#define glClearDepthf			SharedGL_glClearDepthf
-#define glGetProgramBinary		SharedGL_glGetProgramBinary
-#define glProgramBinary			SharedGL_glProgramBinary
-#define glProgramParameteri		SharedGL_glProgramParameteri
-#define glUseProgramStages		SharedGL_glUseProgramStages
-#define glActiveShaderProgram		SharedGL_glActiveShaderProgram
-#define glCreateShaderProgramv		SharedGL_glCreateShaderProgramv
-#define glBindProgramPipeline		SharedGL_glBindProgramPipeline
-#define glDeleteProgramPipelines	SharedGL_glDeleteProgramPipelines
-#define glGenProgramPipelines		SharedGL_glGenProgramPipelines
-#define glIsProgramPipeline		SharedGL_glIsProgramPipeline
-#define glGetProgramPipelineiv		SharedGL_glGetProgramPipelineiv
-#define glProgramUniform1i		SharedGL_glProgramUniform1i
-#define glProgramUniform1iv		SharedGL_glProgramUniform1iv
-#define glProgramUniform1f		SharedGL_glProgramUniform1f
-#define glProgramUniform1fv		SharedGL_glProgramUniform1fv
-#define glProgramUniform1d		SharedGL_glProgramUniform1d
-#define glProgramUniform1dv		SharedGL_glProgramUniform1dv
-#define glProgramUniform1ui		SharedGL_glProgramUniform1ui
-#define glProgramUniform1uiv		SharedGL_glProgramUniform1uiv
-#define glProgramUniform2i		SharedGL_glProgramUniform2i
-#define glProgramUniform2iv		SharedGL_glProgramUniform2iv
-#define glProgramUniform2f		SharedGL_glProgramUniform2f
-#define glProgramUniform2fv		SharedGL_glProgramUniform2fv
-#define glProgramUniform2d		SharedGL_glProgramUniform2d
-#define glProgramUniform2dv		SharedGL_glProgramUniform2dv
-#define glProgramUniform2ui		SharedGL_glProgramUniform2ui
-#define glProgramUniform2uiv		SharedGL_glProgramUniform2uiv
-#define glProgramUniform3i		SharedGL_glProgramUniform3i
-#define glProgramUniform3iv		SharedGL_glProgramUniform3iv
-#define glProgramUniform3f		SharedGL_glProgramUniform3f
-#define glProgramUniform3fv		SharedGL_glProgramUniform3fv
-#define glProgramUniform3d		SharedGL_glProgramUniform3d
-#define glProgramUniform3dv		SharedGL_glProgramUniform3dv
-#define glProgramUniform3ui		SharedGL_glProgramUniform3ui
-#define glProgramUniform3uiv		SharedGL_glProgramUniform3uiv
-#define glProgramUniform4i		SharedGL_glProgramUniform4i
-#define glProgramUniform4iv		SharedGL_glProgramUniform4iv
-#define glProgramUniform4f		SharedGL_glProgramUniform4f
-#define glProgramUniform4fv		SharedGL_glProgramUniform4fv
-#define glProgramUniform4d		SharedGL_glProgramUniform4d
-#define glProgramUniform4dv		SharedGL_glProgramUniform4dv
-#define glProgramUniform4ui		SharedGL_glProgramUniform4ui
-#define glProgramUniform4uiv		SharedGL_glProgramUniform4uiv
-#define glProgramUniformMatrix2fv	SharedGL_glProgramUniformMatrix2fv
-#define glProgramUniformMatrix3fv	SharedGL_glProgramUniformMatrix3fv
-#define glProgramUniformMatrix4fv	SharedGL_glProgramUniformMatrix4fv
-#define glProgramUniformMatrix2dv	SharedGL_glProgramUniformMatrix2dv
-#define glProgramUniformMatrix3dv	SharedGL_glProgramUniformMatrix3dv
-#define glProgramUniformMatrix4dv	SharedGL_glProgramUniformMatrix4dv
-#define glProgramUniformMatrix2x3fv	SharedGL_glProgramUniformMatrix2x3fv
-#define glProgramUniformMatrix3x2fv	SharedGL_glProgramUniformMatrix3x2fv
-#define glProgramUniformMatrix2x4fv	SharedGL_glProgramUniformMatrix2x4fv
-#define glProgramUniformMatrix4x2fv	SharedGL_glProgramUniformMatrix4x2fv
-#define glProgramUniformMatrix3x4fv	SharedGL_glProgramUniformMatrix3x4fvx
-#define glProgramUniformMatrix4x3fv	SharedGL_glProgramUniformMatrix4x3fv
-#define glProgramUniformMatrix2x3dv	SharedGL_glProgramUniformMatrix2x3dv
-#define glProgramUniformMatrix3x2dv	SharedGL_glProgramUniformMatrix3x2dv
-#define glProgramUniformMatrix2x4dv	SharedGL_glProgramUniformMatrix2x4dv
-#define glProgramUniformMatrix4x2dv	SharedGL_glProgramUniformMatrix4x2dv
-#define glProgramUniformMatrix3x4dv	SharedGL_glProgramUniformMatrix3x4dv
-#define glProgramUniformMatrix4x3dv	SharedGL_glProgramUniformMatrix4x3dv
-#define glValidateProgramPipeline	SharedGL_glValidateProgramPipeline
-#define glGetProgramPipelineInfoLog	SharedGL_glGetProgramPipelineInfoLog
-#define glVertexAttribL1d		SharedGL_glVertexAttribL1d
-#define glVertexAttribL2d		SharedGL_glVertexAttribL2d
-#define glVertexAttribL3d		SharedGL_glVertexAttribL3d
-#define glVertexAttribL4d		SharedGL_glVertexAttribL4d
-#define glVertexAttribL1dv		SharedGL_glVertexAttribL1dv
-#define glVertexAttribL2dv		SharedGL_glVertexAttribL2dv
-#define glVertexAttribL3dv		SharedGL_glVertexAttribL3dv
-#define glVertexAttribL4dv		SharedGL_glVertexAttribL4dv
-#define glVertexAttribLPointer		SharedGL_glVertexAttribLPointer
-#define glGetVertexAttribLdv		SharedGL_glGetVertexAttribLdv
-#define glViewportArrayv		SharedGL_glViewportArrayv
-#define glViewportIndexedf		SharedGL_glViewportIndexedf
-#define glViewportIndexedfv		SharedGL_glViewportIndexedfv
-#define glScissorArrayv			SharedGL_glScissorArrayv
-#define glScissorIndexed		SharedGL_glScissorIndexed
-#define glScissorIndexedv		SharedGL_glScissorIndexedv
-#define glDepthRangeArrayv		SharedGL_glDepthRangeArrayv
-#define glDepthRangeIndexed		SharedGL_glDepthRangeIndexed
-#define glGetFloati_v			SharedGL_glGetFloati_v
-#define glGetDoublei_v			SharedGL_glGetDoublei_v
+#define glReleaseShaderCompiler		HH_GL_glReleaseShaderCompiler
+#define glShaderBinary			HH_GL_glShaderBinary
+#define glGetShaderPrecisionFormat	HH_GL_glGetShaderPrecisionFormat
+#define glDepthRangef			HH_GL_glDepthRangef
+#define glClearDepthf			HH_GL_glClearDepthf
+#define glGetProgramBinary		HH_GL_glGetProgramBinary
+#define glProgramBinary			HH_GL_glProgramBinary
+#define glProgramParameteri		HH_GL_glProgramParameteri
+#define glUseProgramStages		HH_GL_glUseProgramStages
+#define glActiveShaderProgram		HH_GL_glActiveShaderProgram
+#define glCreateShaderProgramv		HH_GL_glCreateShaderProgramv
+#define glBindProgramPipeline		HH_GL_glBindProgramPipeline
+#define glDeleteProgramPipelines	HH_GL_glDeleteProgramPipelines
+#define glGenProgramPipelines		HH_GL_glGenProgramPipelines
+#define glIsProgramPipeline		HH_GL_glIsProgramPipeline
+#define glGetProgramPipelineiv		HH_GL_glGetProgramPipelineiv
+#define glProgramUniform1i		HH_GL_glProgramUniform1i
+#define glProgramUniform1iv		HH_GL_glProgramUniform1iv
+#define glProgramUniform1f		HH_GL_glProgramUniform1f
+#define glProgramUniform1fv		HH_GL_glProgramUniform1fv
+#define glProgramUniform1d		HH_GL_glProgramUniform1d
+#define glProgramUniform1dv		HH_GL_glProgramUniform1dv
+#define glProgramUniform1ui		HH_GL_glProgramUniform1ui
+#define glProgramUniform1uiv		HH_GL_glProgramUniform1uiv
+#define glProgramUniform2i		HH_GL_glProgramUniform2i
+#define glProgramUniform2iv		HH_GL_glProgramUniform2iv
+#define glProgramUniform2f		HH_GL_glProgramUniform2f
+#define glProgramUniform2fv		HH_GL_glProgramUniform2fv
+#define glProgramUniform2d		HH_GL_glProgramUniform2d
+#define glProgramUniform2dv		HH_GL_glProgramUniform2dv
+#define glProgramUniform2ui		HH_GL_glProgramUniform2ui
+#define glProgramUniform2uiv		HH_GL_glProgramUniform2uiv
+#define glProgramUniform3i		HH_GL_glProgramUniform3i
+#define glProgramUniform3iv		HH_GL_glProgramUniform3iv
+#define glProgramUniform3f		HH_GL_glProgramUniform3f
+#define glProgramUniform3fv		HH_GL_glProgramUniform3fv
+#define glProgramUniform3d		HH_GL_glProgramUniform3d
+#define glProgramUniform3dv		HH_GL_glProgramUniform3dv
+#define glProgramUniform3ui		HH_GL_glProgramUniform3ui
+#define glProgramUniform3uiv		HH_GL_glProgramUniform3uiv
+#define glProgramUniform4i		HH_GL_glProgramUniform4i
+#define glProgramUniform4iv		HH_GL_glProgramUniform4iv
+#define glProgramUniform4f		HH_GL_glProgramUniform4f
+#define glProgramUniform4fv		HH_GL_glProgramUniform4fv
+#define glProgramUniform4d		HH_GL_glProgramUniform4d
+#define glProgramUniform4dv		HH_GL_glProgramUniform4dv
+#define glProgramUniform4ui		HH_GL_glProgramUniform4ui
+#define glProgramUniform4uiv		HH_GL_glProgramUniform4uiv
+#define glProgramUniformMatrix2fv	HH_GL_glProgramUniformMatrix2fv
+#define glProgramUniformMatrix3fv	HH_GL_glProgramUniformMatrix3fv
+#define glProgramUniformMatrix4fv	HH_GL_glProgramUniformMatrix4fv
+#define glProgramUniformMatrix2dv	HH_GL_glProgramUniformMatrix2dv
+#define glProgramUniformMatrix3dv	HH_GL_glProgramUniformMatrix3dv
+#define glProgramUniformMatrix4dv	HH_GL_glProgramUniformMatrix4dv
+#define glProgramUniformMatrix2x3fv	HH_GL_glProgramUniformMatrix2x3fv
+#define glProgramUniformMatrix3x2fv	HH_GL_glProgramUniformMatrix3x2fv
+#define glProgramUniformMatrix2x4fv	HH_GL_glProgramUniformMatrix2x4fv
+#define glProgramUniformMatrix4x2fv	HH_GL_glProgramUniformMatrix4x2fv
+#define glProgramUniformMatrix3x4fv	HH_GL_glProgramUniformMatrix3x4fvx
+#define glProgramUniformMatrix4x3fv	HH_GL_glProgramUniformMatrix4x3fv
+#define glProgramUniformMatrix2x3dv	HH_GL_glProgramUniformMatrix2x3dv
+#define glProgramUniformMatrix3x2dv	HH_GL_glProgramUniformMatrix3x2dv
+#define glProgramUniformMatrix2x4dv	HH_GL_glProgramUniformMatrix2x4dv
+#define glProgramUniformMatrix4x2dv	HH_GL_glProgramUniformMatrix4x2dv
+#define glProgramUniformMatrix3x4dv	HH_GL_glProgramUniformMatrix3x4dv
+#define glProgramUniformMatrix4x3dv	HH_GL_glProgramUniformMatrix4x3dv
+#define glValidateProgramPipeline	HH_GL_glValidateProgramPipeline
+#define glGetProgramPipelineInfoLog	HH_GL_glGetProgramPipelineInfoLog
+#define glVertexAttribL1d		HH_GL_glVertexAttribL1d
+#define glVertexAttribL2d		HH_GL_glVertexAttribL2d
+#define glVertexAttribL3d		HH_GL_glVertexAttribL3d
+#define glVertexAttribL4d		HH_GL_glVertexAttribL4d
+#define glVertexAttribL1dv		HH_GL_glVertexAttribL1dv
+#define glVertexAttribL2dv		HH_GL_glVertexAttribL2dv
+#define glVertexAttribL3dv		HH_GL_glVertexAttribL3dv
+#define glVertexAttribL4dv		HH_GL_glVertexAttribL4dv
+#define glVertexAttribLPointer		HH_GL_glVertexAttribLPointer
+#define glGetVertexAttribLdv		HH_GL_glGetVertexAttribLdv
+#define glViewportArrayv		HH_GL_glViewportArrayv
+#define glViewportIndexedf		HH_GL_glViewportIndexedf
+#define glViewportIndexedfv		HH_GL_glViewportIndexedfv
+#define glScissorArrayv			HH_GL_glScissorArrayv
+#define glScissorIndexed		HH_GL_glScissorIndexed
+#define glScissorIndexedv		HH_GL_glScissorIndexedv
+#define glDepthRangeArrayv		HH_GL_glDepthRangeArrayv
+#define glDepthRangeIndexed		HH_GL_glDepthRangeIndexed
+#define glGetFloati_v			HH_GL_glGetFloati_v
+#define glGetDoublei_v			HH_GL_glGetDoublei_v
 
 typedef void      (__stdcall *PFNGLVERTEXATTRIBLPOINTERPROC)	        (GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
-typedef void      (__stdcall *PFNGLRELEASESHADERCOSharedGLILERPROC)	        (void);
+typedef void      (__stdcall *PFNGLRELEASESHADERCOHH_GLILERPROC)	        (void);
 typedef void      (__stdcall *PFNGLSHADERBINARYPROC)		        (GLsizei count, const GLuint *shaders, GLenum binaryFormat, const void *binary, GLsizei length);
 typedef void      (__stdcall *PFNGLGETSHADERPRECISIONFORMATPROC)        (GLenum shadertype, GLenum precisiontype, GLint *range, GLint *precision);
 typedef void      (__stdcall *PFNGLDEPTHRANGEFPROC)		        (GLfloat n, GLfloat f);
 typedef void      (__stdcall *PFNGLCLEARDEPTHFPROC)		        (GLfloat d);
 typedef void      (__stdcall *PFNGLGETPROGRAMBINARYPROC)	        (GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, void *binary);
 typedef void      (__stdcall *PFNGLPROGRAMBINARYPROC)		        (GLuint program, GLenum binaryFormat, const void *binary, GLsizei length);
-typedef void      (__stdcall *PFNGLPROGRASharedGLARAMETERIPROC)	        (GLuint program, GLenum pname, GLint value);
+typedef void      (__stdcall *PFNGLPROGRAHH_GLARAMETERIPROC)	        (GLuint program, GLenum pname, GLint value);
 typedef void      (__stdcall *PFNGLUSEPROGRAMSTAGESPROC)	        (GLuint pipeline, GLbitfield stages, GLuint program);
-typedef void      (__stdcall *PFNGLACTIVESHADERPROGRASharedGLROC)	        (GLuint pipeline, GLuint program);
+typedef void      (__stdcall *PFNGLACTIVESHADERPROGRAHH_GLROC)	        (GLuint pipeline, GLuint program);
 typedef GLuint    (__stdcall *PFNGLCREATESHADERPROGRAMVPROC)	        (GLenum type, GLsizei count, const GLchar *const*strings);
-typedef void      (__stdcall *PFNGLBINDPROGRASharedGLIPELINEPROC)	        (GLuint pipeline);
-typedef void      (__stdcall *PFNGLDELETEPROGRASharedGLIPELINESPROC)	        (GLsizei n, const GLuint *pipelines);
-typedef void      (__stdcall *PFNGLGENPROGRASharedGLIPELINESPROC)	        (GLsizei n, GLuint *pipelines);
-typedef GLboolean (__stdcall *PFNGLISPROGRASharedGLIPELINEPROC)	        (GLuint pipeline);
-typedef void      (__stdcall *PFNGLGETPROGRASharedGLIPELINEIVPROC)	        (GLuint pipeline, GLenum pname, GLint *params);
+typedef void      (__stdcall *PFNGLBINDPROGRAHH_GLIPELINEPROC)	        (GLuint pipeline);
+typedef void      (__stdcall *PFNGLDELETEPROGRAHH_GLIPELINESPROC)	        (GLsizei n, const GLuint *pipelines);
+typedef void      (__stdcall *PFNGLGENPROGRAHH_GLIPELINESPROC)	        (GLsizei n, GLuint *pipelines);
+typedef GLboolean (__stdcall *PFNGLISPROGRAHH_GLIPELINEPROC)	        (GLuint pipeline);
+typedef void      (__stdcall *PFNGLGETPROGRAHH_GLIPELINEIVPROC)	        (GLuint pipeline, GLenum pname, GLint *params);
 typedef void      (__stdcall *PFNGLPROGRAMUNIFORM1IPROC)	        (GLuint program, GLint location, GLint v0);
 typedef void      (__stdcall *PFNGLPROGRAMUNIFORM1IVPROC)	        (GLuint program, GLint location, GLsizei count, const GLint *value);
 typedef void      (__stdcall *PFNGLPROGRAMUNIFORM1FPROC)	        (GLuint program, GLint location, GLfloat v0);
@@ -2891,8 +2891,8 @@ typedef void      (__stdcall *PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC)	(GLuint progra
 typedef void      (__stdcall *PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC)	(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
 typedef void      (__stdcall *PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC)	(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
 typedef void      (__stdcall *PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC)	(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-typedef void      (__stdcall *PFNGLVALIDATEPROGRASharedGLIPELINEPROC)		(GLuint pipeline);
-typedef void      (__stdcall *PFNGLGETPROGRASharedGLIPELINEINFOLOGPROC)	(GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog);
+typedef void      (__stdcall *PFNGLVALIDATEPROGRAHH_GLIPELINEPROC)		(GLuint pipeline);
+typedef void      (__stdcall *PFNGLGETPROGRAHH_GLIPELINEINFOLOGPROC)	(GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog);
 typedef void      (__stdcall *PFNGLVERTEXATTRIBL1DPROC)			(GLuint index, GLdouble x);
 typedef void      (__stdcall *PFNGLVERTEXATTRIBL2DPROC)			(GLuint index, GLdouble x, GLdouble y);
 typedef void      (__stdcall *PFNGLVERTEXATTRIBL3DPROC)			(GLuint index, GLdouble x, GLdouble y, GLdouble z);
@@ -2913,108 +2913,108 @@ typedef void      (__stdcall *PFNGLDEPTHRANGEINDEXEDPROC)		(GLuint index, GLdoub
 typedef void      (__stdcall *PFNGLGETFLOATI_VPROC)			(GLenum target, GLuint index, GLfloat *data);
 typedef void      (__stdcall *PFNGLGETDOUBLEI_VPROC)			(GLenum target, GLuint index, GLdouble *data);
 
-PFNGLRELEASESHADERCOSharedGLILERPROC		SharedGL_glReleaseShaderCompiler	= 0;
-PFNGLSHADERBINARYPROC			SharedGL_glShaderBinary		= 0;
-PFNGLGETSHADERPRECISIONFORMATPROC	SharedGL_glGetShaderPrecisionFormat	= 0;
-PFNGLDEPTHRANGEFPROC			SharedGL_glDepthRangef		= 0;
-PFNGLCLEARDEPTHFPROC			SharedGL_glClearDepthf		= 0;
-PFNGLGETPROGRAMBINARYPROC		SharedGL_glGetProgramBinary		= 0;
-PFNGLPROGRAMBINARYPROC			SharedGL_glProgramBinary		= 0;
-PFNGLPROGRASharedGLARAMETERIPROC		SharedGL_glProgramParameteri		= 0;
-PFNGLUSEPROGRAMSTAGESPROC		SharedGL_glUseProgramStages		= 0;
-PFNGLACTIVESHADERPROGRASharedGLROC		SharedGL_glActiveShaderProgram	= 0;
-PFNGLCREATESHADERPROGRAMVPROC		SharedGL_glCreateShaderProgramv	= 0;
-PFNGLBINDPROGRASharedGLIPELINEPROC		SharedGL_glBindProgramPipeline	= 0;
-PFNGLDELETEPROGRASharedGLIPELINESPROC		SharedGL_glDeleteProgramPipelines	= 0;
-PFNGLGENPROGRASharedGLIPELINESPROC		SharedGL_glGenProgramPipelines	= 0;
-PFNGLISPROGRASharedGLIPELINEPROC		SharedGL_glIsProgramPipeline		= 0;
-PFNGLGETPROGRASharedGLIPELINEIVPROC		SharedGL_glGetProgramPipelineiv	= 0;
-PFNGLPROGRAMUNIFORM1IPROC		SharedGL_glProgramUniform1i		= 0;
-PFNGLPROGRAMUNIFORM1IVPROC		SharedGL_glProgramUniform1iv		= 0;
-PFNGLPROGRAMUNIFORM1FPROC		SharedGL_glProgramUniform1f		= 0;
-PFNGLPROGRAMUNIFORM1FVPROC		SharedGL_glProgramUniform1fv		= 0;
-PFNGLPROGRAMUNIFORM1DPROC		SharedGL_glProgramUniform1d		= 0;
-PFNGLPROGRAMUNIFORM1DVPROC		SharedGL_glProgramUniform1dv		= 0;
-PFNGLPROGRAMUNIFORM1UIPROC		SharedGL_glProgramUniform1ui		= 0;
-PFNGLPROGRAMUNIFORM1UIVPROC		SharedGL_glProgramUniform1uiv	= 0;
-PFNGLPROGRAMUNIFORM2IPROC		SharedGL_glProgramUniform2i		= 0;
-PFNGLPROGRAMUNIFORM2IVPROC		SharedGL_glProgramUniform2iv		= 0;
-PFNGLPROGRAMUNIFORM2FPROC		SharedGL_glProgramUniform2f		= 0;
-PFNGLPROGRAMUNIFORM2FVPROC		SharedGL_glProgramUniform2fv		= 0;
-PFNGLPROGRAMUNIFORM2DPROC		SharedGL_glProgramUniform2d		= 0;
-PFNGLPROGRAMUNIFORM2DVPROC		SharedGL_glProgramUniform2dv		= 0;
-PFNGLPROGRAMUNIFORM2UIPROC		SharedGL_glProgramUniform2ui		= 0;
-PFNGLPROGRAMUNIFORM2UIVPROC		SharedGL_glProgramUniform2uiv	= 0;
-PFNGLPROGRAMUNIFORM3IPROC		SharedGL_glProgramUniform3i		= 0;
-PFNGLPROGRAMUNIFORM3IVPROC		SharedGL_glProgramUniform3iv		= 0;
-PFNGLPROGRAMUNIFORM3FPROC		SharedGL_glProgramUniform3f		= 0;
-PFNGLPROGRAMUNIFORM3FVPROC		SharedGL_glProgramUniform3fv		= 0;
-PFNGLPROGRAMUNIFORM3DPROC		SharedGL_glProgramUniform3d		= 0;
-PFNGLPROGRAMUNIFORM3DVPROC		SharedGL_glProgramUniform3dv		= 0;
-PFNGLPROGRAMUNIFORM3UIPROC		SharedGL_glProgramUniform3ui		= 0;
-PFNGLPROGRAMUNIFORM3UIVPROC		SharedGL_glProgramUniform3uiv	= 0;
-PFNGLPROGRAMUNIFORM4IPROC		SharedGL_glProgramUniform4i		= 0;
-PFNGLPROGRAMUNIFORM4IVPROC		SharedGL_glProgramUniform4iv		= 0;
-PFNGLPROGRAMUNIFORM4FPROC		SharedGL_glProgramUniform4f		= 0;
-PFNGLPROGRAMUNIFORM4FVPROC		SharedGL_glProgramUniform4fv		= 0;
-PFNGLPROGRAMUNIFORM4DPROC		SharedGL_glProgramUniform4d		= 0;
-PFNGLPROGRAMUNIFORM4DVPROC		SharedGL_glProgramUniform4dv		= 0;
-PFNGLPROGRAMUNIFORM4UIPROC		SharedGL_glProgramUniform4ui		= 0;
-PFNGLPROGRAMUNIFORM4UIVPROC		SharedGL_glProgramUniform4uiv	= 0;
-PFNGLPROGRAMUNIFORMMATRIX2FVPROC	SharedGL_glProgramUniformMatrix2fv	= 0;
-PFNGLPROGRAMUNIFORMMATRIX3FVPROC	SharedGL_glProgramUniformMatrix3fv	= 0;
-PFNGLPROGRAMUNIFORMMATRIX4FVPROC	SharedGL_glProgramUniformMatrix4fv	= 0;
-PFNGLPROGRAMUNIFORMMATRIX2DVPROC	SharedGL_glProgramUniformMatrix2dv	= 0;
-PFNGLPROGRAMUNIFORMMATRIX3DVPROC	SharedGL_glProgramUniformMatrix3dv	= 0;
-PFNGLPROGRAMUNIFORMMATRIX4DVPROC	SharedGL_glProgramUniformMatrix4dv	= 0;
-PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC	SharedGL_glProgramUniformMatrix2x3fv = 0;
-PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC	SharedGL_glProgramUniformMatrix3x2fv = 0;
-PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC	SharedGL_glProgramUniformMatrix2x4fv = 0;
-PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC	SharedGL_glProgramUniformMatrix4x2fv = 0;
-PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC	SharedGL_glProgramUniformMatrix3x4fv = 0;
-PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC	SharedGL_glProgramUniformMatrix4x3fv = 0;
-PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC	SharedGL_glProgramUniformMatrix2x3dv = 0;
-PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC	SharedGL_glProgramUniformMatrix3x2dv = 0;
-PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC	SharedGL_glProgramUniformMatrix2x4dv = 0;
-PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC	SharedGL_glProgramUniformMatrix4x2dv = 0;
-PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC	SharedGL_glProgramUniformMatrix3x4dv = 0;
-PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC	SharedGL_glProgramUniformMatrix4x3dv = 0;
-PFNGLVALIDATEPROGRASharedGLIPELINEPROC	SharedGL_glValidateProgramPipeline	= 0;
-PFNGLGETPROGRASharedGLIPELINEINFOLOGPROC	SharedGL_glGetProgramPipelineInfoLog = 0;
-PFNGLVERTEXATTRIBL1DPROC		SharedGL_glVertexAttribL1d		= 0;
-PFNGLVERTEXATTRIBL2DPROC		SharedGL_glVertexAttribL2d		= 0;
-PFNGLVERTEXATTRIBL3DPROC		SharedGL_glVertexAttribL3d		= 0;
-PFNGLVERTEXATTRIBL4DPROC		SharedGL_glVertexAttribL4d		= 0;
-PFNGLVERTEXATTRIBL1DVPROC		SharedGL_glVertexAttribL1dv		= 0;
-PFNGLVERTEXATTRIBL2DVPROC		SharedGL_glVertexAttribL2dv		= 0;
-PFNGLVERTEXATTRIBL3DVPROC		SharedGL_glVertexAttribL3dv		= 0;
-PFNGLVERTEXATTRIBL4DVPROC		SharedGL_glVertexAttribL4dv		= 0;
-PFNGLVERTEXATTRIBLPOINTERPROC		SharedGL_glVertexAttribLPointer	= 0;
-PFNGLGETVERTEXATTRIBLDVPROC		SharedGL_glGetVertexAttribLdv	= 0;
-PFNGLVIEWPORTARRAYVPROC			SharedGL_glViewportArrayv		= 0;
-PFNGLVIEWPORTINDEXEDFPROC		SharedGL_glViewportIndexedf		= 0;
-PFNGLVIEWPORTINDEXEDFVPROC		SharedGL_glViewportIndexedfv		= 0;
-PFNGLSCISSORARRAYVPROC			SharedGL_glScissorArrayv		= 0;
-PFNGLSCISSORINDEXEDPROC			SharedGL_glScissorIndexed		= 0;
-PFNGLSCISSORINDEXEDVPROC		SharedGL_glScissorIndexedv		= 0;
-PFNGLDEPTHRANGEARRAYVPROC		SharedGL_glDepthRangeArrayv		= 0;
-PFNGLDEPTHRANGEINDEXEDPROC		SharedGL_glDepthRangeIndexed		= 0;
-PFNGLGETFLOATI_VPROC			SharedGL_glGetFloati_v		= 0;
-PFNGLGETDOUBLEI_VPROC			SharedGL_glGetDoublei_v		= 0;
+PFNGLRELEASESHADERCOHH_GLILERPROC		HH_GL_glReleaseShaderCompiler	= 0;
+PFNGLSHADERBINARYPROC			HH_GL_glShaderBinary		= 0;
+PFNGLGETSHADERPRECISIONFORMATPROC	HH_GL_glGetShaderPrecisionFormat	= 0;
+PFNGLDEPTHRANGEFPROC			HH_GL_glDepthRangef		= 0;
+PFNGLCLEARDEPTHFPROC			HH_GL_glClearDepthf		= 0;
+PFNGLGETPROGRAMBINARYPROC		HH_GL_glGetProgramBinary		= 0;
+PFNGLPROGRAMBINARYPROC			HH_GL_glProgramBinary		= 0;
+PFNGLPROGRAHH_GLARAMETERIPROC		HH_GL_glProgramParameteri		= 0;
+PFNGLUSEPROGRAMSTAGESPROC		HH_GL_glUseProgramStages		= 0;
+PFNGLACTIVESHADERPROGRAHH_GLROC		HH_GL_glActiveShaderProgram	= 0;
+PFNGLCREATESHADERPROGRAMVPROC		HH_GL_glCreateShaderProgramv	= 0;
+PFNGLBINDPROGRAHH_GLIPELINEPROC		HH_GL_glBindProgramPipeline	= 0;
+PFNGLDELETEPROGRAHH_GLIPELINESPROC		HH_GL_glDeleteProgramPipelines	= 0;
+PFNGLGENPROGRAHH_GLIPELINESPROC		HH_GL_glGenProgramPipelines	= 0;
+PFNGLISPROGRAHH_GLIPELINEPROC		HH_GL_glIsProgramPipeline		= 0;
+PFNGLGETPROGRAHH_GLIPELINEIVPROC		HH_GL_glGetProgramPipelineiv	= 0;
+PFNGLPROGRAMUNIFORM1IPROC		HH_GL_glProgramUniform1i		= 0;
+PFNGLPROGRAMUNIFORM1IVPROC		HH_GL_glProgramUniform1iv		= 0;
+PFNGLPROGRAMUNIFORM1FPROC		HH_GL_glProgramUniform1f		= 0;
+PFNGLPROGRAMUNIFORM1FVPROC		HH_GL_glProgramUniform1fv		= 0;
+PFNGLPROGRAMUNIFORM1DPROC		HH_GL_glProgramUniform1d		= 0;
+PFNGLPROGRAMUNIFORM1DVPROC		HH_GL_glProgramUniform1dv		= 0;
+PFNGLPROGRAMUNIFORM1UIPROC		HH_GL_glProgramUniform1ui		= 0;
+PFNGLPROGRAMUNIFORM1UIVPROC		HH_GL_glProgramUniform1uiv	= 0;
+PFNGLPROGRAMUNIFORM2IPROC		HH_GL_glProgramUniform2i		= 0;
+PFNGLPROGRAMUNIFORM2IVPROC		HH_GL_glProgramUniform2iv		= 0;
+PFNGLPROGRAMUNIFORM2FPROC		HH_GL_glProgramUniform2f		= 0;
+PFNGLPROGRAMUNIFORM2FVPROC		HH_GL_glProgramUniform2fv		= 0;
+PFNGLPROGRAMUNIFORM2DPROC		HH_GL_glProgramUniform2d		= 0;
+PFNGLPROGRAMUNIFORM2DVPROC		HH_GL_glProgramUniform2dv		= 0;
+PFNGLPROGRAMUNIFORM2UIPROC		HH_GL_glProgramUniform2ui		= 0;
+PFNGLPROGRAMUNIFORM2UIVPROC		HH_GL_glProgramUniform2uiv	= 0;
+PFNGLPROGRAMUNIFORM3IPROC		HH_GL_glProgramUniform3i		= 0;
+PFNGLPROGRAMUNIFORM3IVPROC		HH_GL_glProgramUniform3iv		= 0;
+PFNGLPROGRAMUNIFORM3FPROC		HH_GL_glProgramUniform3f		= 0;
+PFNGLPROGRAMUNIFORM3FVPROC		HH_GL_glProgramUniform3fv		= 0;
+PFNGLPROGRAMUNIFORM3DPROC		HH_GL_glProgramUniform3d		= 0;
+PFNGLPROGRAMUNIFORM3DVPROC		HH_GL_glProgramUniform3dv		= 0;
+PFNGLPROGRAMUNIFORM3UIPROC		HH_GL_glProgramUniform3ui		= 0;
+PFNGLPROGRAMUNIFORM3UIVPROC		HH_GL_glProgramUniform3uiv	= 0;
+PFNGLPROGRAMUNIFORM4IPROC		HH_GL_glProgramUniform4i		= 0;
+PFNGLPROGRAMUNIFORM4IVPROC		HH_GL_glProgramUniform4iv		= 0;
+PFNGLPROGRAMUNIFORM4FPROC		HH_GL_glProgramUniform4f		= 0;
+PFNGLPROGRAMUNIFORM4FVPROC		HH_GL_glProgramUniform4fv		= 0;
+PFNGLPROGRAMUNIFORM4DPROC		HH_GL_glProgramUniform4d		= 0;
+PFNGLPROGRAMUNIFORM4DVPROC		HH_GL_glProgramUniform4dv		= 0;
+PFNGLPROGRAMUNIFORM4UIPROC		HH_GL_glProgramUniform4ui		= 0;
+PFNGLPROGRAMUNIFORM4UIVPROC		HH_GL_glProgramUniform4uiv	= 0;
+PFNGLPROGRAMUNIFORMMATRIX2FVPROC	HH_GL_glProgramUniformMatrix2fv	= 0;
+PFNGLPROGRAMUNIFORMMATRIX3FVPROC	HH_GL_glProgramUniformMatrix3fv	= 0;
+PFNGLPROGRAMUNIFORMMATRIX4FVPROC	HH_GL_glProgramUniformMatrix4fv	= 0;
+PFNGLPROGRAMUNIFORMMATRIX2DVPROC	HH_GL_glProgramUniformMatrix2dv	= 0;
+PFNGLPROGRAMUNIFORMMATRIX3DVPROC	HH_GL_glProgramUniformMatrix3dv	= 0;
+PFNGLPROGRAMUNIFORMMATRIX4DVPROC	HH_GL_glProgramUniformMatrix4dv	= 0;
+PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC	HH_GL_glProgramUniformMatrix2x3fv = 0;
+PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC	HH_GL_glProgramUniformMatrix3x2fv = 0;
+PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC	HH_GL_glProgramUniformMatrix2x4fv = 0;
+PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC	HH_GL_glProgramUniformMatrix4x2fv = 0;
+PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC	HH_GL_glProgramUniformMatrix3x4fv = 0;
+PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC	HH_GL_glProgramUniformMatrix4x3fv = 0;
+PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC	HH_GL_glProgramUniformMatrix2x3dv = 0;
+PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC	HH_GL_glProgramUniformMatrix3x2dv = 0;
+PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC	HH_GL_glProgramUniformMatrix2x4dv = 0;
+PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC	HH_GL_glProgramUniformMatrix4x2dv = 0;
+PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC	HH_GL_glProgramUniformMatrix3x4dv = 0;
+PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC	HH_GL_glProgramUniformMatrix4x3dv = 0;
+PFNGLVALIDATEPROGRAHH_GLIPELINEPROC	HH_GL_glValidateProgramPipeline	= 0;
+PFNGLGETPROGRAHH_GLIPELINEINFOLOGPROC	HH_GL_glGetProgramPipelineInfoLog = 0;
+PFNGLVERTEXATTRIBL1DPROC		HH_GL_glVertexAttribL1d		= 0;
+PFNGLVERTEXATTRIBL2DPROC		HH_GL_glVertexAttribL2d		= 0;
+PFNGLVERTEXATTRIBL3DPROC		HH_GL_glVertexAttribL3d		= 0;
+PFNGLVERTEXATTRIBL4DPROC		HH_GL_glVertexAttribL4d		= 0;
+PFNGLVERTEXATTRIBL1DVPROC		HH_GL_glVertexAttribL1dv		= 0;
+PFNGLVERTEXATTRIBL2DVPROC		HH_GL_glVertexAttribL2dv		= 0;
+PFNGLVERTEXATTRIBL3DVPROC		HH_GL_glVertexAttribL3dv		= 0;
+PFNGLVERTEXATTRIBL4DVPROC		HH_GL_glVertexAttribL4dv		= 0;
+PFNGLVERTEXATTRIBLPOINTERPROC		HH_GL_glVertexAttribLPointer	= 0;
+PFNGLGETVERTEXATTRIBLDVPROC		HH_GL_glGetVertexAttribLdv	= 0;
+PFNGLVIEWPORTARRAYVPROC			HH_GL_glViewportArrayv		= 0;
+PFNGLVIEWPORTINDEXEDFPROC		HH_GL_glViewportIndexedf		= 0;
+PFNGLVIEWPORTINDEXEDFVPROC		HH_GL_glViewportIndexedfv		= 0;
+PFNGLSCISSORARRAYVPROC			HH_GL_glScissorArrayv		= 0;
+PFNGLSCISSORINDEXEDPROC			HH_GL_glScissorIndexed		= 0;
+PFNGLSCISSORINDEXEDVPROC		HH_GL_glScissorIndexedv		= 0;
+PFNGLDEPTHRANGEARRAYVPROC		HH_GL_glDepthRangeArrayv		= 0;
+PFNGLDEPTHRANGEINDEXEDPROC		HH_GL_glDepthRangeIndexed		= 0;
+PFNGLGETFLOATI_VPROC			HH_GL_glGetFloati_v		= 0;
+PFNGLGETDOUBLEI_VPROC			HH_GL_glGetDoublei_v		= 0;
 
 // 4.2
-#define glDrawArraysInstancedBaseInstance		SharedGL_glDrawArraysInstancedBaseInstance
-#define glDrawElementsInstancedBaseInstance		SharedGL_glDrawElementsInstancedBaseInstance
-#define glDrawElementsInstancedBaseVertexBaseInstance	SharedGL_glDrawElementsInstancedBaseVertexBaseInstance
-#define glGetInternalformativ				SharedGL_glGetInternalformativ
-#define glGetActiveAtomicCounterBufferiv		SharedGL_glGetActiveAtomicCounterBufferiv
-#define glBindImageTexture				SharedGL_glBindImageTexture
-#define glMemoryBarrier					SharedGL_glMemoryBarrier
-#define glTexStorage1D					SharedGL_glTexStorage1D
-#define glTexStorage2D					SharedGL_glTexStorage2D
-#define glTexStorage3D					SharedGL_glTexStorage3D
-#define glDrawTransformFeedbackInstanced		SharedGL_glDrawTransformFeedbackInstanced
-#define glDrawTransformFeedbackStreamInstanced		SharedGL_glDrawTransformFeedbackStreamInstanced
+#define glDrawArraysInstancedBaseInstance		HH_GL_glDrawArraysInstancedBaseInstance
+#define glDrawElementsInstancedBaseInstance		HH_GL_glDrawElementsInstancedBaseInstance
+#define glDrawElementsInstancedBaseVertexBaseInstance	HH_GL_glDrawElementsInstancedBaseVertexBaseInstance
+#define glGetInternalformativ				HH_GL_glGetInternalformativ
+#define glGetActiveAtomicCounterBufferiv		HH_GL_glGetActiveAtomicCounterBufferiv
+#define glBindImageTexture				HH_GL_glBindImageTexture
+#define glMemoryBarrier					HH_GL_glMemoryBarrier
+#define glTexStorage1D					HH_GL_glTexStorage1D
+#define glTexStorage2D					HH_GL_glTexStorage2D
+#define glTexStorage3D					HH_GL_glTexStorage3D
+#define glDrawTransformFeedbackInstanced		HH_GL_glDrawTransformFeedbackInstanced
+#define glDrawTransformFeedbackStreamInstanced		HH_GL_glDrawTransformFeedbackStreamInstanced
 
 typedef void (__stdcall *PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC)             (GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance);
 typedef void (__stdcall *PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC)           (GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount, GLuint baseinstance);
@@ -3029,69 +3029,69 @@ typedef void (__stdcall *PFNGLTEXSTORAGE3DPROC)                                (
 typedef void (__stdcall *PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC)              (GLenum mode, GLuint id, GLsizei instancecount);
 typedef void (__stdcall *PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC)        (GLenum mode, GLuint id, GLuint stream, GLsizei instancecount);
 
-PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC		SharedGL_glDrawArraysInstancedBaseInstance		  = 0;
-PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC		SharedGL_glDrawElementsInstancedBaseInstance		  = 0;
-PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC	SharedGL_glDrawElementsInstancedBaseVertexBaseInstance = 0;
-PFNGLGETINTERNALFORMATIVPROC				SharedGL_glGetInternalformativ			  = 0;
-PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC			SharedGL_glGetActiveAtomicCounterBufferiv		  = 0;
-PFNGLBINDIMAGETEXTUREPROC				SharedGL_glBindImageTexture				  = 0;
-PFNGLMEMORYBARRIERPROC					SharedGL_glMemoryBarrier				  = 0;
-PFNGLTEXSTORAGE1DPROC					SharedGL_glTexStorage1D				  = 0;
-PFNGLTEXSTORAGE2DPROC					SharedGL_glTexStorage2D				  = 0;
-PFNGLTEXSTORAGE3DPROC					SharedGL_glTexStorage3D				  = 0;
-PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC			SharedGL_glDrawTransformFeedbackInstanced		  = 0;
-PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC		SharedGL_glDrawTransformFeedbackStreamInstanced	  = 0;
+PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC		HH_GL_glDrawArraysInstancedBaseInstance		  = 0;
+PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC		HH_GL_glDrawElementsInstancedBaseInstance		  = 0;
+PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC	HH_GL_glDrawElementsInstancedBaseVertexBaseInstance = 0;
+PFNGLGETINTERNALFORMATIVPROC				HH_GL_glGetInternalformativ			  = 0;
+PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC			HH_GL_glGetActiveAtomicCounterBufferiv		  = 0;
+PFNGLBINDIMAGETEXTUREPROC				HH_GL_glBindImageTexture				  = 0;
+PFNGLMEMORYBARRIERPROC					HH_GL_glMemoryBarrier				  = 0;
+PFNGLTEXSTORAGE1DPROC					HH_GL_glTexStorage1D				  = 0;
+PFNGLTEXSTORAGE2DPROC					HH_GL_glTexStorage2D				  = 0;
+PFNGLTEXSTORAGE3DPROC					HH_GL_glTexStorage3D				  = 0;
+PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC			HH_GL_glDrawTransformFeedbackInstanced		  = 0;
+PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC		HH_GL_glDrawTransformFeedbackStreamInstanced	  = 0;
 
 // 4.3 
-#define glClearBufferData			SharedGL_glClearBufferData
-#define glClearBufferSubData			SharedGL_glClearBufferSubData
-#define glDispatchCompute			SharedGL_glDispatchCompute
-#define glDispatchComputeIndirect		SharedGL_glDispatchComputeIndirect
-#define glCopyImageSubData			SharedGL_glCopyImageSubData
-#define glFramebufferParameteri			SharedGL_glFramebufferParameteri
-#define glGetFramebufferParameteriv		SharedGL_glGetFramebufferParameteriv
-#define glGetInternalformati64v			SharedGL_glGetInternalformati64v
-#define glInvalidateTexSubImage			SharedGL_glInvalidateTexSubImage
-#define glInvalidateTexImage			SharedGL_glInvalidateTexImage
-#define glInvalidateBufferSubData		SharedGL_glInvalidateBufferSubData
-#define glInvalidateBufferData			SharedGL_glInvalidateBufferData
-#define glInvalidateFramebuffer			SharedGL_glInvalidateFramebuffer
-#define glInvalidateSubFramebuffer		SharedGL_glInvalidateSubFramebuffer
-#define glMultiDrawArraysIndirect		SharedGL_glMultiDrawArraysIndirect
-#define glMultiDrawElementsIndirect		SharedGL_glMultiDrawElementsIndirect
-#define glGetProgramInterfaceiv			SharedGL_glGetProgramInterfaceiv
-#define glGetProgramResourceIndex		SharedGL_glGetProgramResourceIndex
-#define glGetProgramResourceName		SharedGL_glGetProgramResourceName
-#define glGetProgramResourceiv			SharedGL_glGetProgramResourceiv
-#define glGetProgramResourceLocation		SharedGL_glGetProgramResourceLocation
-#define glGetProgramResourceLocationIndex	SharedGL_glGetProgramResourceLocationIndex
-#define glShaderStorageBlockBinding		SharedGL_glShaderStorageBlockBinding
-#define glTexBufferRange			SharedGL_glTexBufferRange
-#define glTexStorage2DMultisample		SharedGL_glTexStorage2DMultisample
-#define glTexStorage3DMultisample		SharedGL_glTexStorage3DMultisample
-#define glTextureView				SharedGL_glTextureView
-#define glBindVertexBuffer			SharedGL_glBindVertexBuffer
-#define glVertexAttribFormat			SharedGL_glVertexAttribFormat
-#define glVertexAttribIFormat			SharedGL_glVertexAttribIFormat
-#define glVertexAttribLFormat			SharedGL_glVertexAttribLFormat
-#define glVertexAttribBinding			SharedGL_glVertexAttribBinding
-#define glVertexBindingDivisor			SharedGL_glVertexBindingDivisor
-#define glDebugMessageControl			SharedGL_glDebugMessageControl
-#define glDebugMessageInsert			SharedGL_glDebugMessageInsert
-#define glDebugMessageCallback			SharedGL_glDebugMessageCallback
-#define glGetDebugMessageLog			SharedGL_glGetDebugMessageLog
-#define glPushDebugGroup			SharedGL_glPushDebugGroup
-#define glPopDebugGroup				SharedGL_glPopDebugGroup
-#define glObjectLabel				SharedGL_glObjectLabel
-#define glGetObjectLabel			SharedGL_glGetObjectLabel
-#define glObjectPtrLabel			SharedGL_glObjectPtrLabel
-#define glGetObjectPtrLabel			SharedGL_glGetObjectPtrLabel
-#define glGetPointerv				SharedGL_glGetPointerv
+#define glClearBufferData			HH_GL_glClearBufferData
+#define glClearBufferSubData			HH_GL_glClearBufferSubData
+#define glDispatchCompute			HH_GL_glDispatchCompute
+#define glDispatchComputeIndirect		HH_GL_glDispatchComputeIndirect
+#define glCopyImageSubData			HH_GL_glCopyImageSubData
+#define glFramebufferParameteri			HH_GL_glFramebufferParameteri
+#define glGetFramebufferParameteriv		HH_GL_glGetFramebufferParameteriv
+#define glGetInternalformati64v			HH_GL_glGetInternalformati64v
+#define glInvalidateTexSubImage			HH_GL_glInvalidateTexSubImage
+#define glInvalidateTexImage			HH_GL_glInvalidateTexImage
+#define glInvalidateBufferSubData		HH_GL_glInvalidateBufferSubData
+#define glInvalidateBufferData			HH_GL_glInvalidateBufferData
+#define glInvalidateFramebuffer			HH_GL_glInvalidateFramebuffer
+#define glInvalidateSubFramebuffer		HH_GL_glInvalidateSubFramebuffer
+#define glMultiDrawArraysIndirect		HH_GL_glMultiDrawArraysIndirect
+#define glMultiDrawElementsIndirect		HH_GL_glMultiDrawElementsIndirect
+#define glGetProgramInterfaceiv			HH_GL_glGetProgramInterfaceiv
+#define glGetProgramResourceIndex		HH_GL_glGetProgramResourceIndex
+#define glGetProgramResourceName		HH_GL_glGetProgramResourceName
+#define glGetProgramResourceiv			HH_GL_glGetProgramResourceiv
+#define glGetProgramResourceLocation		HH_GL_glGetProgramResourceLocation
+#define glGetProgramResourceLocationIndex	HH_GL_glGetProgramResourceLocationIndex
+#define glShaderStorageBlockBinding		HH_GL_glShaderStorageBlockBinding
+#define glTexBufferRange			HH_GL_glTexBufferRange
+#define glTexStorage2DMultisample		HH_GL_glTexStorage2DMultisample
+#define glTexStorage3DMultisample		HH_GL_glTexStorage3DMultisample
+#define glTextureView				HH_GL_glTextureView
+#define glBindVertexBuffer			HH_GL_glBindVertexBuffer
+#define glVertexAttribFormat			HH_GL_glVertexAttribFormat
+#define glVertexAttribIFormat			HH_GL_glVertexAttribIFormat
+#define glVertexAttribLFormat			HH_GL_glVertexAttribLFormat
+#define glVertexAttribBinding			HH_GL_glVertexAttribBinding
+#define glVertexBindingDivisor			HH_GL_glVertexBindingDivisor
+#define glDebugMessageControl			HH_GL_glDebugMessageControl
+#define glDebugMessageInsert			HH_GL_glDebugMessageInsert
+#define glDebugMessageCallback			HH_GL_glDebugMessageCallback
+#define glGetDebugMessageLog			HH_GL_glGetDebugMessageLog
+#define glPushDebugGroup			HH_GL_glPushDebugGroup
+#define glPopDebugGroup				HH_GL_glPopDebugGroup
+#define glObjectLabel				HH_GL_glObjectLabel
+#define glGetObjectLabel			HH_GL_glGetObjectLabel
+#define glObjectPtrLabel			HH_GL_glObjectPtrLabel
+#define glGetObjectPtrLabel			HH_GL_glGetObjectPtrLabel
+#define glGetPointerv				HH_GL_glGetPointerv
 
 typedef void   (__stdcall *PFNGLCLEARBUFFERDATAPROC)                 (GLenum target, GLenum internalformat, GLenum format, GLenum type, const void *data);
 typedef void   (__stdcall *PFNGLCLEARBUFFERSUBDATAPROC)              (GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data);
-typedef void   (__stdcall *PFNGLDISPATCHCOSharedGLUTEPROC)                 (GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z);
-typedef void   (__stdcall *PFNGLDISPATCHCOSharedGLUTEINDIRECTPROC)         (GLintptr indirect);
+typedef void   (__stdcall *PFNGLDISPATCHCOHH_GLUTEPROC)                 (GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z);
+typedef void   (__stdcall *PFNGLDISPATCHCOHH_GLUTEINDIRECTPROC)         (GLintptr indirect);
 typedef void   (__stdcall *PFNGLCOPYIMAGESUBDATAPROC)                (GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth);
 typedef void   (__stdcall *PFNGLFRAMEBUFFERPARAMETERIPROC)           (GLenum target, GLenum pname, GLint param);
 typedef void   (__stdcall *PFNGLGETFRAMEBUFFERPARAMETERIVPROC)       (GLenum target, GLenum pname, GLint *params);
@@ -3112,8 +3112,8 @@ typedef GLint  (__stdcall *PFNGLGETPROGRAMRESOURCELOCATIONPROC)      (GLuint pro
 typedef GLint  (__stdcall *PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC) (GLuint program, GLenum programInterface, const GLchar *name);
 typedef void   (__stdcall *PFNGLSHADERSTORAGEBLOCKBINDINGPROC)       (GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding);
 typedef void   (__stdcall *PFNGLTEXBUFFERRANGEPROC)                  (GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size);
-typedef void   (__stdcall *PFNGLTEXSTORAGE2DMULTISASharedGLLEPROC)         (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-typedef void   (__stdcall *PFNGLTEXSTORAGE3DMULTISASharedGLLEPROC)         (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+typedef void   (__stdcall *PFNGLTEXSTORAGE2DMULTISAHH_GLLEPROC)         (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
+typedef void   (__stdcall *PFNGLTEXSTORAGE3DMULTISAHH_GLLEPROC)         (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
 typedef void   (__stdcall *PFNGLTEXTUREVIEWPROC)                     (GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers);
 typedef void   (__stdcall *PFNGLBINDVERTEXBUFFERPROC)                (GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
 typedef void   (__stdcall *PFNGLVERTEXATTRIBFORMATPROC)              (GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
@@ -3133,60 +3133,60 @@ typedef void   (__stdcall *PFNGLOBJECTPTRLABELPROC)                  (const void
 typedef void   (__stdcall *PFNGLGETOBJECTPTRLABELPROC)               (const void *ptr, GLsizei bufSize, GLsizei *length, GLchar *label);
 typedef void   (__stdcall *PFNGLGETPOINTERVPROC)                     (GLenum pname, void **params);
 
-PFNGLCLEARBUFFERDATAPROC			SharedGL_glClearBufferData		      = 0;
-PFNGLCLEARBUFFERSUBDATAPROC			SharedGL_glClearBufferSubData	      = 0;
-PFNGLDISPATCHCOSharedGLUTEPROC			SharedGL_glDispatchCompute		      = 0;
-PFNGLDISPATCHCOSharedGLUTEINDIRECTPROC		SharedGL_glDispatchComputeIndirect	      = 0;
-PFNGLCOPYIMAGESUBDATAPROC			SharedGL_glCopyImageSubData		      = 0;
-PFNGLFRAMEBUFFERPARAMETERIPROC			SharedGL_glFramebufferParameteri	      = 0;
-PFNGLGETFRAMEBUFFERPARAMETERIVPROC		SharedGL_glGetFramebufferParameteriv	      = 0;
-PFNGLGETINTERNALFORMATI64VPROC			SharedGL_glGetInternalformati64v	      = 0;
-PFNGLINVALIDATETEXSUBIMAGEPROC			SharedGL_glInvalidateTexSubImage	      = 0;
-PFNGLINVALIDATETEXIMAGEPROC			SharedGL_glInvalidateTexImage	      = 0;
-PFNGLINVALIDATEBUFFERSUBDATAPROC		SharedGL_glInvalidateBufferSubData	      = 0;
-PFNGLINVALIDATEBUFFERDATAPROC			SharedGL_glInvalidateBufferData	      = 0;
-PFNGLINVALIDATEFRAMEBUFFERPROC			SharedGL_glInvalidateFramebuffer	      = 0;
-PFNGLINVALIDATESUBFRAMEBUFFERPROC		SharedGL_glInvalidateSubFramebuffer	      = 0;
-PFNGLMULTIDRAWARRAYSINDIRECTPROC		SharedGL_glMultiDrawArraysIndirect	      = 0;
-PFNGLMULTIDRAWELEMENTSINDIRECTPROC		SharedGL_glMultiDrawElementsIndirect	      = 0;
-PFNGLGETPROGRAMINTERFACEIVPROC			SharedGL_glGetProgramInterfaceiv	      = 0;
-PFNGLGETPROGRAMRESOURCEINDEXPROC		SharedGL_glGetProgramResourceIndex	      = 0;
-PFNGLGETPROGRAMRESOURCENAMEPROC			SharedGL_glGetProgramResourceName	      = 0;
-PFNGLGETPROGRAMRESOURCEIVPROC			SharedGL_glGetProgramResourceiv	      = 0;
-PFNGLGETPROGRAMRESOURCELOCATIONPROC		SharedGL_glGetProgramResourceLocation      = 0;
-PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC	SharedGL_glGetProgramResourceLocationIndex = 0;
-PFNGLSHADERSTORAGEBLOCKBINDINGPROC		SharedGL_glShaderStorageBlockBinding	      = 0;
-PFNGLTEXBUFFERRANGEPROC				SharedGL_glTexBufferRange		      = 0;
-PFNGLTEXSTORAGE2DMULTISASharedGLLEPROC		SharedGL_glTexStorage2DMultisample	      = 0;
-PFNGLTEXSTORAGE3DMULTISASharedGLLEPROC		SharedGL_glTexStorage3DMultisample	      = 0;
-PFNGLTEXTUREVIEWPROC				SharedGL_glTextureView		      = 0;
-PFNGLBINDVERTEXBUFFERPROC			SharedGL_glBindVertexBuffer		      = 0;
-PFNGLVERTEXATTRIBFORMATPROC			SharedGL_glVertexAttribFormat	      = 0;
-PFNGLVERTEXATTRIBIFORMATPROC			SharedGL_glVertexAttribIFormat	      = 0;
-PFNGLVERTEXATTRIBLFORMATPROC			SharedGL_glVertexAttribLFormat	      = 0;
-PFNGLVERTEXATTRIBBINDINGPROC			SharedGL_glVertexAttribBinding	      = 0;
-PFNGLVERTEXBINDINGDIVISORPROC			SharedGL_glVertexBindingDivisor	      = 0;
-PFNGLDEBUGMESSAGECONTROLPROC			SharedGL_glDebugMessageControl	      = 0;
-PFNGLDEBUGMESSAGEINSERTPROC			SharedGL_glDebugMessageInsert	      = 0;
-PFNGLDEBUGMESSAGECALLBACKPROC			SharedGL_glDebugMessageCallback	      = 0;
-PFNGLGETDEBUGMESSAGELOGPROC			SharedGL_glGetDebugMessageLog	      = 0;
-PFNGLPUSHDEBUGGROUPPROC				SharedGL_glPushDebugGroup		      = 0;
-PFNGLPOPDEBUGGROUPPROC				SharedGL_glPopDebugGroup		      = 0;
-PFNGLOBJECTLABELPROC				SharedGL_glObjectLabel		      = 0;
-PFNGLGETOBJECTLABELPROC				SharedGL_glGetObjectLabel		      = 0;
-PFNGLOBJECTPTRLABELPROC				SharedGL_glObjectPtrLabel		      = 0;
-PFNGLGETOBJECTPTRLABELPROC			SharedGL_glGetObjectPtrLabel		      = 0;
-PFNGLGETPOINTERVPROC				SharedGL_glGetPointerv		      = 0;
+PFNGLCLEARBUFFERDATAPROC			HH_GL_glClearBufferData		      = 0;
+PFNGLCLEARBUFFERSUBDATAPROC			HH_GL_glClearBufferSubData	      = 0;
+PFNGLDISPATCHCOHH_GLUTEPROC			HH_GL_glDispatchCompute		      = 0;
+PFNGLDISPATCHCOHH_GLUTEINDIRECTPROC		HH_GL_glDispatchComputeIndirect	      = 0;
+PFNGLCOPYIMAGESUBDATAPROC			HH_GL_glCopyImageSubData		      = 0;
+PFNGLFRAMEBUFFERPARAMETERIPROC			HH_GL_glFramebufferParameteri	      = 0;
+PFNGLGETFRAMEBUFFERPARAMETERIVPROC		HH_GL_glGetFramebufferParameteriv	      = 0;
+PFNGLGETINTERNALFORMATI64VPROC			HH_GL_glGetInternalformati64v	      = 0;
+PFNGLINVALIDATETEXSUBIMAGEPROC			HH_GL_glInvalidateTexSubImage	      = 0;
+PFNGLINVALIDATETEXIMAGEPROC			HH_GL_glInvalidateTexImage	      = 0;
+PFNGLINVALIDATEBUFFERSUBDATAPROC		HH_GL_glInvalidateBufferSubData	      = 0;
+PFNGLINVALIDATEBUFFERDATAPROC			HH_GL_glInvalidateBufferData	      = 0;
+PFNGLINVALIDATEFRAMEBUFFERPROC			HH_GL_glInvalidateFramebuffer	      = 0;
+PFNGLINVALIDATESUBFRAMEBUFFERPROC		HH_GL_glInvalidateSubFramebuffer	      = 0;
+PFNGLMULTIDRAWARRAYSINDIRECTPROC		HH_GL_glMultiDrawArraysIndirect	      = 0;
+PFNGLMULTIDRAWELEMENTSINDIRECTPROC		HH_GL_glMultiDrawElementsIndirect	      = 0;
+PFNGLGETPROGRAMINTERFACEIVPROC			HH_GL_glGetProgramInterfaceiv	      = 0;
+PFNGLGETPROGRAMRESOURCEINDEXPROC		HH_GL_glGetProgramResourceIndex	      = 0;
+PFNGLGETPROGRAMRESOURCENAMEPROC			HH_GL_glGetProgramResourceName	      = 0;
+PFNGLGETPROGRAMRESOURCEIVPROC			HH_GL_glGetProgramResourceiv	      = 0;
+PFNGLGETPROGRAMRESOURCELOCATIONPROC		HH_GL_glGetProgramResourceLocation      = 0;
+PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC	HH_GL_glGetProgramResourceLocationIndex = 0;
+PFNGLSHADERSTORAGEBLOCKBINDINGPROC		HH_GL_glShaderStorageBlockBinding	      = 0;
+PFNGLTEXBUFFERRANGEPROC				HH_GL_glTexBufferRange		      = 0;
+PFNGLTEXSTORAGE2DMULTISAHH_GLLEPROC		HH_GL_glTexStorage2DMultisample	      = 0;
+PFNGLTEXSTORAGE3DMULTISAHH_GLLEPROC		HH_GL_glTexStorage3DMultisample	      = 0;
+PFNGLTEXTUREVIEWPROC				HH_GL_glTextureView		      = 0;
+PFNGLBINDVERTEXBUFFERPROC			HH_GL_glBindVertexBuffer		      = 0;
+PFNGLVERTEXATTRIBFORMATPROC			HH_GL_glVertexAttribFormat	      = 0;
+PFNGLVERTEXATTRIBIFORMATPROC			HH_GL_glVertexAttribIFormat	      = 0;
+PFNGLVERTEXATTRIBLFORMATPROC			HH_GL_glVertexAttribLFormat	      = 0;
+PFNGLVERTEXATTRIBBINDINGPROC			HH_GL_glVertexAttribBinding	      = 0;
+PFNGLVERTEXBINDINGDIVISORPROC			HH_GL_glVertexBindingDivisor	      = 0;
+PFNGLDEBUGMESSAGECONTROLPROC			HH_GL_glDebugMessageControl	      = 0;
+PFNGLDEBUGMESSAGEINSERTPROC			HH_GL_glDebugMessageInsert	      = 0;
+PFNGLDEBUGMESSAGECALLBACKPROC			HH_GL_glDebugMessageCallback	      = 0;
+PFNGLGETDEBUGMESSAGELOGPROC			HH_GL_glGetDebugMessageLog	      = 0;
+PFNGLPUSHDEBUGGROUPPROC				HH_GL_glPushDebugGroup		      = 0;
+PFNGLPOPDEBUGGROUPPROC				HH_GL_glPopDebugGroup		      = 0;
+PFNGLOBJECTLABELPROC				HH_GL_glObjectLabel		      = 0;
+PFNGLGETOBJECTLABELPROC				HH_GL_glGetObjectLabel		      = 0;
+PFNGLOBJECTPTRLABELPROC				HH_GL_glObjectPtrLabel		      = 0;
+PFNGLGETOBJECTPTRLABELPROC			HH_GL_glGetObjectPtrLabel		      = 0;
+PFNGLGETPOINTERVPROC				HH_GL_glGetPointerv		      = 0;
 
 // note: 4.4
-#define glBufferStorage		SharedGL_glBufferStorage
-#define glClearTexImage		SharedGL_glClearTexImage
-#define glClearTexSubImage	SharedGL_glClearTexSubImage
-#define glBindBuffersRange	SharedGL_glBindBuffersRange
-#define glBindTextures		SharedGL_glBindTextures
-#define glBindSamplers		SharedGL_glBindSamplers
-#define glBindImageTextures	SharedGL_glBindImageTextures
-#define glBindVertexBuffers	SharedGL_glBindVertexBuffers
+#define glBufferStorage		HH_GL_glBufferStorage
+#define glClearTexImage		HH_GL_glClearTexImage
+#define glClearTexSubImage	HH_GL_glClearTexSubImage
+#define glBindBuffersRange	HH_GL_glBindBuffersRange
+#define glBindTextures		HH_GL_glBindTextures
+#define glBindSamplers		HH_GL_glBindSamplers
+#define glBindImageTextures	HH_GL_glBindImageTextures
+#define glBindVertexBuffers	HH_GL_glBindVertexBuffers
 
 typedef void (__stdcall *PFNGLBUFFERSTORAGEPROC)     (GLenum target, GLsizeiptr size, const void *data, GLbitfield flags);
 typedef void (__stdcall *PFNGLCLEARTEXIMAGEPROC)     (GLuint texture, GLint level, GLenum format, GLenum type, const void *data);
@@ -3194,143 +3194,143 @@ typedef void (__stdcall *PFNGLCLEARTEXSUBIMAGEPROC)  (GLuint texture, GLint leve
 typedef void (__stdcall *PFNGLBINDBUFFERSBASEPROC)   (GLenum target, GLuint first, GLsizei count, const GLuint *buffers);
 typedef void (__stdcall *PFNGLBINDBUFFERSRANGEPROC)  (GLenum target, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizeiptr *sizes);
 typedef void (__stdcall *PFNGLBINDTEXTURESPROC)      (GLuint first, GLsizei count, const GLuint *textures);
-typedef void (__stdcall *PFNGLBINDSASharedGLLERSPROC)      (GLuint first, GLsizei count, const GLuint *samplers);
+typedef void (__stdcall *PFNGLBINDSAHH_GLLERSPROC)      (GLuint first, GLsizei count, const GLuint *samplers);
 typedef void (__stdcall *PFNGLBINDIMAGETEXTURESPROC) (GLuint first, GLsizei count, const GLuint *textures);
 typedef void (__stdcall *PFNGLBINDVERTEXBUFFERSPROC) (GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides);
 
-PFNGLBUFFERSTORAGEPROC		SharedGL_glBufferStorage	= 0;
-PFNGLCLEARTEXIMAGEPROC		SharedGL_glClearTexImage	= 0;
-PFNGLCLEARTEXSUBIMAGEPROC	SharedGL_glClearTexSubImage	= 0;
-PFNGLBINDBUFFERSBASEPROC	SharedGL_glBindBuffersBase	= 0;
-PFNGLBINDBUFFERSRANGEPROC	SharedGL_glBindBuffersRange	= 0;
-PFNGLBINDTEXTURESPROC		SharedGL_glBindTextures	= 0;
-PFNGLBINDSASharedGLLERSPROC		SharedGL_glBindSamplers	= 0;
-PFNGLBINDIMAGETEXTURESPROC	SharedGL_glBindImageTextures = 0;
-PFNGLBINDVERTEXBUFFERSPROC	SharedGL_glBindVertexBuffers = 0;
+PFNGLBUFFERSTORAGEPROC		HH_GL_glBufferStorage	= 0;
+PFNGLCLEARTEXIMAGEPROC		HH_GL_glClearTexImage	= 0;
+PFNGLCLEARTEXSUBIMAGEPROC	HH_GL_glClearTexSubImage	= 0;
+PFNGLBINDBUFFERSBASEPROC	HH_GL_glBindBuffersBase	= 0;
+PFNGLBINDBUFFERSRANGEPROC	HH_GL_glBindBuffersRange	= 0;
+PFNGLBINDTEXTURESPROC		HH_GL_glBindTextures	= 0;
+PFNGLBINDSAHH_GLLERSPROC		HH_GL_glBindSamplers	= 0;
+PFNGLBINDIMAGETEXTURESPROC	HH_GL_glBindImageTextures = 0;
+PFNGLBINDVERTEXBUFFERSPROC	HH_GL_glBindVertexBuffers = 0;
 
 // 4.5 
-#define glClipControl					SharedGL_glClipControl
-#define glCreateTransformFeedbacks			SharedGL_glCreateTransformFeedbacks
-#define glTransformFeedbackBufferBase			SharedGL_glTransformFeedbackBufferBase
-#define glTransformFeedbackBufferRange			SharedGL_glTransformFeedbackBufferRange
-#define glGetTransformFeedbackiv			SharedGL_glGetTransformFeedbackiv
-#define glGetTransformFeedbacki_v			SharedGL_glGetTransformFeedbacki_v
-#define glGetTransformFeedbacki64_v			SharedGL_glGetTransformFeedbacki64_v
-#define glCreateBuffers					SharedGL_glCreateBuffers
-#define glNamedBufferStorage				SharedGL_glNamedBufferStorage
-#define glNamedBufferData				SharedGL_glNamedBufferData
-#define glNamedBufferSubData				SharedGL_glNamedBufferSubData
-#define glCopyNamedBufferSubData			SharedGL_glCopyNamedBufferSubData
-#define glClearNamedBufferData				SharedGL_glClearNamedBufferData
-#define glClearNamedBufferSubData			SharedGL_glClearNamedBufferSubData
-#define glMapNamedBuffer				SharedGL_glMapNamedBuffer
-#define glMapNamedBufferRange				SharedGL_glMapNamedBufferRange
-#define glUnmapNamedBuffer				SharedGL_glUnmapNamedBuffer
-#define glFlushMappedNamedBufferRange			SharedGL_glFlushMappedNamedBufferRange
-#define glGetNamedBufferParameteriv			SharedGL_glGetNamedBufferParameteriv
-#define glGetNamedBufferParameteri64v			SharedGL_glGetNamedBufferParameteri64v
-#define glGetNamedBufferPointerv			SharedGL_glGetNamedBufferPointerv
-#define glGetNamedBufferSubData				SharedGL_glGetNamedBufferSubData
-#define glCreateFramebuffers				SharedGL_glCreateFramebuffers
-#define glNamedFramebufferRenderbuffer			SharedGL_glNamedFramebufferRenderbuffer
-#define glNamedFramebufferParameteri			SharedGL_glNamedFramebufferParameteri
-#define glNamedFramebufferTexture			SharedGL_glNamedFramebufferTexture
-#define glNamedFramebufferTextureLayer			SharedGL_glNamedFramebufferTextureLayer
-#define glNamedFramebufferDrawBuffer			SharedGL_glNamedFramebufferDrawBuffer
-#define glNamedFramebufferDrawBuffers			SharedGL_glNamedFramebufferDrawBuffers
-#define glNamedFramebufferReadBuffer			SharedGL_glNamedFramebufferReadBuffer
-#define glInvalidateNamedFramebufferData		SharedGL_glInvalidateNamedFramebufferData
-#define glInvalidateNamedFramebufferSubData		SharedGL_glInvalidateNamedFramebufferSubData
-#define glClearNamedFramebufferiv			SharedGL_glClearNamedFramebufferiv
-#define glClearNamedFramebufferuiv			SharedGL_glClearNamedFramebufferuiv
-#define glClearNamedFramebufferfv			SharedGL_glClearNamedFramebufferfv
-#define glClearNamedFramebufferfi			SharedGL_glClearNamedFramebufferfi
-#define glBlitNamedFramebuffer				SharedGL_glBlitNamedFramebuffer
-#define glCheckNamedFramebufferStatus			SharedGL_glCheckNamedFramebufferStatus
-#define glGetNamedFramebufferParameteriv		SharedGL_glGetNamedFramebufferParameteriv
-#define glGetNamedFramebufferAttachmentParameteriv	SharedGL_glGetNamedFramebufferAttachmentParameteriv
-#define glCreateRenderbuffers				SharedGL_glCreateRenderbuffers
-#define glNamedRenderbufferStorage			SharedGL_glNamedRenderbufferStorage
-#define glNamedRenderbufferStorageMultisample		SharedGL_glNamedRenderbufferStorageMultisample
-#define glGetNamedRenderbufferParameteriv		SharedGL_glGetNamedRenderbufferParameteriv
-#define glCreateTextures				SharedGL_glCreateTextures
-#define glTextureBuffer					SharedGL_glTextureBuffer
-#define glTextureBufferRange				SharedGL_glTextureBufferRange
-#define glTextureStorage1D				SharedGL_glTextureStorage1D
-#define glTextureStorage2D				SharedGL_glTextureStorage2D
-#define glTextureStorage3D				SharedGL_glTextureStorage3D
-#define glTextureStorage2DMultisample			SharedGL_glTextureStorage2DMultisample
-#define glTextureStorage3DMultisample			SharedGL_glTextureStorage3DMultisample
-#define glTextureSubImage1D				SharedGL_glTextureSubImage1D
-#define glTextureSubImage2D				SharedGL_glTextureSubImage2D
-#define glTextureSubImage3D				SharedGL_glTextureSubImage3D
-#define glCompressedTextureSubImage1D			SharedGL_glCompressedTextureSubImage1D
-#define glCompressedTextureSubImage2D			SharedGL_glCompressedTextureSubImage2D
-#define glCompressedTextureSubImage3D			SharedGL_glCompressedTextureSubImage3D
-#define glCopyTextureSubImage1D				SharedGL_glCopyTextureSubImage1D
-#define glCopyTextureSubImage2D				SharedGL_glCopyTextureSubImage2D
-#define glCopyTextureSubImage3D				SharedGL_glCopyTextureSubImage3D
-#define glTextureParameterf				SharedGL_glTextureParameterf
-#define glTextureParameterfv				SharedGL_glTextureParameterfv
-#define glTextureParameteri				SharedGL_glTextureParameteri
-#define glTextureParameterIiv				SharedGL_glTextureParameterIiv
-#define glTextureParameterIuiv				SharedGL_glTextureParameterIuiv
-#define glTextureParameteriv				SharedGL_glTextureParameteriv
-#define glGenerateTextureMipmap				SharedGL_glGenerateTextureMipmap
-#define glBindTextureUnit				SharedGL_glBindTextureUnit
-#define glGetTextureImage				SharedGL_glGetTextureImage
-#define glGetCompressedTextureImage			SharedGL_glGetCompressedTextureImage
-#define glGetTextureLevelParameterfv			SharedGL_glGetTextureLevelParameterfv
-#define glGetTextureLevelParameteriv			SharedGL_glGetTextureLevelParameteriv
-#define glGetTextureParameterfv				SharedGL_glGetTextureParameterfv
-#define glGetTextureParameterIiv			SharedGL_glGetTextureParameterIiv
-#define glGetTextureParameterIuiv			SharedGL_glGetTextureParameterIuiv
-#define glGetTextureParameteriv				SharedGL_glGetTextureParameteriv
-#define glCreateVertexArrays				SharedGL_glCreateVertexArrays
-#define glDisableVertexArrayAttrib			SharedGL_glDisableVertexArrayAttrib
-#define glEnableVertexArrayAttrib			SharedGL_glEnableVertexArrayAttrib
-#define glVertexArrayElementBuffer			SharedGL_glVertexArrayElementBuffer
-#define glVertexArrayVertexBuffer			SharedGL_glVertexArrayVertexBuffer
-#define glVertexArrayVertexBuffers			SharedGL_glVertexArrayVertexBuffers
-#define glVertexArrayAttribBinding			SharedGL_glVertexArrayAttribBinding
-#define glVertexArrayAttribFormat			SharedGL_glVertexArrayAttribFormat
-#define glVertexArrayAttribIFormat			SharedGL_glVertexArrayAttribIFormat
-#define glVertexArrayAttribLFormat			SharedGL_glVertexArrayAttribLFormat
-#define glVertexArrayBindingDivisor			SharedGL_glVertexArrayBindingDivisor
-#define glGetVertexArrayiv				SharedGL_glGetVertexArrayiv
-#define glGetVertexArrayIndexediv			SharedGL_glGetVertexArrayIndexediv
-#define glGetVertexArrayIndexed64iv			SharedGL_glGetVertexArrayIndexed64iv
-#define glCreateSamplers				SharedGL_glCreateSamplers
-#define glCreateProgramPipelines			SharedGL_glCreateProgramPipelines
-#define glCreateQueries					SharedGL_glCreateQueries
-#define glGetQueryBufferObjecti64v			SharedGL_glGetQueryBufferObjecti64v
-#define glGetQueryBufferObjectiv			SharedGL_glGetQueryBufferObjectiv
-#define glGetQueryBufferObjectui64v			SharedGL_glGetQueryBufferObjectui64v
-#define glGetQueryBufferObjectuiv			SharedGL_glGetQueryBufferObjectuiv
-#define glMemoryBarrierByRegion				SharedGL_glMemoryBarrierByRegion
-#define glGetTextureSubImage				SharedGL_glGetTextureSubImage
-#define glGetCompressedTextureSubImage			SharedGL_glGetCompressedTextureSubImage
-#define glGetGraphicsResetStatus			SharedGL_glGetGraphicsResetStatus
-#define glGetnCompressedTexImage			SharedGL_glGetnCompressedTexImage
-#define glGetnTexImage					SharedGL_glGetnTexImage
-#define glGetnUniformdv					SharedGL_glGetnUniformdv
-#define glGetnUniformfv					SharedGL_glGetnUniformfv
-#define glGetnUniformiv					SharedGL_glGetnUniformiv
-#define glGetnUniformuiv				SharedGL_glGetnUniformuiv
-#define glReadnPixels					SharedGL_glReadnPixels
-#define glGetnMapdv					SharedGL_glGetnMapdv
-#define glGetnMapfv					SharedGL_glGetnMapfv
-#define glGetnMapiv					SharedGL_glGetnMapiv
-#define glGetnPixelMapfv				SharedGL_glGetnPixelMapfv
-#define glGetnPixelMapuiv				SharedGL_glGetnPixelMapuiv
-#define glGetnPixelMapusv				SharedGL_glGetnPixelMapusv
-#define glGetnPolygonStipple				SharedGL_glGetnPolygonStipple
-#define glGetnColorTable				SharedGL_glGetnColorTable
-#define glGetnConvolutionFilter				SharedGL_glGetnConvolutionFilter
-#define glGetnSeparableFilter				SharedGL_glGetnSeparableFilter
-#define glGetnHistogram					SharedGL_glGetnHistogram
-#define glGetnMinmax					SharedGL_glGetnMinmax
-#define glTextureBarrier				SharedGL_glTextureBarrier
+#define glClipControl					HH_GL_glClipControl
+#define glCreateTransformFeedbacks			HH_GL_glCreateTransformFeedbacks
+#define glTransformFeedbackBufferBase			HH_GL_glTransformFeedbackBufferBase
+#define glTransformFeedbackBufferRange			HH_GL_glTransformFeedbackBufferRange
+#define glGetTransformFeedbackiv			HH_GL_glGetTransformFeedbackiv
+#define glGetTransformFeedbacki_v			HH_GL_glGetTransformFeedbacki_v
+#define glGetTransformFeedbacki64_v			HH_GL_glGetTransformFeedbacki64_v
+#define glCreateBuffers					HH_GL_glCreateBuffers
+#define glNamedBufferStorage				HH_GL_glNamedBufferStorage
+#define glNamedBufferData				HH_GL_glNamedBufferData
+#define glNamedBufferSubData				HH_GL_glNamedBufferSubData
+#define glCopyNamedBufferSubData			HH_GL_glCopyNamedBufferSubData
+#define glClearNamedBufferData				HH_GL_glClearNamedBufferData
+#define glClearNamedBufferSubData			HH_GL_glClearNamedBufferSubData
+#define glMapNamedBuffer				HH_GL_glMapNamedBuffer
+#define glMapNamedBufferRange				HH_GL_glMapNamedBufferRange
+#define glUnmapNamedBuffer				HH_GL_glUnmapNamedBuffer
+#define glFlushMappedNamedBufferRange			HH_GL_glFlushMappedNamedBufferRange
+#define glGetNamedBufferParameteriv			HH_GL_glGetNamedBufferParameteriv
+#define glGetNamedBufferParameteri64v			HH_GL_glGetNamedBufferParameteri64v
+#define glGetNamedBufferPointerv			HH_GL_glGetNamedBufferPointerv
+#define glGetNamedBufferSubData				HH_GL_glGetNamedBufferSubData
+#define glCreateFramebuffers				HH_GL_glCreateFramebuffers
+#define glNamedFramebufferRenderbuffer			HH_GL_glNamedFramebufferRenderbuffer
+#define glNamedFramebufferParameteri			HH_GL_glNamedFramebufferParameteri
+#define glNamedFramebufferTexture			HH_GL_glNamedFramebufferTexture
+#define glNamedFramebufferTextureLayer			HH_GL_glNamedFramebufferTextureLayer
+#define glNamedFramebufferDrawBuffer			HH_GL_glNamedFramebufferDrawBuffer
+#define glNamedFramebufferDrawBuffers			HH_GL_glNamedFramebufferDrawBuffers
+#define glNamedFramebufferReadBuffer			HH_GL_glNamedFramebufferReadBuffer
+#define glInvalidateNamedFramebufferData		HH_GL_glInvalidateNamedFramebufferData
+#define glInvalidateNamedFramebufferSubData		HH_GL_glInvalidateNamedFramebufferSubData
+#define glClearNamedFramebufferiv			HH_GL_glClearNamedFramebufferiv
+#define glClearNamedFramebufferuiv			HH_GL_glClearNamedFramebufferuiv
+#define glClearNamedFramebufferfv			HH_GL_glClearNamedFramebufferfv
+#define glClearNamedFramebufferfi			HH_GL_glClearNamedFramebufferfi
+#define glBlitNamedFramebuffer				HH_GL_glBlitNamedFramebuffer
+#define glCheckNamedFramebufferStatus			HH_GL_glCheckNamedFramebufferStatus
+#define glGetNamedFramebufferParameteriv		HH_GL_glGetNamedFramebufferParameteriv
+#define glGetNamedFramebufferAttachmentParameteriv	HH_GL_glGetNamedFramebufferAttachmentParameteriv
+#define glCreateRenderbuffers				HH_GL_glCreateRenderbuffers
+#define glNamedRenderbufferStorage			HH_GL_glNamedRenderbufferStorage
+#define glNamedRenderbufferStorageMultisample		HH_GL_glNamedRenderbufferStorageMultisample
+#define glGetNamedRenderbufferParameteriv		HH_GL_glGetNamedRenderbufferParameteriv
+#define glCreateTextures				HH_GL_glCreateTextures
+#define glTextureBuffer					HH_GL_glTextureBuffer
+#define glTextureBufferRange				HH_GL_glTextureBufferRange
+#define glTextureStorage1D				HH_GL_glTextureStorage1D
+#define glTextureStorage2D				HH_GL_glTextureStorage2D
+#define glTextureStorage3D				HH_GL_glTextureStorage3D
+#define glTextureStorage2DMultisample			HH_GL_glTextureStorage2DMultisample
+#define glTextureStorage3DMultisample			HH_GL_glTextureStorage3DMultisample
+#define glTextureSubImage1D				HH_GL_glTextureSubImage1D
+#define glTextureSubImage2D				HH_GL_glTextureSubImage2D
+#define glTextureSubImage3D				HH_GL_glTextureSubImage3D
+#define glCompressedTextureSubImage1D			HH_GL_glCompressedTextureSubImage1D
+#define glCompressedTextureSubImage2D			HH_GL_glCompressedTextureSubImage2D
+#define glCompressedTextureSubImage3D			HH_GL_glCompressedTextureSubImage3D
+#define glCopyTextureSubImage1D				HH_GL_glCopyTextureSubImage1D
+#define glCopyTextureSubImage2D				HH_GL_glCopyTextureSubImage2D
+#define glCopyTextureSubImage3D				HH_GL_glCopyTextureSubImage3D
+#define glTextureParameterf				HH_GL_glTextureParameterf
+#define glTextureParameterfv				HH_GL_glTextureParameterfv
+#define glTextureParameteri				HH_GL_glTextureParameteri
+#define glTextureParameterIiv				HH_GL_glTextureParameterIiv
+#define glTextureParameterIuiv				HH_GL_glTextureParameterIuiv
+#define glTextureParameteriv				HH_GL_glTextureParameteriv
+#define glGenerateTextureMipmap				HH_GL_glGenerateTextureMipmap
+#define glBindTextureUnit				HH_GL_glBindTextureUnit
+#define glGetTextureImage				HH_GL_glGetTextureImage
+#define glGetCompressedTextureImage			HH_GL_glGetCompressedTextureImage
+#define glGetTextureLevelParameterfv			HH_GL_glGetTextureLevelParameterfv
+#define glGetTextureLevelParameteriv			HH_GL_glGetTextureLevelParameteriv
+#define glGetTextureParameterfv				HH_GL_glGetTextureParameterfv
+#define glGetTextureParameterIiv			HH_GL_glGetTextureParameterIiv
+#define glGetTextureParameterIuiv			HH_GL_glGetTextureParameterIuiv
+#define glGetTextureParameteriv				HH_GL_glGetTextureParameteriv
+#define glCreateVertexArrays				HH_GL_glCreateVertexArrays
+#define glDisableVertexArrayAttrib			HH_GL_glDisableVertexArrayAttrib
+#define glEnableVertexArrayAttrib			HH_GL_glEnableVertexArrayAttrib
+#define glVertexArrayElementBuffer			HH_GL_glVertexArrayElementBuffer
+#define glVertexArrayVertexBuffer			HH_GL_glVertexArrayVertexBuffer
+#define glVertexArrayVertexBuffers			HH_GL_glVertexArrayVertexBuffers
+#define glVertexArrayAttribBinding			HH_GL_glVertexArrayAttribBinding
+#define glVertexArrayAttribFormat			HH_GL_glVertexArrayAttribFormat
+#define glVertexArrayAttribIFormat			HH_GL_glVertexArrayAttribIFormat
+#define glVertexArrayAttribLFormat			HH_GL_glVertexArrayAttribLFormat
+#define glVertexArrayBindingDivisor			HH_GL_glVertexArrayBindingDivisor
+#define glGetVertexArrayiv				HH_GL_glGetVertexArrayiv
+#define glGetVertexArrayIndexediv			HH_GL_glGetVertexArrayIndexediv
+#define glGetVertexArrayIndexed64iv			HH_GL_glGetVertexArrayIndexed64iv
+#define glCreateSamplers				HH_GL_glCreateSamplers
+#define glCreateProgramPipelines			HH_GL_glCreateProgramPipelines
+#define glCreateQueries					HH_GL_glCreateQueries
+#define glGetQueryBufferObjecti64v			HH_GL_glGetQueryBufferObjecti64v
+#define glGetQueryBufferObjectiv			HH_GL_glGetQueryBufferObjectiv
+#define glGetQueryBufferObjectui64v			HH_GL_glGetQueryBufferObjectui64v
+#define glGetQueryBufferObjectuiv			HH_GL_glGetQueryBufferObjectuiv
+#define glMemoryBarrierByRegion				HH_GL_glMemoryBarrierByRegion
+#define glGetTextureSubImage				HH_GL_glGetTextureSubImage
+#define glGetCompressedTextureSubImage			HH_GL_glGetCompressedTextureSubImage
+#define glGetGraphicsResetStatus			HH_GL_glGetGraphicsResetStatus
+#define glGetnCompressedTexImage			HH_GL_glGetnCompressedTexImage
+#define glGetnTexImage					HH_GL_glGetnTexImage
+#define glGetnUniformdv					HH_GL_glGetnUniformdv
+#define glGetnUniformfv					HH_GL_glGetnUniformfv
+#define glGetnUniformiv					HH_GL_glGetnUniformiv
+#define glGetnUniformuiv				HH_GL_glGetnUniformuiv
+#define glReadnPixels					HH_GL_glReadnPixels
+#define glGetnMapdv					HH_GL_glGetnMapdv
+#define glGetnMapfv					HH_GL_glGetnMapfv
+#define glGetnMapiv					HH_GL_glGetnMapiv
+#define glGetnPixelMapfv				HH_GL_glGetnPixelMapfv
+#define glGetnPixelMapuiv				HH_GL_glGetnPixelMapuiv
+#define glGetnPixelMapusv				HH_GL_glGetnPixelMapusv
+#define glGetnPolygonStipple				HH_GL_glGetnPolygonStipple
+#define glGetnColorTable				HH_GL_glGetnColorTable
+#define glGetnConvolutionFilter				HH_GL_glGetnConvolutionFilter
+#define glGetnSeparableFilter				HH_GL_glGetnSeparableFilter
+#define glGetnHistogram					HH_GL_glGetnHistogram
+#define glGetnMinmax					HH_GL_glGetnMinmax
+#define glTextureBarrier				HH_GL_glTextureBarrier
 
 typedef void      (__stdcall *PFNGLCLIPCONTROLPROC)                              (GLenum origin, GLenum depth);
 typedef void      (__stdcall *PFNGLCREATETRANSFORMFEEDBACKSPROC)                 (GLsizei n, GLuint *ids);
@@ -3374,7 +3374,7 @@ typedef void      (__stdcall *PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC)          
 typedef void      (__stdcall *PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC) (GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params);
 typedef void      (__stdcall *PFNGLCREATERENDERBUFFERSPROC)                      (GLsizei n, GLuint *renderbuffers);
 typedef void      (__stdcall *PFNGLNAMEDRENDERBUFFERSTORAGEPROC)                 (GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void      (__stdcall *PFNGLNAMEDRENDERBUFFERSTORAGEMULTISASharedGLLEPROC)      (GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
+typedef void      (__stdcall *PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAHH_GLLEPROC)      (GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
 typedef void      (__stdcall *PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC)          (GLuint renderbuffer, GLenum pname, GLint *params);
 typedef void      (__stdcall *PFNGLCREATETEXTURESPROC)                           (GLenum target, GLsizei n, GLuint *textures);
 typedef void      (__stdcall *PFNGLTEXTUREBUFFERPROC)                            (GLuint texture, GLenum internalformat, GLuint buffer);
@@ -3382,14 +3382,14 @@ typedef void      (__stdcall *PFNGLTEXTUREBUFFERRANGEPROC)                      
 typedef void      (__stdcall *PFNGLTEXTURESTORAGE1DPROC)                         (GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width);
 typedef void      (__stdcall *PFNGLTEXTURESTORAGE2DPROC)                         (GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);
 typedef void      (__stdcall *PFNGLTEXTURESTORAGE3DPROC)                         (GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);
-typedef void      (__stdcall *PFNGLTEXTURESTORAGE2DMULTISASharedGLLEPROC)              (GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-typedef void      (__stdcall *PFNGLTEXTURESTORAGE3DMULTISASharedGLLEPROC)              (GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+typedef void      (__stdcall *PFNGLTEXTURESTORAGE2DMULTISAHH_GLLEPROC)              (GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
+typedef void      (__stdcall *PFNGLTEXTURESTORAGE3DMULTISAHH_GLLEPROC)              (GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
 typedef void      (__stdcall *PFNGLTEXTURESUBIMAGE1DPROC)                        (GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels);
 typedef void      (__stdcall *PFNGLTEXTURESUBIMAGE2DPROC)                        (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels);
 typedef void      (__stdcall *PFNGLTEXTURESUBIMAGE3DPROC)                        (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
-typedef void      (__stdcall *PFNGLCOSharedGLRESSEDTEXTURESUBIMAGE1DPROC)              (GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
-typedef void      (__stdcall *PFNGLCOSharedGLRESSEDTEXTURESUBIMAGE2DPROC)              (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
-typedef void      (__stdcall *PFNGLCOSharedGLRESSEDTEXTURESUBIMAGE3DPROC)              (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
+typedef void      (__stdcall *PFNGLCOHH_GLRESSEDTEXTURESUBIMAGE1DPROC)              (GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
+typedef void      (__stdcall *PFNGLCOHH_GLRESSEDTEXTURESUBIMAGE2DPROC)              (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+typedef void      (__stdcall *PFNGLCOHH_GLRESSEDTEXTURESUBIMAGE3DPROC)              (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
 typedef void      (__stdcall *PFNGLCOPYTEXTURESUBIMAGE1DPROC)                    (GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
 typedef void      (__stdcall *PFNGLCOPYTEXTURESUBIMAGE2DPROC)                    (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
 typedef void      (__stdcall *PFNGLCOPYTEXTURESUBIMAGE3DPROC)                    (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
@@ -3402,7 +3402,7 @@ typedef void      (__stdcall *PFNGLTEXTUREPARAMETERIVPROC)                      
 typedef void      (__stdcall *PFNGLGENERATETEXTUREMIPMAPPROC)                    (GLuint texture);
 typedef void      (__stdcall *PFNGLBINDTEXTUREUNITPROC)                          (GLuint unit, GLuint texture);
 typedef void      (__stdcall *PFNGLGETTEXTUREIMAGEPROC)                          (GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels);
-typedef void      (__stdcall *PFNGLGETCOSharedGLRESSEDTEXTUREIMAGEPROC)                (GLuint texture, GLint level, GLsizei bufSize, void *pixels);
+typedef void      (__stdcall *PFNGLGETCOHH_GLRESSEDTEXTUREIMAGEPROC)                (GLuint texture, GLint level, GLsizei bufSize, void *pixels);
 typedef void      (__stdcall *PFNGLGETTEXTURELEVELPARAMETERFVPROC)               (GLuint texture, GLint level, GLenum pname, GLfloat *params);
 typedef void      (__stdcall *PFNGLGETTEXTURELEVELPARAMETERIVPROC)               (GLuint texture, GLint level, GLenum pname, GLint *params);
 typedef void      (__stdcall *PFNGLGETTEXTUREPARAMETERFVPROC)                    (GLuint texture, GLenum pname, GLfloat *params);
@@ -3423,8 +3423,8 @@ typedef void      (__stdcall *PFNGLVERTEXARRAYBINDINGDIVISORPROC)               
 typedef void      (__stdcall *PFNGLGETVERTEXARRAYIVPROC)                         (GLuint vaobj, GLenum pname, GLint *param);
 typedef void      (__stdcall *PFNGLGETVERTEXARRAYINDEXEDIVPROC)                  (GLuint vaobj, GLuint index, GLenum pname, GLint *param);
 typedef void      (__stdcall *PFNGLGETVERTEXARRAYINDEXED64IVPROC)                (GLuint vaobj, GLuint index, GLenum pname, GLint64 *param);
-typedef void      (__stdcall *PFNGLCREATESASharedGLLERSPROC)                           (GLsizei n, GLuint *samplers);
-typedef void      (__stdcall *PFNGLCREATEPROGRASharedGLIPELINESPROC)			 (GLsizei n, GLuint *pipelines);
+typedef void      (__stdcall *PFNGLCREATESAHH_GLLERSPROC)                           (GLsizei n, GLuint *samplers);
+typedef void      (__stdcall *PFNGLCREATEPROGRAHH_GLIPELINESPROC)			 (GLsizei n, GLuint *pipelines);
 typedef void      (__stdcall *PFNGLCREATEQUERIESPROC)				 (GLenum target, GLsizei n, GLuint *ids);
 typedef void      (__stdcall *PFNGLGETQUERYBUFFEROBJECTI64VPROC)		 (GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
 typedef void      (__stdcall *PFNGLGETQUERYBUFFEROBJECTIVPROC)			 (GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
@@ -3432,9 +3432,9 @@ typedef void      (__stdcall *PFNGLGETQUERYBUFFEROBJECTUI64VPROC)		 (GLuint id, 
 typedef void      (__stdcall *PFNGLGETQUERYBUFFEROBJECTUIVPROC)			 (GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
 typedef void      (__stdcall *PFNGLMEMORYBARRIERBYREGIONPROC)			 (GLbitfield barriers);
 typedef void      (__stdcall *PFNGLGETTEXTURESUBIMAGEPROC)			 (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void *pixels);
-typedef void      (__stdcall *PFNGLGETCOSharedGLRESSEDTEXTURESUBIMAGEPROC)		 (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void *pixels);
+typedef void      (__stdcall *PFNGLGETCOHH_GLRESSEDTEXTURESUBIMAGEPROC)		 (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void *pixels);
 typedef GLenum    (__stdcall * PFNGLGETGRAPHICSRESETSTATUSPROC)			 (void);
-typedef void      (__stdcall *PFNGLGETNCOSharedGLRESSEDTEXIMAGEPROC)			 (GLenum target, GLint lod, GLsizei bufSize, void *pixels);
+typedef void      (__stdcall *PFNGLGETNCOHH_GLRESSEDTEXIMAGEPROC)			 (GLenum target, GLint lod, GLsizei bufSize, void *pixels);
 typedef void      (__stdcall *PFNGLGETNTEXIMAGEPROC)				 (GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels);
 typedef void      (__stdcall *PFNGLGETNUNIFORMDVPROC)				 (GLuint program, GLint location, GLsizei bufSize, GLdouble *params);
 typedef void      (__stdcall *PFNGLGETNUNIFORMFVPROC)				 (GLuint program, GLint location, GLsizei bufSize, GLfloat *params);
@@ -3451,148 +3451,148 @@ typedef void      (__stdcall *PFNGLGETNPOLYGONSTIPPLEPROC)			 (GLsizei bufSize, 
 typedef void      (__stdcall *PFNGLGETNCOLORTABLEPROC)				 (GLenum target, GLenum format, GLenum type, GLsizei bufSize, void *table);
 typedef void      (__stdcall *PFNGLGETNCONVOLUTIONFILTERPROC)			 (GLenum target, GLenum format, GLenum type, GLsizei bufSize, void *image);
 typedef void      (__stdcall *PFNGLGETNSEPARABLEFILTERPROC)			 (GLenum target, GLenum format, GLenum type, GLsizei rowBufSize, void *row, GLsizei columnBufSize, void *column, void *span);
-typedef void      (__stdcall *PFNGLGETNHISTOGRASharedGLROC)				 (GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void *values);
+typedef void      (__stdcall *PFNGLGETNHISTOGRAHH_GLROC)				 (GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void *values);
 typedef void      (__stdcall *PFNGLGETNMINMAXPROC)				 (GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void *values);
 typedef void      (__stdcall *PFNGLTEXTUREBARRIERPROC)				 (void);
 
-PFNGLCLIPCONTROLPROC					SharedGL_glClipControl			       = 0;
-PFNGLCREATETRANSFORMFEEDBACKSPROC			SharedGL_glCreateTransformFeedbacks		       = 0;
-PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC			SharedGL_glTransformFeedbackBufferBase	       = 0;
-PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC			SharedGL_glTransformFeedbackBufferRange	       = 0;
-PFNGLGETTRANSFORMFEEDBACKIVPROC				SharedGL_glGetTransformFeedbackiv		       = 0;
-PFNGLGETTRANSFORMFEEDBACKI_VPROC			SharedGL_glGetTransformFeedbacki_v		       = 0;
-PFNGLGETTRANSFORMFEEDBACKI64_VPROC			SharedGL_glGetTransformFeedbacki64_v		       = 0;
-PFNGLCREATEBUFFERSPROC					SharedGL_glCreateBuffers			       = 0;
-PFNGLNAMEDBUFFERSTORAGEPROC				SharedGL_glNamedBufferStorage		       = 0;
-PFNGLNAMEDBUFFERDATAPROC				SharedGL_glNamedBufferData			       = 0;
-PFNGLNAMEDBUFFERSUBDATAPROC				SharedGL_glNamedBufferSubData		       = 0;
-PFNGLCOPYNAMEDBUFFERSUBDATAPROC				SharedGL_glCopyNamedBufferSubData		       = 0;
-PFNGLCLEARNAMEDBUFFERDATAPROC				SharedGL_glClearNamedBufferData		       = 0;
-PFNGLCLEARNAMEDBUFFERSUBDATAPROC			SharedGL_glClearNamedBufferSubData		       = 0;
-PFNGLMAPNAMEDBUFFERPROC					SharedGL_glMapNamedBuffer			       = 0;
-PFNGLMAPNAMEDBUFFERRANGEPROC				SharedGL_glMapNamedBufferRange		       = 0;
-PFNGLUNMAPNAMEDBUFFERPROC				SharedGL_glUnmapNamedBuffer			       = 0;
-PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC			SharedGL_glFlushMappedNamedBufferRange	       = 0;
-PFNGLGETNAMEDBUFFERPARAMETERIVPROC			SharedGL_glGetNamedBufferParameteriv		       = 0;
-PFNGLGETNAMEDBUFFERPARAMETERI64VPROC			SharedGL_glGetNamedBufferParameteri64v	       = 0;
-PFNGLGETNAMEDBUFFERPOINTERVPROC				SharedGL_glGetNamedBufferPointerv		       = 0;
-PFNGLGETNAMEDBUFFERSUBDATAPROC				SharedGL_glGetNamedBufferSubData		       = 0;
-PFNGLCREATEFRAMEBUFFERSPROC				SharedGL_glCreateFramebuffers		       = 0;
-PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC			SharedGL_glNamedFramebufferRenderbuffer	       = 0;
-PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC			SharedGL_glNamedFramebufferParameteri	       = 0;
-PFNGLNAMEDFRAMEBUFFERTEXTUREPROC			SharedGL_glNamedFramebufferTexture		       = 0;
-PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC			SharedGL_glNamedFramebufferTextureLayer	       = 0;
-PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC			SharedGL_glNamedFramebufferDrawBuffer	       = 0;
-PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC			SharedGL_glNamedFramebufferDrawBuffers	       = 0;
-PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC			SharedGL_glNamedFramebufferReadBuffer	       = 0;
-PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC			SharedGL_glInvalidateNamedFramebufferData	       = 0;
-PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC		SharedGL_glInvalidateNamedFramebufferSubData	       = 0;
-PFNGLCLEARNAMEDFRAMEBUFFERIVPROC			SharedGL_glClearNamedFramebufferiv		       = 0;
-PFNGLCLEARNAMEDFRAMEBUFFERUIVPROC			SharedGL_glClearNamedFramebufferuiv		       = 0;
-PFNGLCLEARNAMEDFRAMEBUFFERFVPROC			SharedGL_glClearNamedFramebufferfv		       = 0;
-PFNGLCLEARNAMEDFRAMEBUFFERFIPROC			SharedGL_glClearNamedFramebufferfi		       = 0;
-PFNGLBLITNAMEDFRAMEBUFFERPROC				SharedGL_glBlitNamedFramebuffer		       = 0;
-PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC			SharedGL_glCheckNamedFramebufferStatus	       = 0;
-PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC			SharedGL_glGetNamedFramebufferParameteriv	       = 0;
-PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC	SharedGL_glGetNamedFramebufferAttachmentParameteriv = 0;
-PFNGLCREATERENDERBUFFERSPROC				SharedGL_glCreateRenderbuffers		       = 0;
-PFNGLNAMEDRENDERBUFFERSTORAGEPROC			SharedGL_glNamedRenderbufferStorage		       = 0;
-PFNGLNAMEDRENDERBUFFERSTORAGEMULTISASharedGLLEPROC		SharedGL_glNamedRenderbufferStorageMultisample      = 0;
-PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC		SharedGL_glGetNamedRenderbufferParameteriv	       = 0;
-PFNGLCREATETEXTURESPROC					SharedGL_glCreateTextures			       = 0;
-PFNGLTEXTUREBUFFERPROC					SharedGL_glTextureBuffer			       = 0;
-PFNGLTEXTUREBUFFERRANGEPROC				SharedGL_glTextureBufferRange		       = 0;
-PFNGLTEXTURESTORAGE1DPROC				SharedGL_glTextureStorage1D			       = 0;
-PFNGLTEXTURESTORAGE2DPROC				SharedGL_glTextureStorage2D			       = 0;
-PFNGLTEXTURESTORAGE3DPROC				SharedGL_glTextureStorage3D			       = 0;
-PFNGLTEXTURESTORAGE2DMULTISASharedGLLEPROC			SharedGL_glTextureStorage2DMultisample	       = 0;
-PFNGLTEXTURESTORAGE3DMULTISASharedGLLEPROC			SharedGL_glTextureStorage3DMultisample	       = 0;
-PFNGLTEXTURESUBIMAGE1DPROC				SharedGL_glTextureSubImage1D			       = 0;
-PFNGLTEXTURESUBIMAGE2DPROC				SharedGL_glTextureSubImage2D			       = 0;
-PFNGLTEXTURESUBIMAGE3DPROC				SharedGL_glTextureSubImage3D			       = 0;
-PFNGLCOSharedGLRESSEDTEXTURESUBIMAGE1DPROC			SharedGL_glCompressedTextureSubImage1D	       = 0;
-PFNGLCOSharedGLRESSEDTEXTURESUBIMAGE2DPROC			SharedGL_glCompressedTextureSubImage2D	       = 0;
-PFNGLCOSharedGLRESSEDTEXTURESUBIMAGE3DPROC			SharedGL_glCompressedTextureSubImage3D	       = 0;
-PFNGLCOPYTEXTURESUBIMAGE1DPROC				SharedGL_glCopyTextureSubImage1D		       = 0;
-PFNGLCOPYTEXTURESUBIMAGE2DPROC				SharedGL_glCopyTextureSubImage2D		       = 0;
-PFNGLCOPYTEXTURESUBIMAGE3DPROC				SharedGL_glCopyTextureSubImage3D		       = 0;
-PFNGLTEXTUREPARAMETERFPROC				SharedGL_glTextureParameterf			       = 0;
-PFNGLTEXTUREPARAMETERFVPROC				SharedGL_glTextureParameterfv		       = 0;
-PFNGLTEXTUREPARAMETERIPROC				SharedGL_glTextureParameteri			       = 0;
-PFNGLTEXTUREPARAMETERIIVPROC				SharedGL_glTextureParameterIiv		       = 0;
-PFNGLTEXTUREPARAMETERIUIVPROC				SharedGL_glTextureParameterIuiv		       = 0;
-PFNGLTEXTUREPARAMETERIVPROC				SharedGL_glTextureParameteriv		       = 0;
-PFNGLGENERATETEXTUREMIPMAPPROC				SharedGL_glGenerateTextureMipmap		       = 0;
-PFNGLBINDTEXTUREUNITPROC				SharedGL_glBindTextureUnit			       = 0;
-PFNGLGETTEXTUREIMAGEPROC				SharedGL_glGetTextureImage			       = 0;
-PFNGLGETCOSharedGLRESSEDTEXTUREIMAGEPROC			SharedGL_glGetCompressedTextureImage		       = 0;
-PFNGLGETTEXTURELEVELPARAMETERFVPROC			SharedGL_glGetTextureLevelParameterfv	       = 0;
-PFNGLGETTEXTURELEVELPARAMETERIVPROC			SharedGL_glGetTextureLevelParameteriv	       = 0;
-PFNGLGETTEXTUREPARAMETERFVPROC				SharedGL_glGetTextureParameterfv		       = 0;
-PFNGLGETTEXTUREPARAMETERIIVPROC				SharedGL_glGetTextureParameterIiv		       = 0;
-PFNGLGETTEXTUREPARAMETERIUIVPROC			SharedGL_glGetTextureParameterIuiv		       = 0;
-PFNGLGETTEXTUREPARAMETERIVPROC				SharedGL_glGetTextureParameteriv		       = 0;
-PFNGLCREATEVERTEXARRAYSPROC				SharedGL_glCreateVertexArrays		       = 0;
-PFNGLDISABLEVERTEXARRAYATTRIBPROC			SharedGL_glDisableVertexArrayAttrib		       = 0;
-PFNGLENABLEVERTEXARRAYATTRIBPROC			SharedGL_glEnableVertexArrayAttrib		       = 0;
-PFNGLVERTEXARRAYELEMENTBUFFERPROC			SharedGL_glVertexArrayElementBuffer		       = 0;
-PFNGLVERTEXARRAYVERTEXBUFFERPROC			SharedGL_glVertexArrayVertexBuffer		       = 0;
-PFNGLVERTEXARRAYVERTEXBUFFERSPROC			SharedGL_glVertexArrayVertexBuffers		       = 0;
-PFNGLVERTEXARRAYATTRIBBINDINGPROC			SharedGL_glVertexArrayAttribBinding		       = 0;
-PFNGLVERTEXARRAYATTRIBFORMATPROC			SharedGL_glVertexArrayAttribFormat		       = 0;
-PFNGLVERTEXARRAYATTRIBIFORMATPROC			SharedGL_glVertexArrayAttribIFormat		       = 0;
-PFNGLVERTEXARRAYATTRIBLFORMATPROC			SharedGL_glVertexArrayAttribLFormat		       = 0;
-PFNGLVERTEXARRAYBINDINGDIVISORPROC			SharedGL_glVertexArrayBindingDivisor		       = 0;
-PFNGLGETVERTEXARRAYIVPROC				SharedGL_glGetVertexArrayiv			       = 0;
-PFNGLGETVERTEXARRAYINDEXEDIVPROC			SharedGL_glGetVertexArrayIndexediv		       = 0;
-PFNGLGETVERTEXARRAYINDEXED64IVPROC			SharedGL_glGetVertexArrayIndexed64iv		       = 0;
-PFNGLCREATESASharedGLLERSPROC					SharedGL_glCreateSamplers			       = 0;
-PFNGLCREATEPROGRASharedGLIPELINESPROC				SharedGL_glCreateProgramPipelines		       = 0;
-PFNGLCREATEQUERIESPROC					SharedGL_glCreateQueries			       = 0;
-PFNGLGETQUERYBUFFEROBJECTI64VPROC			SharedGL_glGetQueryBufferObjecti64v		       = 0;
-PFNGLGETQUERYBUFFEROBJECTIVPROC				SharedGL_glGetQueryBufferObjectiv		       = 0;
-PFNGLGETQUERYBUFFEROBJECTUI64VPROC			SharedGL_glGetQueryBufferObjectui64v		       = 0;
-PFNGLGETQUERYBUFFEROBJECTUIVPROC			SharedGL_glGetQueryBufferObjectuiv		       = 0;
-PFNGLMEMORYBARRIERBYREGIONPROC				SharedGL_glMemoryBarrierByRegion		       = 0;
-PFNGLGETTEXTURESUBIMAGEPROC				SharedGL_glGetTextureSubImage		       = 0;
-PFNGLGETCOSharedGLRESSEDTEXTURESUBIMAGEPROC			SharedGL_glGetCompressedTextureSubImage	       = 0;
-PFNGLGETGRAPHICSRESETSTATUSPROC				SharedGL_glGetGraphicsResetStatus		       = 0;
-PFNGLGETNCOSharedGLRESSEDTEXIMAGEPROC				SharedGL_glGetnCompressedTexImage		       = 0;
-PFNGLGETNTEXIMAGEPROC					SharedGL_glGetnTexImage			       = 0;
-PFNGLGETNUNIFORMDVPROC					SharedGL_glGetnUniformdv			       = 0;
-PFNGLGETNUNIFORMFVPROC					SharedGL_glGetnUniformfv			       = 0;
-PFNGLGETNUNIFORMIVPROC					SharedGL_glGetnUniformiv			       = 0;
-PFNGLGETNUNIFORMUIVPROC					SharedGL_glGetnUniformuiv			       = 0;
-PFNGLREADNPIXELSPROC					SharedGL_glReadnPixels			       = 0;
-PFNGLGETNMAPDVPROC					SharedGL_glGetnMapdv				       = 0;
-PFNGLGETNMAPFVPROC					SharedGL_glGetnMapfv				       = 0;
-PFNGLGETNMAPIVPROC					SharedGL_glGetnMapiv				       = 0;
-PFNGLGETNPIXELMAPFVPROC					SharedGL_glGetnPixelMapfv			       = 0;
-PFNGLGETNPIXELMAPUIVPROC				SharedGL_glGetnPixelMapuiv			       = 0;
-PFNGLGETNPIXELMAPUSVPROC				SharedGL_glGetnPixelMapusv			       = 0;
-PFNGLGETNPOLYGONSTIPPLEPROC				SharedGL_glGetnPolygonStipple		       = 0;
-PFNGLGETNCOLORTABLEPROC					SharedGL_glGetnColorTable			       = 0;
-PFNGLGETNCONVOLUTIONFILTERPROC				SharedGL_glGetnConvolutionFilter		       = 0;
-PFNGLGETNSEPARABLEFILTERPROC				SharedGL_glGetnSeparableFilter		       = 0;
-PFNGLGETNHISTOGRASharedGLROC					SharedGL_glGetnHistogram			       = 0;
-PFNGLGETNMINMAXPROC					SharedGL_glGetnMinmax			       = 0;
-PFNGLTEXTUREBARRIERPROC					SharedGL_glTextureBarrier			       = 0;
+PFNGLCLIPCONTROLPROC					HH_GL_glClipControl			       = 0;
+PFNGLCREATETRANSFORMFEEDBACKSPROC			HH_GL_glCreateTransformFeedbacks		       = 0;
+PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC			HH_GL_glTransformFeedbackBufferBase	       = 0;
+PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC			HH_GL_glTransformFeedbackBufferRange	       = 0;
+PFNGLGETTRANSFORMFEEDBACKIVPROC				HH_GL_glGetTransformFeedbackiv		       = 0;
+PFNGLGETTRANSFORMFEEDBACKI_VPROC			HH_GL_glGetTransformFeedbacki_v		       = 0;
+PFNGLGETTRANSFORMFEEDBACKI64_VPROC			HH_GL_glGetTransformFeedbacki64_v		       = 0;
+PFNGLCREATEBUFFERSPROC					HH_GL_glCreateBuffers			       = 0;
+PFNGLNAMEDBUFFERSTORAGEPROC				HH_GL_glNamedBufferStorage		       = 0;
+PFNGLNAMEDBUFFERDATAPROC				HH_GL_glNamedBufferData			       = 0;
+PFNGLNAMEDBUFFERSUBDATAPROC				HH_GL_glNamedBufferSubData		       = 0;
+PFNGLCOPYNAMEDBUFFERSUBDATAPROC				HH_GL_glCopyNamedBufferSubData		       = 0;
+PFNGLCLEARNAMEDBUFFERDATAPROC				HH_GL_glClearNamedBufferData		       = 0;
+PFNGLCLEARNAMEDBUFFERSUBDATAPROC			HH_GL_glClearNamedBufferSubData		       = 0;
+PFNGLMAPNAMEDBUFFERPROC					HH_GL_glMapNamedBuffer			       = 0;
+PFNGLMAPNAMEDBUFFERRANGEPROC				HH_GL_glMapNamedBufferRange		       = 0;
+PFNGLUNMAPNAMEDBUFFERPROC				HH_GL_glUnmapNamedBuffer			       = 0;
+PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC			HH_GL_glFlushMappedNamedBufferRange	       = 0;
+PFNGLGETNAMEDBUFFERPARAMETERIVPROC			HH_GL_glGetNamedBufferParameteriv		       = 0;
+PFNGLGETNAMEDBUFFERPARAMETERI64VPROC			HH_GL_glGetNamedBufferParameteri64v	       = 0;
+PFNGLGETNAMEDBUFFERPOINTERVPROC				HH_GL_glGetNamedBufferPointerv		       = 0;
+PFNGLGETNAMEDBUFFERSUBDATAPROC				HH_GL_glGetNamedBufferSubData		       = 0;
+PFNGLCREATEFRAMEBUFFERSPROC				HH_GL_glCreateFramebuffers		       = 0;
+PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC			HH_GL_glNamedFramebufferRenderbuffer	       = 0;
+PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC			HH_GL_glNamedFramebufferParameteri	       = 0;
+PFNGLNAMEDFRAMEBUFFERTEXTUREPROC			HH_GL_glNamedFramebufferTexture		       = 0;
+PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC			HH_GL_glNamedFramebufferTextureLayer	       = 0;
+PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC			HH_GL_glNamedFramebufferDrawBuffer	       = 0;
+PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC			HH_GL_glNamedFramebufferDrawBuffers	       = 0;
+PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC			HH_GL_glNamedFramebufferReadBuffer	       = 0;
+PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC			HH_GL_glInvalidateNamedFramebufferData	       = 0;
+PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC		HH_GL_glInvalidateNamedFramebufferSubData	       = 0;
+PFNGLCLEARNAMEDFRAMEBUFFERIVPROC			HH_GL_glClearNamedFramebufferiv		       = 0;
+PFNGLCLEARNAMEDFRAMEBUFFERUIVPROC			HH_GL_glClearNamedFramebufferuiv		       = 0;
+PFNGLCLEARNAMEDFRAMEBUFFERFVPROC			HH_GL_glClearNamedFramebufferfv		       = 0;
+PFNGLCLEARNAMEDFRAMEBUFFERFIPROC			HH_GL_glClearNamedFramebufferfi		       = 0;
+PFNGLBLITNAMEDFRAMEBUFFERPROC				HH_GL_glBlitNamedFramebuffer		       = 0;
+PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC			HH_GL_glCheckNamedFramebufferStatus	       = 0;
+PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC			HH_GL_glGetNamedFramebufferParameteriv	       = 0;
+PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC	HH_GL_glGetNamedFramebufferAttachmentParameteriv = 0;
+PFNGLCREATERENDERBUFFERSPROC				HH_GL_glCreateRenderbuffers		       = 0;
+PFNGLNAMEDRENDERBUFFERSTORAGEPROC			HH_GL_glNamedRenderbufferStorage		       = 0;
+PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAHH_GLLEPROC		HH_GL_glNamedRenderbufferStorageMultisample      = 0;
+PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC		HH_GL_glGetNamedRenderbufferParameteriv	       = 0;
+PFNGLCREATETEXTURESPROC					HH_GL_glCreateTextures			       = 0;
+PFNGLTEXTUREBUFFERPROC					HH_GL_glTextureBuffer			       = 0;
+PFNGLTEXTUREBUFFERRANGEPROC				HH_GL_glTextureBufferRange		       = 0;
+PFNGLTEXTURESTORAGE1DPROC				HH_GL_glTextureStorage1D			       = 0;
+PFNGLTEXTURESTORAGE2DPROC				HH_GL_glTextureStorage2D			       = 0;
+PFNGLTEXTURESTORAGE3DPROC				HH_GL_glTextureStorage3D			       = 0;
+PFNGLTEXTURESTORAGE2DMULTISAHH_GLLEPROC			HH_GL_glTextureStorage2DMultisample	       = 0;
+PFNGLTEXTURESTORAGE3DMULTISAHH_GLLEPROC			HH_GL_glTextureStorage3DMultisample	       = 0;
+PFNGLTEXTURESUBIMAGE1DPROC				HH_GL_glTextureSubImage1D			       = 0;
+PFNGLTEXTURESUBIMAGE2DPROC				HH_GL_glTextureSubImage2D			       = 0;
+PFNGLTEXTURESUBIMAGE3DPROC				HH_GL_glTextureSubImage3D			       = 0;
+PFNGLCOHH_GLRESSEDTEXTURESUBIMAGE1DPROC			HH_GL_glCompressedTextureSubImage1D	       = 0;
+PFNGLCOHH_GLRESSEDTEXTURESUBIMAGE2DPROC			HH_GL_glCompressedTextureSubImage2D	       = 0;
+PFNGLCOHH_GLRESSEDTEXTURESUBIMAGE3DPROC			HH_GL_glCompressedTextureSubImage3D	       = 0;
+PFNGLCOPYTEXTURESUBIMAGE1DPROC				HH_GL_glCopyTextureSubImage1D		       = 0;
+PFNGLCOPYTEXTURESUBIMAGE2DPROC				HH_GL_glCopyTextureSubImage2D		       = 0;
+PFNGLCOPYTEXTURESUBIMAGE3DPROC				HH_GL_glCopyTextureSubImage3D		       = 0;
+PFNGLTEXTUREPARAMETERFPROC				HH_GL_glTextureParameterf			       = 0;
+PFNGLTEXTUREPARAMETERFVPROC				HH_GL_glTextureParameterfv		       = 0;
+PFNGLTEXTUREPARAMETERIPROC				HH_GL_glTextureParameteri			       = 0;
+PFNGLTEXTUREPARAMETERIIVPROC				HH_GL_glTextureParameterIiv		       = 0;
+PFNGLTEXTUREPARAMETERIUIVPROC				HH_GL_glTextureParameterIuiv		       = 0;
+PFNGLTEXTUREPARAMETERIVPROC				HH_GL_glTextureParameteriv		       = 0;
+PFNGLGENERATETEXTUREMIPMAPPROC				HH_GL_glGenerateTextureMipmap		       = 0;
+PFNGLBINDTEXTUREUNITPROC				HH_GL_glBindTextureUnit			       = 0;
+PFNGLGETTEXTUREIMAGEPROC				HH_GL_glGetTextureImage			       = 0;
+PFNGLGETCOHH_GLRESSEDTEXTUREIMAGEPROC			HH_GL_glGetCompressedTextureImage		       = 0;
+PFNGLGETTEXTURELEVELPARAMETERFVPROC			HH_GL_glGetTextureLevelParameterfv	       = 0;
+PFNGLGETTEXTURELEVELPARAMETERIVPROC			HH_GL_glGetTextureLevelParameteriv	       = 0;
+PFNGLGETTEXTUREPARAMETERFVPROC				HH_GL_glGetTextureParameterfv		       = 0;
+PFNGLGETTEXTUREPARAMETERIIVPROC				HH_GL_glGetTextureParameterIiv		       = 0;
+PFNGLGETTEXTUREPARAMETERIUIVPROC			HH_GL_glGetTextureParameterIuiv		       = 0;
+PFNGLGETTEXTUREPARAMETERIVPROC				HH_GL_glGetTextureParameteriv		       = 0;
+PFNGLCREATEVERTEXARRAYSPROC				HH_GL_glCreateVertexArrays		       = 0;
+PFNGLDISABLEVERTEXARRAYATTRIBPROC			HH_GL_glDisableVertexArrayAttrib		       = 0;
+PFNGLENABLEVERTEXARRAYATTRIBPROC			HH_GL_glEnableVertexArrayAttrib		       = 0;
+PFNGLVERTEXARRAYELEMENTBUFFERPROC			HH_GL_glVertexArrayElementBuffer		       = 0;
+PFNGLVERTEXARRAYVERTEXBUFFERPROC			HH_GL_glVertexArrayVertexBuffer		       = 0;
+PFNGLVERTEXARRAYVERTEXBUFFERSPROC			HH_GL_glVertexArrayVertexBuffers		       = 0;
+PFNGLVERTEXARRAYATTRIBBINDINGPROC			HH_GL_glVertexArrayAttribBinding		       = 0;
+PFNGLVERTEXARRAYATTRIBFORMATPROC			HH_GL_glVertexArrayAttribFormat		       = 0;
+PFNGLVERTEXARRAYATTRIBIFORMATPROC			HH_GL_glVertexArrayAttribIFormat		       = 0;
+PFNGLVERTEXARRAYATTRIBLFORMATPROC			HH_GL_glVertexArrayAttribLFormat		       = 0;
+PFNGLVERTEXARRAYBINDINGDIVISORPROC			HH_GL_glVertexArrayBindingDivisor		       = 0;
+PFNGLGETVERTEXARRAYIVPROC				HH_GL_glGetVertexArrayiv			       = 0;
+PFNGLGETVERTEXARRAYINDEXEDIVPROC			HH_GL_glGetVertexArrayIndexediv		       = 0;
+PFNGLGETVERTEXARRAYINDEXED64IVPROC			HH_GL_glGetVertexArrayIndexed64iv		       = 0;
+PFNGLCREATESAHH_GLLERSPROC					HH_GL_glCreateSamplers			       = 0;
+PFNGLCREATEPROGRAHH_GLIPELINESPROC				HH_GL_glCreateProgramPipelines		       = 0;
+PFNGLCREATEQUERIESPROC					HH_GL_glCreateQueries			       = 0;
+PFNGLGETQUERYBUFFEROBJECTI64VPROC			HH_GL_glGetQueryBufferObjecti64v		       = 0;
+PFNGLGETQUERYBUFFEROBJECTIVPROC				HH_GL_glGetQueryBufferObjectiv		       = 0;
+PFNGLGETQUERYBUFFEROBJECTUI64VPROC			HH_GL_glGetQueryBufferObjectui64v		       = 0;
+PFNGLGETQUERYBUFFEROBJECTUIVPROC			HH_GL_glGetQueryBufferObjectuiv		       = 0;
+PFNGLMEMORYBARRIERBYREGIONPROC				HH_GL_glMemoryBarrierByRegion		       = 0;
+PFNGLGETTEXTURESUBIMAGEPROC				HH_GL_glGetTextureSubImage		       = 0;
+PFNGLGETCOHH_GLRESSEDTEXTURESUBIMAGEPROC			HH_GL_glGetCompressedTextureSubImage	       = 0;
+PFNGLGETGRAPHICSRESETSTATUSPROC				HH_GL_glGetGraphicsResetStatus		       = 0;
+PFNGLGETNCOHH_GLRESSEDTEXIMAGEPROC				HH_GL_glGetnCompressedTexImage		       = 0;
+PFNGLGETNTEXIMAGEPROC					HH_GL_glGetnTexImage			       = 0;
+PFNGLGETNUNIFORMDVPROC					HH_GL_glGetnUniformdv			       = 0;
+PFNGLGETNUNIFORMFVPROC					HH_GL_glGetnUniformfv			       = 0;
+PFNGLGETNUNIFORMIVPROC					HH_GL_glGetnUniformiv			       = 0;
+PFNGLGETNUNIFORMUIVPROC					HH_GL_glGetnUniformuiv			       = 0;
+PFNGLREADNPIXELSPROC					HH_GL_glReadnPixels			       = 0;
+PFNGLGETNMAPDVPROC					HH_GL_glGetnMapdv				       = 0;
+PFNGLGETNMAPFVPROC					HH_GL_glGetnMapfv				       = 0;
+PFNGLGETNMAPIVPROC					HH_GL_glGetnMapiv				       = 0;
+PFNGLGETNPIXELMAPFVPROC					HH_GL_glGetnPixelMapfv			       = 0;
+PFNGLGETNPIXELMAPUIVPROC				HH_GL_glGetnPixelMapuiv			       = 0;
+PFNGLGETNPIXELMAPUSVPROC				HH_GL_glGetnPixelMapusv			       = 0;
+PFNGLGETNPOLYGONSTIPPLEPROC				HH_GL_glGetnPolygonStipple		       = 0;
+PFNGLGETNCOLORTABLEPROC					HH_GL_glGetnColorTable			       = 0;
+PFNGLGETNCONVOLUTIONFILTERPROC				HH_GL_glGetnConvolutionFilter		       = 0;
+PFNGLGETNSEPARABLEFILTERPROC				HH_GL_glGetnSeparableFilter		       = 0;
+PFNGLGETNHISTOGRAHH_GLROC					HH_GL_glGetnHistogram			       = 0;
+PFNGLGETNMINMAXPROC					HH_GL_glGetnMinmax			       = 0;
+PFNGLTEXTUREBARRIERPROC					HH_GL_glTextureBarrier			       = 0;
 
 // 4.6
-#define glSpecializeShader			SharedGL_glSpecializeShader
-#define glMultiDrawArraysIndirectCount		SharedGL_glMultiDrawArraysIndirectCount
-#define glMultiDrawElementsIndirectCount	SharedGL_glMultiDrawElementsIndirectCount
-#define glPolygonOffsetClamp			SharedGL_glPolygonOffsetClamp
+#define glSpecializeShader			HH_GL_glSpecializeShader
+#define glMultiDrawArraysIndirectCount		HH_GL_glMultiDrawArraysIndirectCount
+#define glMultiDrawElementsIndirectCount	HH_GL_glMultiDrawElementsIndirectCount
+#define glPolygonOffsetClamp			HH_GL_glPolygonOffsetClamp
 
 typedef void (__stdcall *PFNGLSPECIALIZESHADERPROC)               (GLuint shader, const GLchar *pEntryPoint, GLuint numSpecializationConstants, const GLuint *pConstantIndex, const GLuint *pConstantValue);
 typedef void (__stdcall *PFNGLMULTIDRAWARRAYSINDIRECTCOUNTPROC)   (GLenum mode, const void *indirect, GLintptr drawcount, GLsizei maxdrawcount, GLsizei stride);
 typedef void (__stdcall *PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTPROC) (GLenum mode, GLenum type, const void *indirect, GLintptr drawcount, GLsizei maxdrawcount, GLsizei stride);
-typedef void (__stdcall *PFNGLPOLYGONOFFSETCLASharedGLPROC)             (GLfloat factor, GLfloat units, GLfloat clamp);
+typedef void (__stdcall *PFNGLPOLYGONOFFSETCLAHH_GLPROC)             (GLfloat factor, GLfloat units, GLfloat clamp);
 
-PFNGLSPECIALIZESHADERPROC		SharedGL_glSpecializeShader	          = 0;
-PFNGLMULTIDRAWARRAYSINDIRECTCOUNTPROC	SharedGL_glMultiDrawArraysIndirectCount   = 0;
-PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTPROC	SharedGL_glMultiDrawElementsIndirectCount = 0;
-PFNGLPOLYGONOFFSETCLASharedGLPROC	SharedGL_glPolygonOffsetClamp	          = 0;
+PFNGLSPECIALIZESHADERPROC		HH_GL_glSpecializeShader	          = 0;
+PFNGLMULTIDRAWARRAYSINDIRECTCOUNTPROC	HH_GL_glMultiDrawArraysIndirectCount   = 0;
+PFNGLMULTIDRAWELEMENTSINDIRECTCOUNTPROC	HH_GL_glMultiDrawElementsIndirectCount = 0;
+PFNGLPOLYGONOFFSETCLAHH_GLPROC	HH_GL_glPolygonOffsetClamp	          = 0;
 
 
 // HELPERS

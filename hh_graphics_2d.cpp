@@ -100,6 +100,9 @@ struct render_information_font
 
 struct render_information_primitive
 {
+    s32 window_width;
+    s32 window_height;
+    
     GLuint rect_vao;    
     GLuint rect_vbo;    
     GLuint rect_uv_vbo; 
@@ -124,6 +127,14 @@ struct render_information_primitive
     render_information_font font;
 };
 
+inline internal void graphics_primitive_set_window_width     (render_information_primitive* primitive, s32 width)  { primitive->window_width = width;  }
+inline internal void graphics_primitive_set_window_height    (render_information_primitive* primitive, s32 height) { primitive->window_height = height; }
+inline internal void graphics_primitive_set_window_dimensions(render_information_primitive* primitive, s32 width, s32 height)
+{
+    graphics_primitive_set_window_width(primitive, width);
+    graphics_primitive_set_window_height(primitive, height);
+}
+
 inline internal void graphics_primitive_set_colour    (render_information_primitive* primitive, r32 r, r32 g, r32 b, r32 a) { primitive->colour       = { r, g, b, a }; }
 inline internal void graphics_primitive_set_colour    (render_information_primitive* primitive, v4 colour)                  { primitive->colour       = colour;         }
 inline internal void graphics_primitive_set_texture   (render_information_primitive* primitive, GLuint texture)             { primitive->texture      = texture;        } 
@@ -132,7 +143,6 @@ inline internal void graphics_primitive_set_zindex    (render_information_primit
 {
     primitive->z_index = (z_index == 1) ? -1.0 : 0.98;
     primitive->z_index = (z_index == 0) ? primitive->z_index : -0.96;
-    // FAR PLANE (1.0); NEAR PLANE (-1.0) 
 }
 
 inline internal void graphics_primitive_set_font_texture(render_information_font* font, GLuint texture) { font->texture = texture; }
@@ -154,9 +164,9 @@ inline internal void graphics_primitive_set_font_glyph(render_information_font* 
 
 
 
-#define graphics_set_backgroundcolour(param_r, param_g, param_b) \
-    glClearColor((param_r), (param_g), (param_b), 1.0); \
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	\
+#define graphics_set_backgroundcolour(param_r, param_g, param_b)	\
+    glClearColor((param_r), (param_g), (param_b), 1.0);			\
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);			\
 
 #define graphics_set_parameter_texture(param_name, param_shader, param_textureid, param_texture) \
     glUniform1i(glGetUniformLocation((param_shader), (param_name)), (param_textureid)); \
@@ -204,7 +214,7 @@ inline internal void conversion_rect_to_data   (rect r, v2* data)
     data[4] = { r.x1, r.y0 }; // top    - right
     data[5] = { r.x0, r.y1 }; // bottom - left
 }
-inline internal void conversion_rect_to_data   (rect_u32 r_u32, v3* data)
+inline internal void conversion_rect_to_data   (rect_u32 r_u32, s32 window_width, s32 window_height, v3* data)
 {
     rect r = {};
     r.x0 = ((r_u32.x0 / (r32)window_width) * 2.0) - 1.0;
@@ -305,8 +315,10 @@ internal void graphics_primitive_opengl_compileprimitives(v3* rect_vertexdata,
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);     
 }
 
-internal void graphics_primitives_initialise(render_information_primitive* primitive)
+internal void graphics_primitives_initialise(render_information_primitive* primitive, s32 window_width, s32 window_height)
 {
+    graphics_primitive_set_window_dimensions(primitive, window_width, window_height);
+     
     // // PRIMITIVE DATA
     
     v3 rect_vertexdata  [6]  = {}; // @ rect 
@@ -418,7 +430,7 @@ internal void graphics_primitive_render_rect  (render_information_primitive* pri
 
     // update.
     v3 vertex_data[6] = {};
-    conversion_rect_to_data(r, vertex_data);
+    conversion_rect_to_data(r, primitive->window_width, primitive->window_height, vertex_data);
     
     glBindBuffer(GL_ARRAY_BUFFER, primitive->rect_vbo);
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(v3) * 6, vertex_data);
@@ -489,8 +501,8 @@ internal void graphics_primitive_render_text(render_information_primitive* primi
 {
     // @ [0, pixel width], [0, pixel height]
     
-    s32 px = (position.x/16.0) * window_width;
-    s32 py = (position.y/9.0)  * window_height;
+    s32 px = (position.x/16.0) * primitive->window_width;
+    s32 py = (position.y/9.0)  * primitive->window_height;
     
     s32 dx = px;
     s32 dy = py;
@@ -551,6 +563,6 @@ internal void graphics_primitive_metrics_text(render_information_primitive* prim
 
     // @ [0, 16.0], [0, 9.0]
     
-    *max_width  = (px/(r32)window_width) * 16.0;
-    *max_height = (py/(r32)window_height) * 9.0;
+    *max_width  = (px/(r32)primitive->window_width) * 16.0;
+    *max_height = (py/(r32)primitive->window_height) * 9.0;
 }

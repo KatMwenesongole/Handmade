@@ -1,5 +1,6 @@
 #define PI  3.14159
 #define TAU (2 * PI)
+
 #include <math.h> //bad!
 
 struct v4

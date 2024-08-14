@@ -1,11 +1,6 @@
 //
 // STANDARD ALLOCATOR IMPLEMENTATION
 //
-
-internal inline void MEM_FILL (void* base, u32 size, s8 c);
-internal inline void MEM_CLEAR(void* base, u32 size);
-internal inline void MEM_COPY (void* source, void* destination, u32 size);
-
 struct memory_entry
 {
     memory_entry* next;
@@ -148,7 +143,7 @@ internal void  MEM_FREE_SPACE(memory_struct* Memory, void* base)
 
 	MEM_CLEAR(entry->base, entry->size);
     }
-    if(before && !before->used) // @ is there an entry before us? and is is used?
+    if(before && !before->used) // @ is there an entry before us? and is it used?
     {
 	before->next = entry->next;
 	before->size += sizeof(memory_entry) + entry->size;
