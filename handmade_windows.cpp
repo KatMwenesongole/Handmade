@@ -130,7 +130,6 @@ struct windows_information
     s32 monitor_width;
     s32 monitor_height;
     
-    //WINDOWPLACEMENT placement = { sizeof(placement) };
     WINDOWPLACEMENT placement;
     DWORD style;
 };
