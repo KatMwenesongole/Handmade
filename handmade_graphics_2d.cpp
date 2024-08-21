@@ -7,7 +7,7 @@
 //
 
 #define ANSI_OFFSET 32
-#define ANSI_COUNT  223
+#define ANSI_COUNT  233
 
 // TEXT
 
@@ -159,7 +159,7 @@ inline internal void graphics_primitive_set_font_texture(render_information_font
 inline internal void graphics_primitive_set_font_colour(render_information_font* font, r32 r, r32 g, r32 b, r32 a) { font->colour = { r, g, b, a }; }
 inline internal void graphics_primitive_set_font_colour(render_information_font* font, v4 colour) { font->colour = colour; }
 inline internal void graphics_primitive_set_font_linespacing(render_information_font* font, s32 line_spacing) { font->line_spacing = line_spacing; }
-inline internal void graphics_primitive_set_font_glyph(render_information_font* font, s8 character,
+inline internal void graphics_primitive_set_font_glyph(render_information_font* font, u8 character,
 						       s32 width, s32 height, s32 dy,
 						       s32 spacing, s32 pre_spacing,
 						       r32 u0, r32 v0, r32 u1, r32 v1)
@@ -493,7 +493,7 @@ internal void graphics_primitive_render_circle(render_information_primitive* pri
 
 // TEXT
 
-internal void graphics_primitive_render_glyph (render_information_primitive* primitive, s8 character, s32 x, s32 y)
+internal void graphics_primitive_render_glyph (render_information_primitive* primitive, u8 character, s32 x, s32 y)
 {
     graphics_primitive_set_colour (primitive, primitive->font.colour);
     graphics_primitive_set_texture(primitive, primitive->font.texture);
@@ -525,9 +525,6 @@ internal void graphics_primitive_render_text(render_information_primitive* primi
 	    dx  = px; 
 	    dy += primitive->font.line_spacing; 
 	}
-	else if(text[c] == ' ' ) { // temp!
-	    dx += primitive->font.line_spacing*2; //temp!
-	} // temp!
 	else
 	{
 	    render_information_glyph* glyph = &primitive->font.glyphs[text[c] - ANSI_OFFSET];
@@ -558,9 +555,6 @@ internal void graphics_primitive_metrics_text(render_information_primitive* prim
 
 	    py += primitive->font.line_spacing; 
 	}
-	else if(text[c] == ' ') { // temp!
-	    dx += primitive->font.line_spacing*2; // temp!
-	} // temp!
 	else
 	{
 	    render_information_glyph* glyph = &primitive->font.glyphs[text[c] - ANSI_OFFSET];

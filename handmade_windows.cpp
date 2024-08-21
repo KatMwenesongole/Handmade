@@ -119,24 +119,73 @@ io_freefile(io_file file)
 // Handmade Heroine/hh_opengl_windows.cpp
 //
 
-struct window_information
+struct windows_information
 {
     HWND window;
+    HDC  window_dc;
+    
     s32  window_width;
     s32  window_height;
-    HDC  window_dc;
+
+    s32 monitor_width;
+    s32 monitor_height;
+    
+    //WINDOWPLACEMENT placement = { sizeof(placement) };
+    WINDOWPLACEMENT placement;
+    DWORD style;
 };
 
+internal void
+windows_fullscreen(windows_information* info, b32* fullscreen)
+{
+    if(!(*fullscreen))
+    {
+	MONITORINFO monitor_info = { sizeof(monitor_info) };
+	if (GetWindowPlacement(info->window, &info->placement) &&
+	    GetMonitorInfoA(MonitorFromWindow(info->window, MONITOR_DEFAULTTOPRIMARY), &monitor_info))
+	{
+	    SetWindowLong(info->window, GWL_STYLE, info->style & ~WS_OVERLAPPEDWINDOW);
+	    SetWindowPos (info->window, HWND_TOP,
+			  monitor_info.rcMonitor.left, monitor_info.rcMonitor.top,
+			  monitor_info.rcMonitor.right  - monitor_info.rcMonitor.left,
+			  monitor_info.rcMonitor.bottom - monitor_info.rcMonitor.top,
+			  SWP_NOOWNERZORDER | SWP_FRAMECHANGED);
+
+	    *fullscreen = true;
+	}
+    }
+    else
+    {
+	SetWindowLong(info->window, GWL_STYLE, info->style);
+	SetWindowPlacement(info->window, &info->placement);
+	
+	*fullscreen = false;
+    }
+
+    RECT window_rect = {};
+    GetClientRect(info->window, &window_rect);
+
+    info->window_width  = window_rect.right  - window_rect.left;
+    info->window_height = window_rect.bottom - window_rect.top;
+
+    windows_opengl_updateviewport(info->window_width, info->window_height);
+}
+
+
 internal b32
-windows_initialise_window(window_information* window_info,
+windows_initialise_window(windows_information* window_info,
 			  HINSTANCE instance, WNDPROC window_procedure_message,
 			  s32 window_width, s32 window_height,
                           s8* window_title)
 {
     b32 success = false;
 
-    window_info->window_width  = window_width;
-    window_info->window_height = window_height;
+    SetProcessDpiAwareness(PROCESS_PER_MONITOR_DPI_AWARE);
+
+    window_info-> window_width  = window_width;
+    window_info-> window_height = window_height;
+    window_info->monitor_width  = GetSystemMetrics(SM_CXSCREEN);
+    window_info->monitor_height = GetSystemMetrics(SM_CYSCREEN);
     
     WNDCLASSA window_class = {};
     window_class.style 	       = CS_OWNDC | CS_HREDRAW | CS_VREDRAW;
@@ -147,18 +196,11 @@ windows_initialise_window(window_information* window_info,
 
     if(RegisterClassA(&window_class))
     {
-	SetProcessDpiAwareness(PROCESS_PER_MONITOR_DPI_AWARE);
-
-	s32 monitor_width  = GetSystemMetrics(SM_CXSCREEN);
-	s32 monitor_height = GetSystemMetrics(SM_CYSCREEN);
-
-	// resize the window.
-
 	RECT window_rect = {
-	    (monitor_width  - window_width )/2,
-	    (monitor_height - window_height)/2,
-	    window_width  + window_rect.left  ,
-	    window_height + window_rect.top   ,
+	    (window_info->monitor_width  - window_width )/2,
+	    (window_info->monitor_height - window_height)/2,
+	    window_info->window_width  + window_rect.left  ,
+	    window_info->window_height + window_rect.top   ,
 	};
 
 	if(!AdjustWindowRect(&window_rect, WS_SYSMENU | WS_MINIMIZEBOX | WS_CAPTION, false)) {
@@ -178,6 +220,9 @@ windows_initialise_window(window_information* window_info,
 	if(window_info->window)
 	{
 	    window_info->window_dc = GetDC(window_info->window);
+	    window_info->placement = { sizeof(window_info->placement) }; 
+	    window_info->style     = GetWindowLongA(window_info->window, GWL_STYLE);
+    
 	    if(windows_opengl_initialise(window_info->window_dc))
 	    {
 		windows_opengl_updateviewport(window_width, window_height);
@@ -198,7 +243,7 @@ windows_initialise_window(window_information* window_info,
 }
 
 internal void
-windows_process_messages(window_information* window_info)
+windows_process_messages(windows_information* window_info)
 {
     MSG message = {};
     while(PeekMessageA(&message, window_info->window, 0, 0, PM_REMOVE))
@@ -206,15 +251,6 @@ windows_process_messages(window_information* window_info)
 	TranslateMessage(&message);
 	DispatchMessageA(&message);
     }
-}
-
-internal void
-windows_deinitialise_window(window_information* window_info)
-{
-    DestroyWindow(window_info->window);
-    
-    //UnregisterClassA(window_class.lpszClassName, instance);
-    
 }
 
 

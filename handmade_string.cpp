@@ -38,6 +38,8 @@ string_digitcount(s32 n)   // .number of digits in a number from an integer
     return(c);
 }
 
+// conversions. from to.
+
 internal s32
 string_to_integer(s8* str) // .string to signed integer
 {
@@ -90,6 +92,7 @@ string_to_hexadecimal(s8* str) //TODO: write the damn function
     return(3735928559);
 }
 
+// conversions. to from.
 internal void
 integer_to_string(s32 n, s8* str, s32* size)           
 {
