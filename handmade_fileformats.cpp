@@ -1,3 +1,6 @@
+#pragma once
+
+
 struct bitmap_header_v4
 {
     // can only load & save (A8 R8 G8 B8) - BITMAP V4

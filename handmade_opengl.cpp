@@ -1,3 +1,10 @@
+/*
+// // // // // // // // // // // // // // // // // // // // // // // // //  
+
+ Notice: (C) Copyright 2024 by Kat Mwenesongole. All Rights Reserved.
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+*/
 #pragma once
 
 // CORE (1.0 - 4.6) 

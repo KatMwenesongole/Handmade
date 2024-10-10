@@ -1,3 +1,12 @@
+/*
+// // // // // // // // // // // // // // // // // // // // // // // // //  
+
+ Notice: (C) Copyright 2024 by Kat Mwenesongole. All Rights Reserved.
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+*/
+#pragma once
+
 //
 // STANDARD ALLOCATOR IMPLEMENTATION
 //
@@ -129,7 +138,7 @@ internal void  MEM_FREE_SPACE(memory_struct* Memory, void* base)
     memory_entry* entry = memory_find_entry(Memory, base);
     ASSERT(entry)
 
-    MEM_CLEAR(entry->base, entry->size); // @ clear data.
+    mem_clear(entry->base, entry->size); // @ clear data.
 
     memory_entry* next   = entry->next;
     memory_entry* before = memory_find_entry_before(Memory, entry->base);
@@ -141,14 +150,14 @@ internal void  MEM_FREE_SPACE(memory_struct* Memory, void* base)
 	entry->next = next->next;
 	entry->used = false;
 
-	MEM_CLEAR(entry->base, entry->size);
+	mem_clear(entry->base, entry->size);
     }
     if(before && !before->used) // @ is there an entry before us? and is it used?
     {
 	before->next = entry->next;
 	before->size += sizeof(memory_entry) + entry->size;
 
-	MEM_CLEAR(before->base, before->size); // @ clear data.
+	mem_clear(before->base, before->size); // @ clear data.
 
 	entry = before;
     }
@@ -158,7 +167,7 @@ internal void  MEM_FREE_SPACE(memory_struct* Memory, void* base)
 	// @ we can get rid of ourselves. we are at the top of the stack.
 	Memory->used -= entry->size + sizeof(memory_entry);
 
-	MEM_CLEAR(entry, sizeof(memory_entry)); // @ clear structure.
+	mem_clear(entry, sizeof(memory_entry)); // @ clear structure.
     }
     
 }

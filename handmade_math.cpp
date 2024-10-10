@@ -1,3 +1,12 @@
+/*
+// // // // // // // // // // // // // // // // // // // // // // // // //  
+
+ Notice: (C) Copyright 2024 by Kat Mwenesongole. All Rights Reserved.
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+*/
+#pragma once
+
 #define PI  3.14159
 #define TAU (2 * PI)
 

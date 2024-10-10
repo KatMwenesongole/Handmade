@@ -1,3 +1,12 @@
+/*
+// // // // // // // // // // // // // // // // // // // // // // // // //  
+
+ Notice: (C) Copyright 2024 by Kat Mwenesongole. All Rights Reserved.
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+*/
+#pragma once
+
 // mem
 internal inline void
 mem_copy(void* source, void* destination, s32 size)

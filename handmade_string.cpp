@@ -1,3 +1,13 @@
+/*
+// // // // // // // // // // // // // // // // // // // // // // // // //  
+
+ Notice: (C) Copyright 2024 by Kat Mwenesongole. All Rights Reserved.
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+*/
+#pragma once
+
+
 internal u32
 string_size(s8* str)       // .use on null terminated strings only!
 {
@@ -87,9 +97,43 @@ string_to_real(s8* str)   // .string to real
     return(value);
 }
 internal u32
-string_to_hexadecimal(s8* str) //TODO: write the damn function
+string_to_hexadecimal(s8* str) 
 {
-    return(3735928559);
+    u32 value = 0;
+    
+    if(!(str[0] == '0' && str[1] == 'x'))
+    {
+	return(0); // not hexadecimal or wrong format.
+    }
+
+    str += 2; 
+
+    s32 digit_count = string_digitcount(str) + 1;
+
+    for(s32 current_digit = 0; current_digit < digit_count; current_digit++)
+    {
+	s32 digit = 0;
+
+	if(str[current_digit] > '@' && str[current_digit] < 'G') // A - Z
+	{
+	    digit = 10 + str[current_digit] - 65;
+	}
+	else if(str[current_digit] > '`' && str[current_digit] < 'g') // a - z
+	{
+	    digit = 10 + str[current_digit] - 97;
+	}
+	else if (str[current_digit] > '/' && str[current_digit] < ':')// 0 - 9
+	{
+	    digit = str[current_digit] - 48;
+	}
+	else
+	{
+	    return(0); // nonsense.
+	}
+
+	value += digit * powf(16, digit_count - (current_digit + 1));	    
+    }
+    return(value);
 }
 
 // conversions. to from.

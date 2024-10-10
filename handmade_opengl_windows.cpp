@@ -1,3 +1,12 @@
+/*
+// // // // // // // // // // // // // // // // // // // // // // // // //  
+
+ Notice: (C) Copyright 2024 by Kat Mwenesongole. All Rights Reserved.
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+*/
+#pragma once
+
 // 1.0 - 1.1 ONLY!
 internal void*
 windows_opengl_loadptr(HMODULE lib, const s8* function_name)

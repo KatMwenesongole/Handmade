@@ -1,3 +1,5 @@
+#pragma once
+
 //
 // z_index 
 //
@@ -30,18 +32,18 @@ struct glyph_header
 };
 struct font_header
 {
-    u32   size;
-    u32  width;
-    u32 height;
+    s32   size;
+    s32  width;
+    s32 height;
     
-    u32 glyph_count;
-    u32 glyph_height;
-    u32 glyph_width;
+    s32 glyph_count;
+    s32 glyph_height;
+    s32 glyph_width;
 
-    u32 line_spacing;
+    s32 line_spacing;
 
-    u32 glyph_offset;
-    u32  byte_offset;
+    s32 glyph_offset;
+    s32  byte_offset;
 };
 #pragma pack(pop)
 
@@ -74,6 +76,17 @@ struct line2d
     r32 y0;
     r32 x1;  // end
     r32 y1;
+};
+struct triangle
+{
+    r32 x0;
+    r32 y0;
+
+    r32 x1;
+    r32 y1;
+    
+    r32 x2;
+    r32 y2;
 };
 
 struct render_information_glyph
@@ -113,7 +126,10 @@ struct render_information_primitive
     r32    line2d_width; 
 
     GLuint circle_vao; 
-    GLuint circle_vbo; 
+    GLuint circle_vbo;
+
+    GLuint triangle_vao;
+    GLuint triangle_vbo;
 
     GLuint  shader;  
     GLuint texture; 
@@ -144,13 +160,13 @@ inline internal void graphics_primitive_set_zindex    (render_information_primit
     switch(z_index)
     {
     case  1:
-	primitive->z_index = -1.0; // above
+	primitive->z_index = -1.0f; // above
 	break;
     case  0:
-	primitive->z_index = 0.98; // middle
+	primitive->z_index = 0.98f; // middle
 	break;
     case -1:
-	primitive->z_index = 0.96; // below
+	primitive->z_index = 0.96f; // below
 	break;
     }
 }
@@ -197,9 +213,6 @@ inline internal void graphics_primitive_set_font_glyph(render_information_font* 
     glUniform1i(glGetUniformLocation((param_shader), (param_name)), (param)); \
 
 #define graphics_rgb_norm(red, green, blue) (red)/(r32)255, (green)/(r32)255, (blue)/(r32)255
-
-
-
 
 // PRIMITIVE
 inline internal void conversion_rect_to_data   (rect r, v3* data)
@@ -276,6 +289,20 @@ inline internal void conversion_circle_to_data (circle c, v3* data)
     }
     data[(4 * subdivision_count) + 1] = { c.x, c.y + c.r_y, 0 };
 }
+inline internal void conversion_triangle_to_data(triangle t, v3* data)
+{
+    t.x0 = ((t.x0 / 16.0) * 2.0) - 1.0;
+    t.x1 = ((t.x1 / 16.0) * 2.0) - 1.0;
+    t.x2 = ((t.x2 / 16.0) * 2.0) - 1.0;
+    
+    t.y0 = (((9.0 - t.y0) / 9.0) * 2.0) - 1.0;
+    t.y1 = (((9.0 - t.y1) / 9.0) * 2.0) - 1.0;
+    t.y2 = (((9.0 - t.y2) / 9.0) * 2.0) - 1.0;
+    
+    data[0] = { t.x0, t.y0, 0.0 };
+    data[1] = { t.x1, t.y1, 0.0 };
+    data[2] = { t.x2, t.y2, 0.0 };
+}
 
 internal void graphics_primitive_opengl_compileprimitives(v3* rect_vertexdata,
 							  v2* rect_uvdata,
@@ -287,7 +314,10 @@ internal void graphics_primitive_opengl_compileprimitives(v3* rect_vertexdata,
 							  GLuint* line2d_vbo,
 							  v3* circle_vertexdata,
 							  GLuint* circle_vao,
-							  GLuint* circle_vbo)
+							  GLuint* circle_vbo,
+                                                          v3* triangle_vertexdata,
+                                                          GLuint* triangle_vao,
+                                                          GLuint* triangle_vbo)
 {
     // RECT
     glGenVertexArrays(1, rect_vao);
@@ -323,30 +353,43 @@ internal void graphics_primitive_opengl_compileprimitives(v3* rect_vertexdata,
     glBindBuffer(GL_ARRAY_BUFFER, *circle_vbo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(v3) * 42, circle_vertexdata, GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);     
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+
+    // TRIANGLE
+    glGenVertexArrays(1, triangle_vao);
+    glBindVertexArray(*triangle_vao);
+
+    glGenBuffers(1, triangle_vbo);
+    glBindBuffer(GL_ARRAY_BUFFER, *triangle_vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(v3) * 3, triangle_vertexdata, GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
 }
 
 internal void graphics_primitives_initialise(render_information_primitive* primitive, s32 window_width, s32 window_height)
 {
     graphics_primitive_set_window_dimensions(primitive, window_width, window_height);
      
-    // // PRIMITIVE DATA
+    // PRIMITIVE DATA
     
-    v3 rect_vertexdata  [6]  = {}; // @ rect 
-    v2 rect_uvdata      [6]  = {}; // @ rect
-    v3 line2d_vertexdata[2]  = {}; // @ line2d
-    v3 circle_vertexdata[42] = {}; // @ circle
+    v3 rect_vertexdata  [6]   = {}; // @ rect 
+    v2 rect_uvdata      [6]   = {}; // @ rect
+    v3 line2d_vertexdata[2]   = {}; // @ line2d
+    v3 circle_vertexdata[42]  = {}; // @ circle
+    v3 triangle_vertexdata[3] = {}; // @ triangle
     
-    rect   _rect    = { 4.0, 2.25, 12.0, 6.75 }; // @ rect
-    rect   _rect_uv = { 0.0, 1.0 ,  1.0, 0.0  }; // @ rect
-    line2d _line2d  = { 4.0, 4.5 , 12.0, 4.5  }; // @ line2d
-    circle _circle  = { 8.0, 4.5 ,  2.0, 2.0  }; // @ circle
+    rect     _rect     = { 4.0, 2.25, 12.0, 6.75 }; // @ rect
+    rect     _rect_uv  = { 0.0, 1.0 ,  1.0, 0.0  }; // @ rect
+    line2d   _line2d   = { 4.0, 4.5 , 12.0, 4.5  }; // @ line2d
+    circle   _circle   = { 8.0, 4.5 ,  2.0, 2.0  }; // @ circle
+    triangle _triangle = { 8.0, 3.0, 4.0, 6.0, 12.0, 6.0 }; // @ triangle
     
     conversion_rect_to_data  (_rect,     rect_vertexdata); // @ rect
     conversion_rect_to_data  (_rect_uv,      rect_uvdata); // @ rect
     conversion_line2d_to_data(_line2d, line2d_vertexdata); // @ line2d
     conversion_circle_to_data(_circle, circle_vertexdata); // @ circle
-
+    conversion_triangle_to_data(_triangle, triangle_vertexdata); // @ triangle
+    
     graphics_primitive_opengl_compileprimitives(rect_vertexdata,          // @ rect
 						rect_uvdata,              // @ rect
 						&primitive->rect_vao,     // @ rect
@@ -357,11 +400,15 @@ internal void graphics_primitives_initialise(render_information_primitive* primi
 						&primitive->line2d_vbo,   // @ line2d
 						circle_vertexdata,        // @ circle
 						&primitive->circle_vao,   // @ circle
-						&primitive->circle_vbo);  // @ circle
+						&primitive->circle_vbo,   // @ circle
+	                                        triangle_vertexdata,      // @ triangle
+	                                        &primitive->triangle_vao,  // @ triangle
+	                                        &primitive->triangle_vbo); // @ triangle
     
-    ASSERT(primitive->rect_vao)   // @ rect
-    ASSERT(primitive->line2d_vao) // @ line2d
-    ASSERT(primitive->circle_vao) // @ circle
+    ASSERT(primitive->    rect_vao) // @ rect
+    ASSERT(primitive->  line2d_vao) // @ line2d
+    ASSERT(primitive->  circle_vao) // @ circle
+    ASSERT(primitive->triangle_vao) // @ triangle
 
     glEnable(GL_DEPTH_TEST);                           // @ depth
     glEnable(GL_BLEND);                                // @ transparency
@@ -489,6 +536,21 @@ internal void graphics_primitive_render_circle(render_information_primitive* pri
     // draw.
     glBindVertexArray(primitive->circle_vao);
     glDrawArrays(GL_TRIANGLE_FAN, 0, 42);
+}
+internal void graphics_primitive_render_triangle(render_information_primitive* primitive, triangle t)
+{
+    graphics_primitive_update_data(primitive);
+
+    // update.
+    v3 vertex_data[3] = {};
+    conversion_triangle_to_data(t, vertex_data);
+
+    glBindBuffer(GL_ARRAY_BUFFER, primitive->triangle_vbo);
+    glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(v3) * 3, vertex_data);
+
+    // draw.
+    glBindVertexArray(primitive->triangle_vao);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
 }
 
 // TEXT

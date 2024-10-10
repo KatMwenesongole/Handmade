@@ -1,3 +1,13 @@
+/*
+// // // // // // // // // // // // // // // // // // // // // // // // //  
+
+ Notice: (C) Copyright 2024 by Kat Mwenesongole. All Rights Reserved.
+
+// // // // // // // // // // // // // // // // // // // // // // // // // 
+*/
+#pragma once
+
+
 #define ACTION_COUNT 69
 
 enum   action_choice
@@ -99,7 +109,7 @@ struct action_map
     // mouse
     
     v2 mouse_position; // [0.0, 16.0], [0.0, 9.0]
-    v2 mouse_offset;   // @ delta
+    v2 mouse_offset; // @ delta
 
     // scroll
     // backwards = -1
